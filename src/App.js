@@ -1,9 +1,15 @@
 import React, { Component } from 'react';
+import classes from './App.css'
 
 class App extends Component {
   render() {
       return(
-          <h1>PV-Tool</h1>
+          <div className={classes.Wrapper}>
+              <p className={classes.Header}>PV-Tool<br></br>
+                  <i style={{fontSize: '30px'}}>!!under construction!!</i>
+              </p>
+          </div>
+
       );
   }
 }
