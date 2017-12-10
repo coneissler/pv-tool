@@ -48,7 +48,7 @@ const reducer = (state = initialState, action) => {
                 }
             };
         // assuming if (checksum = 4)=>expand button is disabled
-        // also assuming that 1,2 can never be activ at the same time
+        // also assuming that 1,2 can never be active at the same time
         // Toggle expand, collapse
         case(actionTypes.TOGGLE_ELEMENT):
             const updatedElement = {
