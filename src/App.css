@@ -4,10 +4,11 @@
     background-color: rgba(0,0,0,0.3);
     border: 5px solid red;
     border-radius: 5px;
+    font-family: Avenir, sans-serif;
 }
 
 .Header {
-    border: 10px dashed white;
+    border: 10px dashed black;
     border-radius: 5px;
     margin: 0;
     font-size: 100px;
@@ -16,5 +17,12 @@
     top: 50%;
     left: 50%;
     margin-right: -50%;
-    transform: translate(-50%, -50%)
+    transform: translate(-50%, -50%);
+    cursor: grabbing;
+}
+
+.Header:hover {
+    color: yellow;
+    background: black;
+    border: 10px dashed white;
 }
