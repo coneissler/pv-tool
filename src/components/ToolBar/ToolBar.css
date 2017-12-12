@@ -1,0 +1,35 @@
+.ToolBar {
+    width: 99%;
+    height: 50px;
+    background-color: lightgrey;
+    margin: auto;
+    padding: 10px;
+    text-align: center;
+
+}
+
+.ToolBarElements {
+    display: inline;
+    padding: 20px;
+}
+
+.Input {
+    display: inline-block;
+    margin: auto;
+    width: 50%;
+    padding: 15px;
+
+}
+.TextBox {
+    outline: none;
+    border: 1px solid #ccc;
+    background-color: white;
+    font: inherit;
+    padding: 3px 10px;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 10px;
+    font-size: 1.5vw;
+    cursor: text;
+}

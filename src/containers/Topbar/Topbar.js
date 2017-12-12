@@ -2,13 +2,12 @@ import React, {Component} from 'react';
 import {connect} from 'react-redux';
 import * as actionTypes from '../../store/actions/actions';
 
-import DropdownBar from '../../components/DropdownBar/DropdownBar';
+import Dropdownbar from '../../components/DropdownBar/DropdownBar';
 import Aux from '../../hoc/Aux/Aux'
+import Toolbar from '../../components/ToolBar/ToolBar'
 
-import classes from './Toolbar.css'
 
-
-class Toolbar extends Component {
+class Topbar extends Component {
 
     inputChangedHandler = (row, element) => {
         if(row[3] < 3){
@@ -29,10 +28,10 @@ class Toolbar extends Component {
     };
 
     render(){
-
         return(
             <Aux>
-                <DropdownBar change={this.inputChangedHandler}/>
+                <Toolbar/>
+                <Dropdownbar change={this.inputChangedHandler}/>´
             </Aux>
         );
     }
@@ -47,8 +46,4 @@ const mapDispatchToProps  = dispatch => {
     }
 };
 
-const mapStateToProps = state => {
-
-};
-
-export default connect(null, mapDispatchToProps)(Toolbar);
+export default connect(null, mapDispatchToProps)(Topbar);
