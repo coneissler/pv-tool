@@ -1,0 +1,40 @@
+.DropDown {
+    outline: none;
+    border: 1px solid #ccc;
+    background-color: white;
+    font: inherit;
+    padding: 6px 10px;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+
+.Size2 {
+    width: 50%;
+    height: 100%;
+}
+
+.Size1 {
+    width: 25%;
+    height: 100%;
+}
+
+.Size0 {
+    width: 0;
+    height: 100%;
+}
+
+.a {
+    background-color: lightblue;
+}
+.p {
+    background-color: lightgreen;
+}
+.s {
+    background-color: salmon;
+}
+.d {
+    background-color: lightgrey;
+}

@@ -1,71 +1,103 @@
 import * as actionTypes from '../actions/actions';
 
 const initialState = {
-    checkSum: 3,
-    a: {
-        1: false,
-        2: true
+    row1: {
+        element: 'a',
+        size: 2
     },
-
-    s: {
-        1: false,
-        2: false
+    row2: {
+        element: 'a',
+        size: 0
     },
-
-    p: {
-        1: true,
-        2: false
+    row3: {
+        element: 'p',
+        size: 1
+    },
+    row4: {
+        element: 's',
+        size: 1
     }
 };
 
 const reducer = (state = initialState, action) => {
-    let newSum = 0;
-    switch(action.type){
+    switch(action.type) {
+        case actionTypes.CHANGE_LEFT_BY2:
+            return {
+                    ...state,
+                    row1: {
+                        element: action.element,
+                        size: 2
+                    },
+                    row2: {
+                        element: action.element,
+                        size: 0
+                    }
+            };
 
-        // enables and updates the checksum
-        case(actionTypes.ENABLE_ELEMENT):
-            newSum = state.checkSum + action.size;
-            if(newSum > 4 || state[action.element][action.size]) return state;
-            return{
-                ...state,
-                checkSum: newSum,
-                [action.element]: {
-                    ...state[action.element],
-                    [action.size]: true
+        case actionTypes.CHANGE_LEFT_BY1:
+            if(state.row2.size !== 0) {
+                return {
+                        ...state,
+                        [action.row]: {
+                            element: action.element,
+                            size: 1
+                        }
+                };
+            }else {
+                return {
+                        ...state,
+                        row1: {
+                            element: action.element,
+                            size: 1
+                        },
+                        row2: {
+                            element: 'd',
+                            size: 1
+                        }
+                };
+            }
+
+        case actionTypes.CHANGE_RIGHT_BY2:
+            return {
+                    ...state,
+                    row3: {
+                        element: action.element,
+                        size: 2
+                    },
+                    row4: {
+                        element: action.element,
+                        size: 0
+                    }
+            };
+
+        case actionTypes.CHANGE_RIGHT_BY1:
+            if(state.row4.size !== 0) {
+                return {
+                        ...state,
+                        [action.row]: {
+                            element: action.element,
+                            size: 1
+                        }
+                };
+            }else {
+                return {
+                        ...state,
+                        row3: {
+                            element: action.element,
+                            size: 1
+                        },
+                        row4: {
+                            element: 'd',
+                            size: 1
+                        }
                 }
-            };
+            }
 
-        // disables an element and updates the checksum
-        case(actionTypes.DISABLE_ELEMENT):
-            newSum = state.checkSum - action.size;
-            if(!state[action.element][action.size]) return state;
-            return{
-                ...state,
-                checkSum: newSum,
-                [action.element]: {
-                    ...state[action.element],
-                    [action.size]: false
-                }
-            };
-        // assuming if (checksum = 4)=>expand button is disabled
-        // also assuming that 1,2 can never be active at the same time
-        // Toggle expand, collapse
-        case(actionTypes.TOGGLE_ELEMENT):
-            const updatedElement = {
-                1: !state[action.element][1],
-                2: !state[action.element][2]
-            };
-            newSum = state.checkSum - 1;
-            if(state[action.element][1]) newSum += 2;
-            return{
-                ...state,
-                checkSum: newSum,
-                [action.element]: updatedElement
-
-            };
-
-        default: return state;
+        default:
+            return state
     }
 };
+
+
 
 export default reducer;

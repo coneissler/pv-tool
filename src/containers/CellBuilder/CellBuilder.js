@@ -3,7 +3,7 @@ import React, {Component} from 'react';
 class CellBuilder extends Component {
     render() {
         return(
-            <div>CellBuilder</div>
+            <div></div>
         );
     }
 }

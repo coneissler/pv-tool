@@ -1,0 +1,13 @@
+.DropdownBar {
+    width: 90%;
+    margin-top: 5%;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 10px;
+    display: flex;
+    background: lightgrey;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
