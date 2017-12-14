@@ -1,8 +1,6 @@
 .DropdownBar {
-    width: 99%;
-    margin-right: auto;
-    margin-left: auto;
-    padding: 10px;
+    width: 100%;
+    padding: 5px;
     display: flex;
     background: lightgrey;
     flex-flow: row wrap;
