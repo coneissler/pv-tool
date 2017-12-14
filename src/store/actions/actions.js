@@ -1,4 +1,0 @@
-export const CHANGE_LEFT_BY1 = 'CHANGE_LEFT_BY1';
-export const CHANGE_LEFT_BY2 = 'CHANGE_LEFT_BY2';
-export const CHANGE_RIGHT_BY1 = 'CHANGE_RIGHT_BY1';
-export const CHANGE_RIGHT_BY2 = 'CHANGE_RIGHT_BY2';
