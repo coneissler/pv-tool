@@ -1,22 +1,58 @@
 import * as actionTypes from '../actions/actions';
 
 const initialState = {
-    row1: {
+    col1: {
         element: 'a',
-        size: 2
+        size: 2,
+        rows: {
+            1: {
+                name: "Constantin Eißler",
+                age: 20,
+                ressort: "IT"
+            },
+            2: {
+                name: "Person 2",
+                age: 23,
+                ressort: "HR"
+            },
+            3: {
+                name: "Person 3",
+                age: 25,
+                ressort: "PR"
+            }
+        }
     },
-    row2: {
+
+    col2: {
         element: 'a',
-        size: 0
+        size: 0,
+        rows: {
+            1: {},
+            2: {},
+            3: {}
+        }
     },
-    row3: {
+
+    col3: {
         element: 'p',
-        size: 1
+        size: 1,
+        rows: {
+            1: {},
+            2: {},
+            3: {}
+        }
     },
-    row4: {
+
+    col4: {
         element: 's',
-        size: 1
-    }
+        size: 1,
+        rows: {
+            1: {},
+            2: {},
+            3: {}
+        }
+    },
+    rowAmount: 10
 };
 
 const reducer = (state = initialState, action) => {
@@ -24,21 +60,21 @@ const reducer = (state = initialState, action) => {
         case actionTypes.CHANGE_LEFT_BY2:
             return {
                     ...state,
-                    row1: {
+                    col1: {
                         element: action.element,
                         size: 2
                     },
-                    row2: {
+                    col2: {
                         element: action.element,
                         size: 0
                     }
             };
 
         case actionTypes.CHANGE_LEFT_BY1:
-            if(state.row2.size !== 0) {
+            if(state.col2.size !== 0) {
                 return {
                         ...state,
-                        [action.row]: {
+                        [action.col]: {
                             element: action.element,
                             size: 1
                         }
@@ -46,11 +82,11 @@ const reducer = (state = initialState, action) => {
             }else {
                 return {
                         ...state,
-                        row1: {
+                        col1: {
                             element: action.element,
                             size: 1
                         },
-                        row2: {
+                        col2: {
                             element: 'd',
                             size: 1
                         }
@@ -60,21 +96,21 @@ const reducer = (state = initialState, action) => {
         case actionTypes.CHANGE_RIGHT_BY2:
             return {
                     ...state,
-                    row3: {
+                    col3: {
                         element: action.element,
                         size: 2
                     },
-                    row4: {
+                    col4: {
                         element: action.element,
                         size: 0
                     }
             };
 
         case actionTypes.CHANGE_RIGHT_BY1:
-            if(state.row4.size !== 0) {
+            if(state.col4.size !== 0) {
                 return {
                         ...state,
-                        [action.row]: {
+                        [action.col]: {
                             element: action.element,
                             size: 1
                         }
@@ -82,11 +118,11 @@ const reducer = (state = initialState, action) => {
             }else {
                 return {
                         ...state,
-                        row3: {
+                        col3: {
                             element: action.element,
                             size: 1
                         },
-                        row4: {
+                        col4: {
                             element: 'd',
                             size: 1
                         }
