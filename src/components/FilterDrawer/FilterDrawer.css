@@ -1,9 +1,9 @@
 .FilterDrawer {
     position: absolute;
     width: 100%;
-    height: 18vw;
+    height: 70vw;
     left: 0;
-    top: 134px;
+    top: 104px;
     z-index: 100;
     background-color: lightgrey;
     padding: 32px 16px;
@@ -15,5 +15,12 @@
 }
 
 .Close {
-    transform: translateY(-350px);
+    transform: translateY(-100%);
+}
+
+@media (min-width: 992px){
+    .FilterDrawer {
+        height: 18vw;
+        top: 134px;
+    }
 }

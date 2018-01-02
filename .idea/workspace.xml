@@ -2,19 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ead1e105-e0f9-4d96-a269-561a88655421" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/components/FilterDrawer/FilterDrawer.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/components/FilterDrawer/FilterDrawer.js" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" afterPath="$PROJECT_DIR$/src/App.js" />
-      <change beforePath="$PROJECT_DIR$/src/assets/Icons/AddIcon.css" afterPath="$PROJECT_DIR$/src/assets/Icons/AddIcon.css" />
-      <change beforePath="$PROJECT_DIR$/src/assets/Icons/FilterIcon.css" afterPath="$PROJECT_DIR$/src/assets/Icons/FilterIcon.css" />
-      <change beforePath="$PROJECT_DIR$/src/components/CellTypes/Cells.css" afterPath="$PROJECT_DIR$/src/components/CellTypes/Cells.css" />
-      <change beforePath="$PROJECT_DIR$/src/components/Column/Column.js" afterPath="$PROJECT_DIR$/src/components/Column/Column.js" />
-      <change beforePath="$PROJECT_DIR$/src/components/DropdownBar/DropdownBar.css" afterPath="$PROJECT_DIR$/src/components/DropdownBar/DropdownBar.css" />
-      <change beforePath="$PROJECT_DIR$/src/components/ToolBar/ToolBar.css" afterPath="$PROJECT_DIR$/src/components/ToolBar/ToolBar.css" />
-      <change beforePath="$PROJECT_DIR$/src/components/ToolBar/ToolBar.js" afterPath="$PROJECT_DIR$/src/components/ToolBar/ToolBar.js" />
-      <change beforePath="$PROJECT_DIR$/src/containers/CellBuilder/CellBuilder.js" afterPath="$PROJECT_DIR$/src/containers/CellBuilder/CellBuilder.js" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Topbar/Topbar.js" afterPath="$PROJECT_DIR$/src/containers/Topbar/Topbar.js" />
+      <change beforePath="$PROJECT_DIR$/src/components/FilterDrawer/FilterDrawer.css" afterPath="$PROJECT_DIR$/src/components/FilterDrawer/FilterDrawer.css" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -72,7 +60,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FilterIcon.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="FilterIcon.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/assets/Icons/FilterIcon.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="160">
@@ -94,11 +82,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FilterDrawer.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="FilterDrawer.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/FilterDrawer/FilterDrawer.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="17" column="29" lean-forward="false" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
+            <state relative-caret-position="520">
+              <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -129,8 +117,8 @@
       <file leaf-file-name="ToolBar.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/ToolBar/ToolBar.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="160">
-              <caret line="8" column="4" lean-forward="false" selection-start-line="8" selection-start-column="4" selection-end-line="9" selection-end-column="19" />
+            <state relative-caret-position="340">
+              <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -208,8 +196,8 @@
         <option value="$PROJECT_DIR$/src/components/DropdownBar/DropdownBar.js" />
         <option value="$PROJECT_DIR$/src/components/ToolBar/ToolBar.css" />
         <option value="$PROJECT_DIR$/src/components/DropdownBar/DropdownBar.css" />
-        <option value="$PROJECT_DIR$/src/components/FilterDrawer/FilterDrawer.css" />
         <option value="$PROJECT_DIR$/src/assets/Icons/FilterIcon.css" />
+        <option value="$PROJECT_DIR$/src/components/FilterDrawer/FilterDrawer.css" />
       </list>
     </option>
   </component>
@@ -386,12 +374,12 @@
       <workItem from="1512852046130" duration="8879000" />
       <workItem from="1512903741933" duration="48623000" />
       <workItem from="1513243053344" duration="13702000" />
-      <workItem from="1513877350080" duration="29037000" />
+      <workItem from="1513877350080" duration="29983000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="100241000" />
+    <option name="totallyTimeSpent" value="101187000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -818,16 +806,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/containers/Topbar/Topbar.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="513">
-          <caret line="43" column="89" lean-forward="false" selection-start-line="43" selection-start-column="89" selection-end-line="43" selection-end-column="89" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/ToolBar/ToolBar.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="200">
@@ -835,14 +813,6 @@
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/ToolBar/ToolBar.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="8" column="4" lean-forward="false" selection-start-line="8" selection-start-column="4" selection-end-line="9" selection-end-column="19" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -854,11 +824,29 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/FilterDrawer/FilterDrawer.css">
+    <entry file="file://$PROJECT_DIR$/src/components/ToolBar/ToolBar.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
-          <caret line="17" column="29" lean-forward="false" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
+          <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/assets/Icons/FilterIcon.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="8" column="16" lean-forward="false" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/containers/Topbar/Topbar.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="513">
+          <caret line="43" column="89" lean-forward="false" selection-start-line="43" selection-start-column="89" selection-end-line="43" selection-end-column="89" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -872,10 +860,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/assets/Icons/FilterIcon.css">
+    <entry file="file://$PROJECT_DIR$/src/components/FilterDrawer/FilterDrawer.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="8" column="16" lean-forward="false" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
+        <state relative-caret-position="520">
+          <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
           <folding />
         </state>
       </provider>
