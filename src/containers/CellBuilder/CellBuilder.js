@@ -10,7 +10,7 @@ class CellBuilder extends Component {
 
         for (let i = 0; i < this.props.amount; i++) {
             const newRow =
-                (<Row style={{marginBottom: "20px"}} key={i} className="show-grid">
+                (<Row style={{marginBottom: "20px", backgroundColor: 'darkgrey', borderRadius: '5px'}} key={i} className="show-grid">
                     <Column type={this.props.col1.element} size={this.props.col1.size}/>
                     <Column type={this.props.col2.element} size={this.props.col2.size}/>
                     <Column type={this.props.col3.element} size={this.props.col3.size}/>

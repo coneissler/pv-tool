@@ -19,13 +19,13 @@ const dropdown = (props) => {
     return(
         <div className={divStyle}>
             <select value={props.config.element + props.config.size} className={selectStyle} onChange={props.changeHandler}>
-                <option value='a2'>A2</option>
-                <option value='a1'>A1</option>
-                <option value='p2'>P2</option>
-                <option value='p1'>P1</option>
-                <option value='s2'>S2</option>
-                <option value='s1'>S1</option>
-                <option hidden value='d1'>D1</option>
+                <option value='a2'>Allgemein (detail)</option>
+                <option value='a1'>Allgemein </option>
+                <option value='p2'>Projekte (detail)</option>
+                <option value='p1'>Projekte</option>
+                <option value='s2'>Schulungen (detail)</option>
+                <option value='s1'>Schulungen</option>
+                <option hidden value='d1'>Default</option>
             </select>
         </div>
     )

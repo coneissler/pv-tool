@@ -1,3 +1,25 @@
 .A2 {
-    background-color: lightblue;
+    background-color: white;
+    border: rgb(30,70,125) solid 2px;
+}
+
+.TopBar {
+    background-color: lightgrey;
+    width: 100%;
+    height: 20%;
+    position:relative;
+}
+
+.RessortMarker {
+    background-color: rgb(30,70,125);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    height: 100%;
+    width: 10%;
+    color: white;
+    font-size: 20px;
+    font-style: italic;
+
 }
