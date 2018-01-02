@@ -10,7 +10,7 @@ const column = (props) => {
              sm={(props.size)*6}
              md={(props.size)*3}
              lg={(props.size)*3}
-             style={{height: '100px', padding: '5px'}}>
+             style={{ padding: '2px'}}>
                 <Cell type={props.type} size={props.size} data={null}/>
         </Col>
     )

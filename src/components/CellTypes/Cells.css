@@ -1,4 +1,10 @@
 .Cell {
-    height: 100%;
+    height: 32vw;
     border-radius: 5px;
+}
+
+@media (min-width: 992px) {
+    .Cell {
+        height: 16vw;
+    }
 }

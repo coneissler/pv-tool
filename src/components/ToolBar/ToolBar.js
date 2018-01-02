@@ -8,7 +8,7 @@ import classes from './ToolBar.css'
 const toolbar = (props) => {
     return (
         <div className={classes.ToolBar}>
-            <FilterIcon />
+            <a onClick={props.filterToggle} ><FilterIcon /></a>
             <input type="text" placeholder="Suche..." className={classes.Input}/>
             <AddIcon />
         </div>

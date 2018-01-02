@@ -10,7 +10,7 @@ class CellBuilder extends Component {
 
         for (let i = 0; i < this.props.amount; i++) {
             const newRow =
-                (<Row key={i} className="show-grid">
+                (<Row style={{marginBottom: "20px"}} key={i} className="show-grid">
                     <Column type={this.props.col1.element} size={this.props.col1.size}/>
                     <Column type={this.props.col2.element} size={this.props.col2.size}/>
                     <Column type={this.props.col3.element} size={this.props.col3.size}/>
@@ -20,7 +20,7 @@ class CellBuilder extends Component {
 
         }
         return(
-            <div style={{width: '99%', margin: 'auto'}}>
+            <div style={{width: '99%', margin: 'auto', paddingTop: '20px'}}>
                 <Grid fluid>
                     {mappedRows}
                 </Grid>

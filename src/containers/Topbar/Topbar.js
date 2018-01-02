@@ -5,9 +5,13 @@ import * as actionTypes from '../../store/actions/actions';
 import Dropdownbar from '../../components/DropdownBar/DropdownBar';
 import Aux from '../../hoc/AuxComponent/Aux'
 import Toolbar from '../../components/ToolBar/ToolBar'
+import FilterDrawer from '../../components/FilterDrawer/FilterDrawer'
 
 
 class Topbar extends Component {
+    state = {
+        expandFilter: false
+    };
 
     inputChangedHandler = (col, element) => {
         if(col[3] < 3){
@@ -23,15 +27,22 @@ class Topbar extends Component {
                 this.props.onDropdownChangeHandler_r2(col, element)
             }
         }
-
-
     };
+
+    filterToggelHandler = () => {
+        const filterState = !this.state.expandFilter;
+        this.setState({
+            expandFilter: filterState
+        });
+    };
+
 
     render(){
         return(
             <Aux>
-                <Toolbar/>
-                <Dropdownbar change={this.inputChangedHandler}/>´
+                <Toolbar filterToggle={this.filterToggelHandler} style={{zIndex: '100000'}}/>
+                <Dropdownbar change={this.inputChangedHandler} style={{zIndex: '100000'}}/>
+                <FilterDrawer open={this.state.expandFilter}/>
             </Aux>
         );
     }
