@@ -4,6 +4,7 @@ import classes from './Dropdown.css'
 
 const dropdown = (props) => {
 
+    if(props.config.size === 0) return null;
     const styles = {
         'a': classes.a,
         'p': classes.p,

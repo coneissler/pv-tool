@@ -21,7 +21,7 @@ class CellBuilder extends Component {
         }
         return(
             <div style={{width: '99%', margin: 'auto'}}>
-                <Grid fluid style={{height: '100%'}}>
+                <Grid fluid>
                     {mappedRows}
                 </Grid>
             </div>

@@ -1,0 +1,25 @@
+.FilterIcon:hover path{
+    fill: black;
+}
+
+.FilterIcon {
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+    cursor: pointer;
+
+}
+
+.Path {
+    transition: 2000ms;
+    transition-timing-function: ease-in-out;
+    -webkit-transition: 200ms;
+    -webkit-transition-timing-function: ease-in-out;
+}
+
+@media (min-width: 992px) {
+    .FilterIcon {
+        width: 50px;
+        height: 50px;
+    }
+}
