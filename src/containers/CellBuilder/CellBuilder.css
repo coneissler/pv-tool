@@ -9,7 +9,7 @@
     position: fixed;
     height: 100%;
     top: 0;
-    background-color: lightgrey;
+    background-color: rgb(30,70,125);
 }
 
 @media (min-width: 992px){

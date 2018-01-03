@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ead1e105-e0f9-4d96-a269-561a88655421" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/components/CellTypes/Cells.css" afterPath="$PROJECT_DIR$/src/components/CellTypes/Cells.css" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/src/components/DropdownBar/Dropdown/Dropdown.css" afterPath="$PROJECT_DIR$/src/components/DropdownBar/Dropdown/Dropdown.css" />
+      <change beforePath="$PROJECT_DIR$/src/components/DropdownBar/DropdownBar.css" afterPath="$PROJECT_DIR$/src/components/DropdownBar/DropdownBar.css" />
+      <change beforePath="$PROJECT_DIR$/src/components/DropdownBar/DropdownBar.js" afterPath="$PROJECT_DIR$/src/components/DropdownBar/DropdownBar.js" />
+      <change beforePath="$PROJECT_DIR$/src/components/ToolBar/ToolBar.css" afterPath="$PROJECT_DIR$/src/components/ToolBar/ToolBar.css" />
       <change beforePath="$PROJECT_DIR$/src/containers/CellBuilder/CellBuilder.css" afterPath="$PROJECT_DIR$/src/containers/CellBuilder/CellBuilder.css" />
       <change beforePath="$PROJECT_DIR$/src/containers/CellBuilder/CellBuilder.js" afterPath="$PROJECT_DIR$/src/containers/CellBuilder/CellBuilder.js" />
     </list>
@@ -22,8 +25,8 @@
       <file leaf-file-name="CellBuilder.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/containers/CellBuilder/CellBuilder.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="600">
-              <caret line="30" column="61" lean-forward="false" selection-start-line="30" selection-start-column="61" selection-end-line="30" selection-end-column="61" />
+            <state relative-caret-position="760">
+              <caret line="38" column="32" lean-forward="true" selection-start-line="38" selection-start-column="32" selection-end-line="38" selection-end-column="32" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
@@ -31,33 +34,51 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CellBuilder.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/containers/CellBuilder/CellBuilder.css">
+      <file leaf-file-name="A2.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/CellTypes/A2/A2.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="140">
-              <caret line="7" column="13" lean-forward="true" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+            <state relative-caret-position="260">
+              <caret line="13" column="36" lean-forward="true" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="36" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Column.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/Column/Column.js">
+      <file leaf-file-name="ToolBar.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/ToolBar/ToolBar.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="12" column="31" lean-forward="false" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="31" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="100">
+              <caret line="10" column="48" lean-forward="false" selection-start-line="10" selection-start-column="48" selection-end-line="10" selection-end-column="48" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Cells.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/CellTypes/Cells.css">
+      <file leaf-file-name="ToolBar.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/ToolBar/ToolBar.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="20">
-              <caret line="1" column="15" lean-forward="false" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="15" />
+            <state relative-caret-position="140">
+              <caret line="7" column="36" lean-forward="false" selection-start-line="7" selection-start-column="36" selection-end-line="7" selection-end-column="36" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CellBuilder.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/containers/CellBuilder/CellBuilder.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="400">
+              <caret line="20" column="13" lean-forward="false" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="reducer.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/store/reducers/reducer.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="303">
+              <caret line="54" column="16" lean-forward="false" selection-start-line="54" selection-start-column="16" selection-end-line="54" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -73,11 +94,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Dropdown.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="DropdownBar.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/DropdownBar/DropdownBar.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="220">
+              <caret line="15" column="16" lean-forward="false" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DropdownBar.css" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/components/DropdownBar/DropdownBar.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="20">
+              <caret line="1" column="13" lean-forward="false" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Dropdown.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/DropdownBar/Dropdown/Dropdown.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="100">
-              <caret line="5" column="22" lean-forward="true" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
+            <state relative-caret-position="180">
+              <caret line="9" column="1" lean-forward="true" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -125,7 +166,6 @@
         <option value="$PROJECT_DIR$/src/components/CellTypes/A1/A1.css" />
         <option value="$PROJECT_DIR$/src/components/CellTypes/P1/P1.css" />
         <option value="$PROJECT_DIR$/src/components/CellTypes/P2/P2.css" />
-        <option value="$PROJECT_DIR$/src/store/reducers/reducer.js" />
         <option value="$PROJECT_DIR$/src/components/Cell/Cell.js" />
         <option value="$PROJECT_DIR$/src/components/CellTypes/S1/S1.css" />
         <option value="$PROJECT_DIR$/src/components/CellTypes/S2/S2.css" />
@@ -143,9 +183,6 @@
         <option value="$PROJECT_DIR$/src/components/ToolBar/ToolBar.js" />
         <option value="$PROJECT_DIR$/src/components/FilterDrawer/FilterDrawer.js" />
         <option value="$PROJECT_DIR$/src/containers/Topbar/Topbar.js" />
-        <option value="$PROJECT_DIR$/src/components/DropdownBar/DropdownBar.js" />
-        <option value="$PROJECT_DIR$/src/components/ToolBar/ToolBar.css" />
-        <option value="$PROJECT_DIR$/src/components/DropdownBar/DropdownBar.css" />
         <option value="$PROJECT_DIR$/src/assets/Icons/FilterIcon.css" />
         <option value="$PROJECT_DIR$/src/components/CellTypes/A2/A2.css" />
         <option value="$PROJECT_DIR$/src/components/CellTypes/P2/P2.js" />
@@ -154,9 +191,13 @@
         <option value="$PROJECT_DIR$/src/components/DropdownBar/Dropdown/Dropdown.js" />
         <option value="$PROJECT_DIR$/src/components/Column/Column.js" />
         <option value="$PROJECT_DIR$/src/components/CellTypes/Cells.css" />
-        <option value="$PROJECT_DIR$/src/components/DropdownBar/Dropdown/Dropdown.css" />
         <option value="$PROJECT_DIR$/src/containers/CellBuilder/CellBuilder.js" />
+        <option value="$PROJECT_DIR$/src/components/ToolBar/ToolBar.css" />
+        <option value="$PROJECT_DIR$/src/components/DropdownBar/Dropdown/Dropdown.css" />
         <option value="$PROJECT_DIR$/src/containers/CellBuilder/CellBuilder.css" />
+        <option value="$PROJECT_DIR$/src/store/reducers/reducer.js" />
+        <option value="$PROJECT_DIR$/src/components/DropdownBar/DropdownBar.js" />
+        <option value="$PROJECT_DIR$/src/components/DropdownBar/DropdownBar.css" />
       </list>
     </option>
   </component>
@@ -206,6 +247,65 @@
             <path>
               <item name="pv-tool" type="b2602c69:ProjectViewProjectNode" />
               <item name="pv-tool" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pv-tool" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pv-tool" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pv-tool" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pv-tool" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pv-tool" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pv-tool" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="DropdownBar" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pv-tool" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pv-tool" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="DropdownBar" type="462c0819:PsiDirectoryNode" />
+              <item name="Dropdown" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pv-tool" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pv-tool" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="ToolBar" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pv-tool" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pv-tool" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="containers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pv-tool" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pv-tool" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="containers" type="462c0819:PsiDirectoryNode" />
+              <item name="CellBuilder" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pv-tool" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pv-tool" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="store" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pv-tool" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pv-tool" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="store" type="462c0819:PsiDirectoryNode" />
+              <item name="reducers" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -262,12 +362,12 @@
       <workItem from="1512852046130" duration="8879000" />
       <workItem from="1512903741933" duration="48623000" />
       <workItem from="1513243053344" duration="13702000" />
-      <workItem from="1513877350080" duration="37549000" />
+      <workItem from="1513877350080" duration="38566000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="108753000" />
+    <option name="totallyTimeSpent" value="109770000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -536,14 +636,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/store/reducers/reducer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-33">
-          <caret line="6" column="8" lean-forward="false" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/App.test.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -590,32 +682,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/DropdownBar/DropdownBar.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="9" column="46" lean-forward="false" selection-start-line="9" selection-start-column="46" selection-end-line="9" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/ToolBar/ToolBar.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="10" column="48" lean-forward="false" selection-start-line="10" selection-start-column="48" selection-end-line="10" selection-end-column="48" />
-          <folding>
-            <element signature="e#0#26#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/ToolBar/ToolBar.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/containers/Topbar/Topbar.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="513">
@@ -623,14 +689,6 @@
           <folding>
             <element signature="e#0#39#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/DropdownBar/DropdownBar.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="9" column="19" lean-forward="false" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -683,14 +741,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/CellTypes/A2/A2.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/assets/Icons/AddIcon.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -725,10 +775,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/CellTypes/A2/A2.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="13" column="36" lean-forward="true" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/ToolBar/ToolBar.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="10" column="48" lean-forward="false" selection-start-line="10" selection-start-column="48" selection-end-line="10" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/store/reducers/reducer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="303">
+          <caret line="54" column="16" lean-forward="false" selection-start-line="54" selection-start-column="16" selection-end-line="54" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/containers/CellBuilder/CellBuilder.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="30" column="61" lean-forward="false" selection-start-line="30" selection-start-column="61" selection-end-line="30" selection-end-column="61" />
+        <state relative-caret-position="760">
+          <caret line="38" column="32" lean-forward="true" selection-start-line="38" selection-start-column="32" selection-end-line="38" selection-end-column="32" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>
@@ -737,8 +811,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/containers/CellBuilder/CellBuilder.css">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="20" column="13" lean-forward="false" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/ToolBar/ToolBar.css">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="140">
-          <caret line="7" column="13" lean-forward="true" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <caret line="7" column="36" lean-forward="false" selection-start-line="7" selection-start-column="36" selection-end-line="7" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/DropdownBar/Dropdown/Dropdown.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="9" column="1" lean-forward="true" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
           <folding />
         </state>
       </provider>
@@ -751,10 +841,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/DropdownBar/Dropdown/Dropdown.css">
+    <entry file="file://$PROJECT_DIR$/src/components/DropdownBar/DropdownBar.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="5" column="22" lean-forward="true" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
+        <state relative-caret-position="220">
+          <caret line="15" column="16" lean-forward="false" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/DropdownBar/DropdownBar.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="20">
+          <caret line="1" column="13" lean-forward="false" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
           <folding />
         </state>
       </provider>

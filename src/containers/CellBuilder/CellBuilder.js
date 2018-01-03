@@ -22,13 +22,13 @@ class CellBuilder extends Component {
         }
         return(
             <div>
-            <div className={classes.BorderArea} style={{left: '0'}}>g</div>
+            <div className={classes.BorderArea} style={{left: '0'}}/>
             <div className={classes.CellBuilder}>
                 <Grid fluid>
                     {mappedRows}
                 </Grid>
             </div>
-            <div className={classes.BorderArea} style={{right: '0'}}>g</div>
+            <div className={classes.BorderArea} style={{right: '0'}}/>
             </div>
         );
     }

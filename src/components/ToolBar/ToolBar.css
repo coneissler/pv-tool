@@ -5,7 +5,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    background-color: lightgrey;
+    background-color: rgb(30,70,125);
     position: relative;
     z-index: 10000;
 
