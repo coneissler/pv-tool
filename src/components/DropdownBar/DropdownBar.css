@@ -1,13 +1,16 @@
 .DropdownBar {
-    width: 85%;
+    width: 100%;
     margin: auto;
     padding: 5px;
     display: flex;
     background: rgb(30,70,125);
-    flex-flow: row wrap;
-    align-items: center;
-    justify-content: space-between;
     position: relative;
     z-index: 10000;
+}
+
+@media (min-width: 992px){
+    .DropdownBar {
+        width: 85%;
+    }
 }
 
