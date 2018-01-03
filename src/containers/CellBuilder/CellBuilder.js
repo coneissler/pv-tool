@@ -1,8 +1,9 @@
 import React, {Component} from 'react';
 import {connect} from 'react-redux';
-import {Grid, Row} from 'react-bootstrap';
+import {Grid, Row, Col} from 'react-bootstrap';
 
 import Column from '../../components/Column/Column';
+import classes from './CellBuilder.css';
 
 class CellBuilder extends Component {
     render() {
@@ -20,10 +21,14 @@ class CellBuilder extends Component {
 
         }
         return(
-            <div style={{width: '99%', margin: 'auto', paddingTop: '20px'}}>
+            <div>
+            <div className={classes.BorderArea} style={{left: '0'}}>g</div>
+            <div className={classes.CellBuilder}>
                 <Grid fluid>
                     {mappedRows}
                 </Grid>
+            </div>
+            <div className={classes.BorderArea} style={{right: '0'}}>g</div>
             </div>
         );
     }

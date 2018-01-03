@@ -1,0 +1,25 @@
+.CellBuilder {
+    width: 99%;
+    margin: auto;
+    padding-top: 20px;
+}
+
+.BorderArea {
+    width: 0;
+    position: fixed;
+    height: 100%;
+    top: 0;
+    background-color: lightgrey;
+}
+
+@media (min-width: 992px){
+    .CellBuilder {
+        width: 80%;
+    }
+
+    .BorderArea {
+        width: 8%;
+    }
+}
+
+
