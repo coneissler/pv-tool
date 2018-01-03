@@ -8,14 +8,11 @@
     background-color: rgb(30,70,125);
     position: relative;
     z-index: 10000;
-
 }
 
 .TextBox {
     height: 100%;
     width: 70%;
-
-
 }
 .Input {
     width: 70%;
@@ -27,8 +24,19 @@
     display: inline-block;
     box-sizing: border-box;
     border-radius: 10px;
-    font-size: 20px;
+    font-size: 15px;
     cursor: text;
+    box-shadow: 0 0 5px #000000;
+    transition: all 200ms ease-in;
+}
+
+.Input:focus {
+    border: 1px solid black;
+    box-shadow: 0 0 10px #000000;
+    background-color: lightyellow;
+    transform: scale(1.02, 1.02);
+    transition: all 200ms ease-in;
+
 }
 
 
@@ -39,6 +47,7 @@
     }
     .ToolBar {
         height: 100px;
+        padding: 30px;
     }
 }
 

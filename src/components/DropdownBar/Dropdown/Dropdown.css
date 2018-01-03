@@ -1,13 +1,15 @@
 .DropDown {
     outline: none;
-    border: 1px solid #ccc;
     font: inherit;
     padding: 6px 10px;
     display: block;
     width: 100%;
     box-sizing: border-box;
     cursor: pointer;
+    transition: all 200ms ease-in;
 }
+
+
 
 
 .Size2 {
@@ -25,12 +27,28 @@
 .a {
     background-color: lightblue;
 }
+.a:hover {
+    background-color: deepskyblue;
+    color: white;
+}
 .p {
     background-color: lightgreen;
+}
+.p:hover {
+    background-color: forestgreen;
+    color: white;
 }
 .s {
     background-color: salmon;
 }
+.s:hover {
+    background-color: orangered;
+    color: white;
+}
 .d {
     background-color: lightgrey;
+}
+.d:hover {
+    background-color: darkgray;
+    color:white;
 }

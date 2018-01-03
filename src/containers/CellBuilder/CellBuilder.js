@@ -1,22 +1,25 @@
 import React, {Component} from 'react';
 import {connect} from 'react-redux';
-import {Grid, Row, Col} from 'react-bootstrap';
+import {Grid} from 'react-bootstrap';
 
-import Column from '../../components/Column/Column';
+import Element from '../Element/Element'
 import classes from './CellBuilder.css';
 
 class CellBuilder extends Component {
+
+
     render() {
         let mappedRows = [];
 
         for (let i = 0; i < this.props.amount; i++) {
             const newRow =
-                (<Row style={{marginBottom: "20px", backgroundColor: 'darkgrey', borderRadius: '5px'}} key={i} className="show-grid">
-                    <Column type={this.props.col1.element} size={this.props.col1.size}/>
-                    <Column type={this.props.col2.element} size={this.props.col2.size}/>
-                    <Column type={this.props.col3.element} size={this.props.col3.size}/>
-                    <Column type={this.props.col4.element} size={this.props.col4.size}/>
-                </Row>);
+                (<Element col1={this.props.col1}
+                      col2={this.props.col2}
+                      col3={this.props.col3}
+                      col4={this.props.col4}
+                    key={i}/>
+
+                );
             mappedRows.push(newRow);
 
         }
@@ -24,7 +27,7 @@ class CellBuilder extends Component {
             <div>
             <div className={classes.BorderArea} style={{left: '0'}}/>
             <div className={classes.CellBuilder}>
-                <Grid fluid>
+                <Grid fluid >
                     {mappedRows}
                 </Grid>
             </div>

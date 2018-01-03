@@ -1,11 +1,12 @@
 import React from 'react';
-import cellClass from '../Cells.css';
-import classes from './A2.css';
+
+import cellClasses from '../Cells.css';
 
 const a2 = (props) => {
     return(
+        <div className={cellClasses.Cell} style={{overflow: 'hidden'}}>
         <svg xmlns='http://www.w3.org/2000/svg' xmlnsXlink='http://www.w3.org/1999/xlink'
-             viewBox='0 0 663.19 197.36' width='100%' height='100%'>
+             viewBox='0 0 663.19 197.36' width='100%' height="100%" >
             <defs>
                 <path d='M0 0L663.19 0L663.19 36.89L0 36.89L0 0Z' id='a3eqB3HcZ' />
                 <path d='M478.86 0L663.19 0L663.19 197.36L478.86 197.36L478.86 0Z' id='aaCF2ov9vC'
@@ -76,6 +77,7 @@ const a2 = (props) => {
                 <use xlinkHref='#b1FUngLyqn' fill='#265102' />
             </g>
         </svg>
+        </div>
     )
 };
 

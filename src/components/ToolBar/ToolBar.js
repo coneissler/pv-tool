@@ -10,7 +10,7 @@ const toolbar = (props) => {
         <div className={classes.ToolBar}>
             <a onClick={props.filterToggle} ><FilterIcon /></a>
             <input type="text" placeholder="Suche..." className={classes.Input}/>
-            <AddIcon />
+            <AddIcon/>
         </div>
     )
 };
