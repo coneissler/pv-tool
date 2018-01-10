@@ -1,12 +1,12 @@
 import React from 'react';
 import Aux from '../../hoc/AuxComponent/Aux'
-import A2 from '../CellTypes/A2/A2'
-import A1 from '../CellTypes/A1/A1'
-import P2 from '../CellTypes/P2/P2'
-import P1 from '../CellTypes/P1/P1'
-import S2 from '../CellTypes/S2/S2'
-import S1 from '../CellTypes/S1/S1'
-import D1 from '../CellTypes/D1/D1'
+import A2 from './CellTypes/A2/A2'
+import A1 from './CellTypes/A1/A1'
+import P2 from './CellTypes/P2/P2'
+import P1 from './CellTypes/P1/P1'
+import S2 from './CellTypes/S2/S2'
+import S1 from './CellTypes/S1/S1'
+import D1 from './CellTypes/D1/D1'
 
 
 const cell = (props) => {
@@ -22,7 +22,7 @@ const cell = (props) => {
                 renderedCell = <A1 data={props.data}/>;
                 break;
             }else{
-                renderedCell = <A2 data={props.data}/>;
+                renderedCell = <A2 data={props.data} socialGrid={props.social}/>;
                 break;
             }
         case "p":

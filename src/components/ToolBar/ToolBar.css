@@ -5,9 +5,8 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    background-color: rgb(30,70,125);
+    background-color: rgb(30,70,125); /*background-color: #14294A;*/
     position: relative;
-    z-index: 10000;
 }
 
 .TextBox {
@@ -23,7 +22,6 @@
     padding: 3px 10px;
     display: inline-block;
     box-sizing: border-box;
-    border-radius: 10px;
     font-size: 15px;
     cursor: text;
     box-shadow: 0 0 5px #000000;

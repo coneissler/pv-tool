@@ -1,0 +1,18 @@
+.Wrapper {
+    position: absolute;
+    right: 2px;
+    top: 2px;
+    width: 22%;
+    height: calc(100% - 4px);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: inline-flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    background-color: rgb(20,70,125);
+
+}

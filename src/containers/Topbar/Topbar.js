@@ -40,7 +40,7 @@ class Topbar extends Component {
     render(){
         return(
             <Aux>
-                <Toolbar filterToggle={this.filterToggelHandler} style={{zIndex: '100000'}}/>
+                <Toolbar openFilter={this.state.expandFilter} filterToggle={this.filterToggelHandler} style={{zIndex: '100000'}}/>
                 <Dropdownbar change={this.inputChangedHandler} style={{zIndex: '100000'}}/>
                 <FilterDrawer open={this.state.expandFilter}/>
             </Aux>

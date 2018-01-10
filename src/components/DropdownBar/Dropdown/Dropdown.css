@@ -6,20 +6,25 @@
     width: 100%;
     box-sizing: border-box;
     cursor: pointer;
-    transition: all 200ms ease-in;
+    transition: all 100ms ease-in;
 }
-
-
-
 
 .Size2 {
     width: 50%;
     height: 100%;
+    transition: all 100ms;
 }
 
 .Size1 {
     width: 25%;
     height: 100%;
+    transition: all 100ms;
+}
+
+.Size0 {
+    width: 0%;
+    height: 100%;
+    transition: all 100ms;
 }
 
 

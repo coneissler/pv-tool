@@ -3,9 +3,7 @@
 }
 
 .FilterIcon:hover {
-    -webkit-animation:scaling .5s ease-out .1s;
-    -moz-animation:scaling .5s ease-out .1s;
-    animation:scaling .5s ease-out .1s;
+    transform: scale(1.2);
 }
 
 .FilterIcon {
@@ -13,7 +11,19 @@
     height: 35px;
     margin: 5px;
     cursor: pointer;
+    transition: transform 0.3s ease-out;
+    z-index: 8000;
+    position: relative;
 
+
+}
+
+.Open {
+    transform: rotate(180deg);
+}
+
+.Open:hover {
+    transform: scale(1.2);
 }
 
 .Path {
@@ -30,27 +40,3 @@
     }
 }
 
-@-moz-keyframes scaling {
-    0%, 100% {
-        -moz-transform: scale(1);
-    }
-    50% {
-        -moz-transform: scale(1.1);
-    }
-}
-@-webkit-keyframes scaling {
-    0%, 100% {
-        -webkit-transform: scale(1);
-    }
-    50% {
-        -webkit-transform: scale(1.1);
-    }
-}
-@keyframes scaling {
-    0%, 100% {
-        transform: scale(1);
-    }
-    50% {
-        transform: scale(1.1);
-    }
-}

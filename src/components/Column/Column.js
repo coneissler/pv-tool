@@ -11,7 +11,7 @@ const column = (props) => {
              md={(props.size)*3}
              lg={(props.size)*3}
              style={{padding: '2px'}}>
-                <Cell type={props.type} size={props.size} data={null}/>
+                <Cell type={props.type} size={props.size} social={props.social} data={props.data}/>
         </Col>
     )
 };

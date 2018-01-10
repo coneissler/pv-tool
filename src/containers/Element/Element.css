@@ -1,8 +1,7 @@
 .Element {
     border-radius: 5px;
     margin-bottom: 20px;
-    background-color: darkgrey;
-    cursor: pointer;
+    background-color: darkgray;
     -webkit-transition: all 200ms ease-in;
     -webkit-transform: scale(1);
     -ms-transform: scale(1);
