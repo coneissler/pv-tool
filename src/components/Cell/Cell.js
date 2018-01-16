@@ -1,5 +1,5 @@
 import React from 'react';
-import Aux from '../../hoc/AuxComponent/Aux'
+import Aux from '../../hoc/AuxComponent/AuxComponent'
 import A2 from './CellTypes/A2/A2'
 import A1 from './CellTypes/A1/A1'
 import P2 from './CellTypes/P2/P2'

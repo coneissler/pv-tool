@@ -26,23 +26,8 @@ const initialState = {
     col2: {
         element: 'a',
         size: 0,
-        rows: [
-            {
-                name: "Constantin Eißler",
-                age: 20,
-                ressort: "IT"
-            },
-            {
-                name: "Person 2",
-                age: 23,
-                ressort: "HR"
-            },
-            {
-                name: "Person 3",
-                age: 25,
-                ressort: "PR"
-            }
-        ]
+        rows: []
+
     },
 
     col3: {

@@ -3,7 +3,7 @@ import {connect} from 'react-redux';
 import * as actionTypes from '../../store/actions/actions';
 
 import Dropdownbar from '../../components/DropdownBar/DropdownBar';
-import Aux from '../../hoc/AuxComponent/Aux'
+import Aux from '../../hoc/AuxComponent/AuxComponent'
 import Toolbar from '../../components/ToolBar/ToolBar'
 import FilterDrawer from '../../components/FilterDrawer/FilterDrawer'
 
