@@ -1,0 +1,240 @@
+.Wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.WrapperOffset {
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: showContact 1s forwards;
+}
+
+.GridWrapperInv{
+    visibility: hidden;
+    transition: visibility 0.80s;
+}
+
+.ButtonWrapper {
+    opacity: 0;
+    animation: hideContact 0.5s forwards;
+}
+
+
+.AspectRatio{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25%;
+    transition: all 0.1s;
+}
+.ContactButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15%;
+    border-radius: 50%;
+    transition: all 0.2s;
+    cursor: pointer;
+
+}
+.Connect {
+    fill: white;
+}
+
+.ContactButton:hover .Connect {
+    fill: rgb(20, 70, 125);
+}
+.ContactButton:hover {
+    background: white;
+}
+
+.Box {
+    display: flex;
+    position: relative;
+    height: 0;
+    padding-bottom: 90%;
+    width: 90%;
+    transition: all 0.1s;
+}
+
+.Box a {
+    background: rgba(255,255,255, 0.3);
+    text-align: center;
+    text-decoration:none;
+    display: inline-block;
+    width: 49%;
+    height: 49%;
+    transition: all 0.1s;
+    padding: 10%;
+}
+
+.Box .Phone {
+    padding: 9%;
+}
+
+.Box a path {
+    transition: all 0.1s;
+}
+
+.slackG path {
+    stroke-width: 3px;
+}
+
+
+.Slack:hover .s0{fill:#ecb32d; stroke: transparent;}
+.Slack:hover .s1{fill:#63c1a0; stroke: transparent;}
+.Slack:hover .s2{fill:#e01a59; stroke: transparent;}
+.Slack:hover .s3{fill:#331433; stroke: transparent;}
+.Slack:hover .s4{fill:#d62027; stroke: transparent;}
+.Slack:hover .s5{fill:#89d3df; stroke: transparent;}
+.Slack:hover .s6{fill:#258b74; stroke: transparent;}
+.Slack:hover .s7{fill:#819c3c; stroke: transparent;}
+
+.Slack:hover {background-color: white}
+
+.Slack:hover .slackG path {
+    stroke-width: 0;
+}
+
+.LinkedIn path {stroke: white; stroke-width: 15px}
+.LinkedIn:hover .l0{fill: white; stroke-width: 0}
+.LinkedIn:hover {background-color: #0077B5}
+
+.Mail path {fill: white}
+.Mail:hover {background-color: white}
+.Mail:hover svg path {stroke: #EEBD15;}
+
+.Phone .p1{fill: transparent}
+.Phone .p0{fill: white}
+
+.Phone:hover {background-color: white}
+.Phone:hover .p0{fill: black}
+.Phone:hover .p1{fill: silver}
+
+a:hover {
+    background: rgba(255,255,255, 0.5);
+    transition: all 0.1s;
+}
+
+
+.Slack {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.Mail {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.Phone {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.LinkedIn {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.SlackAppearing {
+    animation-name: fade;
+    -webkit-animation-name: fade;
+    animation-duration: 0.01s;
+    -webkit-animation-duration: 0.01s;
+}
+.MailAppearing {
+    animation-name: fade;
+    -webkit-animation-name: fade;
+    animation-duration: 0.75s;
+    -webkit-animation-duration: 0.75s;
+}
+.PhoneAppearing {
+    animation-name: fade;
+    -webkit-animation-name: fade;
+    animation-duration: 0.5s;
+    -webkit-animation-duration: 0.5s;
+}
+.LinkedInAppearing {
+    animation-name: fade;
+    -webkit-animation-name: fade;
+    animation-duration: 0.25s;
+    -webkit-animation-duration: 0.25s;
+}
+
+.SlackLeaving {
+    animation-name: fadeOut;
+    -webkit-animation-name: fadeOut;
+    animation-duration: 0.75s;
+    -webkit-animation-duration: 0.75s;
+    opacity: 0;
+}
+.MailLeaving {
+    animation-name: fadeOut;
+    -webkit-animation-name: fadeOut;
+    animation-duration: 0.01s;
+    -webkit-animation-duration: 0.01s;
+    opacity: 0;
+}
+.PhoneLeaving {
+    animation-name: fadeOut;
+    -webkit-animation-name: fadeOut;
+    animation-duration: 0.25s;
+    -webkit-animation-duration: 0.25s;
+    opacity: 0;
+}
+.LinkedInLeaving {
+    animation-name: fadeOut;
+    -webkit-animation-name: fadeOut;
+    animation-duration: 0.5s;
+    -webkit-animation-duration: 0.5s;
+    opacity: 0;
+}
+
+@keyframes fade {
+    0% { opacity:0; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+
+@keyframes fadeOut {
+    0% { opacity:1; }
+    50% { opacity:1; }
+    100% { opacity:0; }
+}
+
+
+@-webkit-keyframes fade {
+    0% { opacity:0; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+
+@keyframes hideContact {
+    0%{opacity: 1}
+    1%{opacity: 0}
+    100%{transform: translateX(-100%)}
+}
+
+@keyframes showContact {
+    0%{opacity: 0}
+    70%{opacity: 0}
+    80%{opacity: 1}
+    100%{transform: translateX(100%)}
+}
+
+
+

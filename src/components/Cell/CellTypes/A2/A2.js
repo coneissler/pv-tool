@@ -1,19 +1,29 @@
-import React from 'react';
-
+import React, {Component} from 'react';
+import {connect} from 'react-redux'
 // import StatusRect from './StatusRect/StatusRect';
 // import RectFlair from './StatusRect/RectFlair/RectFlair';
-import ContactButton from './ContactSection/ContactButton/ContactButton';
-import ContactGrid from './ContactSection/ContactGrid/ContactGrid'
+import ContactSection from './ContactSection/ContactSection'
 import cellClasses from '../Cells.css';
 import classes from './A2.css'
 
-const a2 = (props) => {
-    /* Usage status:    "activ"             -   green Dot
-                        "anythingelse"      -   expanded Dot with "anythingelse" as text
-                */
+class A2 extends Component {
+    state = {
+        socialGrid: false
+    }
 
+    socialClickHandler = () => {
+        const newState = !this.state.socialGrid
+        this.setState({ socialGrid: newState })
+    };
+
+    componentWillReceiveProps(nextProps) {
+        if(!nextProps.closeSocial)
+            this.setState({ socialGrid: false })
+    }
+
+    render(){
     return(
-        <div className={cellClasses.Cell} style={{backgroundColor: 'rgb(20,70,125)'}}>
+        <div className={cellClasses.Cell}>
             <svg viewBox='0 0 626 189' xmlns='http://www.w3.org/2000/svg' xmlnsXlink='http://www.w3.org/1999/xlink'
                  fillRule='evenodd' clipRule='evenodd'
                  strokeLinecap='round' strokeLinejoin='round' strokeMiterlimit='1.5'>
@@ -22,7 +32,7 @@ const a2 = (props) => {
                 <rect width='534.768' height='58.221' fill='#b0b0b0' transform='matrix(.8491 0 0 .65269 37.927 0)'
                 />
                 <text fontSize='12.754' fill='#fff'
-                      transform='matrix(1.87855 0 0 1.96015 289.849 27.947)'>{props.data.name}</text>
+                      transform='matrix(1.87855 0 0 1.96015 289.849 27.947)'>Constantin Eißler</text>
                 <use xlinkHref='#_Image1' width='189' height='169'
                      id='_Image1_' transform='matrix(.86266 0 0 .86982 2 40)'
                 />
@@ -82,10 +92,18 @@ const a2 = (props) => {
                 </defs>
             </svg>
             <div className={classes.Wrapper}>
-                {props.socialGrid ? <ContactGrid/> : <ContactButton socialGrid={props.socialGrid}/>}
+                <ContactSection grid={this.props.closeSocial&&this.state.socialGrid} open={this.socialClickHandler}/>
             </div>
         </div>
     )
+    }
 };
 
-export default a2;
+const mapStateToProps = () => {
+
+    return {
+
+    }
+}
+
+export default connect(mapStateToProps)(A2);
