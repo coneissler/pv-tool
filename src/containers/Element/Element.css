@@ -12,12 +12,12 @@
 }
 
 .Hover {
-    box-shadow: 0 0 50px #000000;
+    box-shadow: 0 0 25px #000000;
     -webkit-transition: all 200ms ease-in;
-    -webkit-transform: scale(1.02);
-    -ms-transform: scale(1.02);
+    -webkit-transform: scale(1.01);
+    -ms-transform: scale(1.01);
     -moz-transition: all 200ms ease-in;
-    -moz-transform: scale(1.02);
+    -moz-transform: scale(1.01);
     transition: all 200ms ease-in;
-    transform: scale(1.02);
+    transform: scale(1.01);
 }

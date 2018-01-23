@@ -27,7 +27,6 @@ const initialState = {
         element: 'a',
         size: 0,
         rows: []
-
     },
 
     col3: {
