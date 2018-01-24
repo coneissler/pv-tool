@@ -14,7 +14,6 @@ class CellBuilder extends Component {
     onSpinnerClickHandler = () => {
         const change = !this.state.click;
         this.setState({click: change});
-
     };
 
     render() {
@@ -22,17 +21,7 @@ class CellBuilder extends Component {
 
         for (let i = 0; i < this.props.amount; i++) {
             const newRow =
-                (<Element element1={this.props.element1}
-                          size1={this.props.size1}
-                          element2={this.props.element2}
-                          size2={this.props.size2}
-                          element3={this.props.element3}
-                          size3={this.props.size3}
-                          element4={this.props.element4}
-                          size4={this.props.size4}
-                    key={i}/>
-
-                );
+                (<Element dataId={i} key={i}/>);
             mappedRows.push(newRow);
 
         }
@@ -51,17 +40,8 @@ class CellBuilder extends Component {
 }
 
 const mapStateToProps = state => {
-    return{
-        amount: state.rowAmount,
-        size1: state.col1.size,
-        size2: state.col2.size,
-        size3: state.col3.size,
-        size4: state.col4.size,
-        element1: state.col1.element,
-        element2: state.col2.element,
-        element3: state.col3.element,
-        element4: state.col4.element
-
+    return {
+        amount: state.rowAmount
     }
 };
 

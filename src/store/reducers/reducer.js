@@ -1,38 +1,28 @@
-import * as actionTypes from '../actions/actions';
+import * as actionTypes from '../actions/actionTypes';
 
 const initialState = {
-    col1: {
-        element: 'a',
-        size: 2,
-        rows: [
+
+    mod: [{type:'a', size: 2}, {type:'a', size: 0}, {type:'p', size: 1}, {type:'s', size: 1}],
+    rowAmount: 3,
+    general2: [
             {
                 name: "Constantin Eißler",
                 age: 20,
-                ressort: "IT"
+                resort: "IT"
             },
             {
                 name: "Person 2",
                 age: 23,
-                ressort: "HR"
+                resort: "HR"
             },
             {
                 name: "Person 3",
                 age: 25,
-                ressort: "PR"
+                resort: "PR"
             }
-        ]
-    },
+        ],
 
-    col2: {
-        element: 'a',
-        size: 0,
-        rows: []
-    },
-
-    col3: {
-        element: 'p',
-        size: 1,
-        rows: [
+    project1: [
             {
                 project: "PV-Tool",
                 bt: 150,
@@ -48,13 +38,9 @@ const initialState = {
                 bt: 50,
                 projectLeader: "Person XY"
             }
-        ]
-    },
+        ],
 
-    col4: {
-        element: 's',
-        size: 1,
-        rows: [
+    seminar1: [
             {
                 seminarName: "Finanzen und Recht",
                 expieriencedIn: "WebDev",
@@ -71,100 +57,29 @@ const initialState = {
                 about: "I like trains"
             }
         ]
-    },
-    rowAmount: 3
 };
 
 const reducer = (state = initialState, action) => {
-    let newRows = null;
     switch (action.type) {
-        case actionTypes.CHANGE_LEFT_BY2:
-            newRows = state[action.col].rows;
-            return {
-                ...state,
-                col1: {
-                    element: action.element,
-                    size: 2,
-                    rows: newRows
-                },
-                col2: {
-                    element: action.element,
-                    size: 0,
-                    rows: newRows
+        case actionTypes.DROPDOWN_CHANGED:
+            const prevSize = state.mod[action.col].size
+            if(prevSize === action.element.size){
+                const newMod = state.mod
+                newMod[action.col] = action.element
+                return {
+                    ...state,
+                    mod: newMod
                 }
-            };
-
-        case actionTypes.CHANGE_LEFT_BY1:
-            newRows = state[action.col].rows;
-            if (state.col2.size !== 0) {
+            }else {
+                const newMod = state.mod
+                const target = action.col - (action.col % 2)
+                newMod[target] = action.element
+                newMod[target+1] = action.element.size === 2 ? {type: action.element.type, size: 0} : {type: 'd', size: 1}
                 return {
                     ...state,
-                    [action.col]: {
-                        element: action.element,
-                        size: 1,
-                        rows: newRows
-
-                    }
-                };
-            } else {
-                return {
-                    ...state,
-                    col1: {
-                        element: action.element,
-                        size: 1,
-                        rows: newRows
-                    },
-                    col2: {
-                        element: 'd',
-                        size: 1,
-                        rows: newRows
-                    }
-                };
-            }
-
-        case actionTypes.CHANGE_RIGHT_BY2:
-            newRows = state[action.col].rows;
-            return {
-                ...state,
-                col3: {
-                    element: action.element,
-                    size: 2,
-                    rows: newRows
-                },
-                col4: {
-                    element: action.element,
-                    size: 0,
-                    rows: newRows
-                }
-            };
-
-        case actionTypes.CHANGE_RIGHT_BY1:
-            newRows = state[action.col].rows;
-            if (state.col4.size !== 0) {
-                return {
-                    ...state,
-                    [action.col]: {
-                        element: action.element,
-                        size: 1,
-                        rows: newRows
-                    }
-                };
-            } else {
-                return {
-                    ...state,
-                    col3: {
-                        element: action.element,
-                        size: 1,
-                        rows: newRows
-                    },
-                    col4: {
-                        element: 'd',
-                        size: 1,
-                        rows: newRows
-                    }
+                    mod: newMod
                 }
             }
-
         default:
             return state
     }
