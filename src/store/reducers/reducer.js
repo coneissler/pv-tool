@@ -3,7 +3,7 @@ import * as actionTypes from '../actions/actionTypes';
 const initialState = {
 
     mod: [{type:'a', size: 2}, {type:'a', size: 0}, {type:'p', size: 1}, {type:'s', size: 1}],
-    rowAmount: 3,
+    rowAmount: 50,
     general2: [
             {
                 name: "Constantin Eißler",
@@ -20,7 +20,7 @@ const initialState = {
                 age: 25,
                 resort: "PR"
             }
-        ],
+            ],
 
     project1: [
             {
@@ -38,7 +38,7 @@ const initialState = {
                 bt: 50,
                 projectLeader: "Person XY"
             }
-        ],
+            ],
 
     seminar1: [
             {
@@ -56,25 +56,23 @@ const initialState = {
                 expieriencedIn: "trains",
                 about: "I like trains"
             }
-        ]
+            ]
 };
 
 const reducer = (state = initialState, action) => {
+    const newMod = state.mod
     switch (action.type) {
         case actionTypes.DROPDOWN_CHANGED:
-            const prevSize = state.mod[action.col].size
-            if(prevSize === action.element.size){
-                const newMod = state.mod
-                newMod[action.col] = action.element
+            if(state.mod[action.col].size === action.element.size){
+                newMod.splice(action.col, 1, action.element)
                 return {
                     ...state,
                     mod: newMod
                 }
             }else {
-                const newMod = state.mod
                 const target = action.col - (action.col % 2)
-                newMod[target] = action.element
-                newMod[target+1] = action.element.size === 2 ? {type: action.element.type, size: 0} : {type: 'd', size: 1}
+                newMod.splice(target, 2, action.element,
+                    action.element.size === 2 ? {type: action.element.type, size: 0} : {type: 'd', size: 1})
                 return {
                     ...state,
                     mod: newMod
