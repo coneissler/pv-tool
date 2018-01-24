@@ -1,4 +1,10 @@
-export const CHANGE_LEFT_BY1 = 'CHANGE_LEFT_BY1';
-export const CHANGE_LEFT_BY2 = 'CHANGE_LEFT_BY2';
-export const CHANGE_RIGHT_BY1 = 'CHANGE_RIGHT_BY1';
-export const CHANGE_RIGHT_BY2 = 'CHANGE_RIGHT_BY2';
+import * as actionTypes from './actionTypes'
+
+export const dropdownChanged = (col, element) => {
+    const mod = {type: element.charAt(0), size: parseInt(element.charAt(1),10)}
+    return {
+        type: actionTypes.DROPDOWN_CHANGED,
+        col: col,
+        element: mod
+    }
+}

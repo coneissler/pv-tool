@@ -1,0 +1,1 @@
+export const DROPDOWN_CHANGED = 'DROPDOWN_CHANGED'

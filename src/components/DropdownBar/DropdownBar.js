@@ -10,10 +10,14 @@ const dropdownBar = (props) => {
     return(
         <div className={classes.DropdownBar} style={{width: '100%'}}>
             <div className={classes.DropdownBar}>
-                <Dropdown config={props.vis[0]} changeHandler={(event) => props.change("col1", event.target.value)}/>
-                <Dropdown config={props.vis[1]} changeHandler={(event) => props.change("col2", event.target.value)}/>
-                <Dropdown config={props.vis[2]} changeHandler={(event) => props.change("col3", event.target.value)}/>
-                <Dropdown config={props.vis[3]} changeHandler={(event) => props.change("col4", event.target.value)}/>
+                <Dropdown config={props.vis0}
+                          changeHandler={(event) => props.change(0, event.target.value)}/>
+                <Dropdown config={props.vis1}
+                          changeHandler={(event) => props.change(1, event.target.value)}/>
+                <Dropdown config={props.vis2}
+                          changeHandler={(event) => props.change(2, event.target.value)}/>
+                <Dropdown config={props.vis3}
+                          changeHandler={(event) => props.change(3, event.target.value)}/>
             </div>
         </div>
     )
@@ -21,7 +25,11 @@ const dropdownBar = (props) => {
 
 const mapStateToProps = state => {
     return {
-        vis: [state.col1, state.col2, state.col3, state.col4]
+        vis0: state.mod[0],
+        vis1: state.mod[1],
+        vis2: state.mod[2],
+        vis3: state.mod[3],
+
     }
 };
 

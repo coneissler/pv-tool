@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import {Row} from 'react-bootstrap';
+import {connect} from 'react-redux'
 
 import Column from '../../components/Column/Column'
 import classes from './Element.css'
@@ -10,6 +11,7 @@ import P1 from '../../components/Cell/CellTypes/P1/P1'
 import P2 from '../../components/Cell/CellTypes/P2/P2'
 import S1 from '../../components/Cell/CellTypes/S1/S1'
 import S2 from '../../components/Cell/CellTypes/S2/S2'
+import D1 from '../../components/Cell/CellTypes/D1/D1'
 
 
 class Element extends Component {
@@ -29,24 +31,34 @@ class Element extends Component {
         if(this.state.hover) style = [classes.Element, classes.Hover, "show-grid"].join(' ');
 
         const cellMap = {
-            a1: <A1 dataId={this.props.dataId}/>,
-            a2: <A2 closeSocial={this.state.hover} dataId={this.props.dataId}/>,
-            p1: <P1 dataId={this.props.dataId}/>,
-            p2: <P2 dataId={this.props.dataId}/>,
-            s1: <S1 dataId={this.props.dataId}/>,
-            s2: <S2 dataId={this.props.dataId}/>
+            a1: <A1/>,
+            a2: <A2 closeSocial={this.state.hover}/>,
+            p1: <P1/>,
+            p2: <P2/>,
+            s1: <S1/>,
+            s2: <S2/>,
+            d1: <D1/>
         }
         return(
             <Row onMouseEnter={this.rowHoverHandler}
                  onMouseLeave={this.rowHoverHandler}
                  className={style}>
-                <Column size={this.props.size1}>{cellMap[this.props.element1 + this.props.size1]}</Column>
-                <Column size={this.props.size2}>{cellMap[this.props.element2 + this.props.size2]}</Column>
-                <Column size={this.props.size3}>{cellMap[this.props.element3 + this.props.size3]}</Column>
-                <Column size={this.props.size4}>{cellMap[this.props.element4 + this.props.size4]}</Column>
+                <Column size={this.props.mod0.size}>{cellMap[this.props.mod0.type + this.props.mod0.size]}</Column>
+                <Column size={this.props.mod1.size}>{cellMap[this.props.mod1.type + this.props.mod1.size]}</Column>
+                <Column size={this.props.mod2.size}>{cellMap[this.props.mod2.type + this.props.mod2.size]}</Column>
+                <Column size={this.props.mod3.size}>{cellMap[this.props.mod3.type + this.props.mod3.size]}</Column>
             </Row>
         );
     }
 }
 
-export default Element;
+const mapStateToProps = (state) => {
+    return {
+        mod0: state.mod[0],
+        mod1: state.mod[1],
+        mod2: state.mod[2],
+        mod3: state.mod[3]
+    }
+}
+
+export default connect(mapStateToProps)(Element);

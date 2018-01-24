@@ -22,9 +22,9 @@
 }
 
 .Size0 {
-    width: 0%;
+    visibility: hidden;
+    width: 0;
     height: 100%;
-    transition: all 100ms;
 }
 
 
