@@ -76,7 +76,7 @@ class A2 extends Component {
                 <path d='M579.091,172.797L465.491,172.797L477.987,16.612L579.091,16.612L579.091,172.797Z'
                       fill='#1e467d' transform='matrix(-.39252 0 0 -.2433 227.305 42.042)' />
                 <text fontStyle='italic'
-                      fontSize='2.003' fill='#fff' transform='translate(6.095 29.898) scale(15.3703)'>HR</text>
+                      fontSize='2.003' fill='#fff' transform='translate(6.095 29.898) scale(15.3703)'>IT</text>
                 <g>
                     <path d='M579.091,172.797L465.491,172.797L483.091,16.373L579.091,16.612L579.091,172.797Z'
                           fill='#1e467d' transform='matrix(1.45029 0 0 1.21011 -214.099 -20.108)'

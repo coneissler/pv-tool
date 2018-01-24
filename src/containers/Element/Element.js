@@ -13,7 +13,6 @@ import S1 from '../../components/Cell/CellTypes/S1/S1'
 import S2 from '../../components/Cell/CellTypes/S2/S2'
 import D1 from '../../components/Cell/CellTypes/D1/D1'
 
-let id = 0;
 
 class Element extends Component {
 
@@ -55,8 +54,7 @@ class Element extends Component {
 }
 
 const mapStateToProps = (state) => {
-    id++;
-    console.log(id)
+    const id = 0
     return {
         mod0: state.mod[0],
         mod1: state.mod[1],
