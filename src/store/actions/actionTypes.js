@@ -1,1 +1,3 @@
 export const DROPDOWN_CHANGED = 'DROPDOWN_CHANGED'
+export const SORT_DATA = 'SORT_DATA'
+

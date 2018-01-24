@@ -8,3 +8,11 @@ export const dropdownChanged = (col, element) => {
         element: mod
     }
 }
+
+export const sortData = (set, key) => {
+    return {
+        type: actionTypes.SORT_DATA,
+        set: set,
+        sortKey: key
+    }
+}
