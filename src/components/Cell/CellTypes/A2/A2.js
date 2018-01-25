@@ -25,7 +25,7 @@ class A2 extends Component {
     render(){
     return(
         <div className={cellClasses.Cell}>
-            <svg viewBox='0 0 626 189' xmlns='http://www.w3.org/2000/svg' xmlnsXlink='http://www.w3.org/1999/xlink'
+            <svg width='100%' height='100%' viewBox='0 0 626 189' xmlns='http://www.w3.org/2000/svg' xmlnsXlink='http://www.w3.org/1999/xlink'
                  fillRule='evenodd' clipRule='evenodd'
                  strokeLinecap='round' strokeLinejoin='round' strokeMiterlimit='1.5'>
                 <rect x='166.159' y='76.668' width='268.982' height='23.257' fill='#fff'
@@ -61,18 +61,18 @@ class A2 extends Component {
                       fill='#fff' stroke='#b0b0b0' strokeWidth='.97' transform='matrix(.98047 0 0 1.07493 23.767 40.587)'
                 />
                 <text fontSize='15' fill='#1e467d'
-                      transform='translate(229.676 173.809)'>Technische Universität Berlin</text>
+                      transform='translate(229.676 173.809)'>Humbold Universität Berlin</text>
                 <ellipse cx='189.661' cy='110.309' rx='16.121'
                          ry='15.809' fill='#fff' stroke='#b0b0b0' transform='matrix(.99252 0 0 1.01209 8.066 56.857)'
                 />
                 <text fontSize='15' fill='#1e467d'
-                      transform='translate(185.48 173.776)'>TU</text>
+                      transform='translate(185.48 173.776)'>HU</text>
                 <ellipse cx='189.661' cy='110.309' rx='16.121' ry='15.809' fill='#b0b0b0'
                          transform='matrix(.99252 0 0 1.01209 254.268 23.857)' />
                 <text fontSize='15' fill='#1e467d'
                       transform='translate(433.212 140.96)'>Inf</text>
                 <text fontSize='12.415'
-                      fill='#1e467d' transform='translate(184.825 71.05) scale(2.01374)'>Mitglied</text>
+                      fill='#1e467d' transform='translate(184.825 71.05) scale(2.01374)'>Interessent</text>
                 <path d='M579.091,172.797L465.491,172.797L477.987,16.612L579.091,16.612L579.091,172.797Z'
                       fill='#1e467d' transform='matrix(-.39252 0 0 -.2433 227.305 42.042)' />
                 <text fontStyle='italic'

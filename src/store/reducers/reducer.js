@@ -3,7 +3,7 @@ import * as actionTypes from '../actions/actionTypes';
 const initialState = {
 
     mod: [{type:'a', size: 2}, {type:'a', size: 0}, {type:'p', size: 1}, {type:'s', size: 1}],
-    rowAmount: 100,
+    rowAmount: 5,
     general2: [
             {
                 name: "Constantin Eißler",
