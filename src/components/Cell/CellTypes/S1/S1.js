@@ -5,7 +5,7 @@ import classes from './S1.css';
 
 const s1 = (props) => {
     return(
-        <div className={[cellClass.Cell, classes.S1].join(' ')}>s1 about:
+        <div className={[cellClass.Cell, classes.S1].join(' ')}>s1 about: {props.data.about}
         </div>
     )
 };

@@ -1,6 +1,5 @@
 .Cell {
-    height: 29.85vw;
-    border-radius: 5px;
+    height: 29.75vw;
     transition: all 0.5s ease-out;
 }
 

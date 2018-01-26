@@ -2,43 +2,101 @@ import * as actionTypes from '../actions/actionTypes';
 
 const initialState = {
 
-    mod: [{type:'a', size: 2}, {type:'a', size: 0}, {type:'p', size: 1}, {type:'s', size: 1}],
-    rowAmount: 5,
+    mod: [{type:'a', size: 2}, {type:'a', size: 0}, {type:'p', size: 1}, {type:'p', size: 1}],
+    rowAmount: 6,
     general2: [
-            {
-                name: "Constantin Eißler",
-                age: 20,
-                resort: "IT"
-            },
-            {
-                name: "Person 2",
-                age: 23,
-                resort: "HR"
-            },
-            {
-                name: "Person 3",
-                age: 25,
-                resort: "PR"
-            }
+        {
+            name: "Constantin Eißler",
+            age: 20,
+            resort: "IT",
+            memberstatus: "Mitglied",
+            major: 'B.Sc. Informatik',
+            university: 'Humbold Universität',
+            uniShort: 'HTW',
+            joinDate: '11.08.2012'
+        },
+        {
+            name: "Alex Mustermann",
+            age: 23,
+            resort: "HR",
+            memberstatus: "Interessent",
+            major: 'M.Sc. Betriebswirtschaftslehre',
+            university: 'Freie Universität',
+            uniShort: 'HTW',
+            joinDate: '01.05.2017'
+        },
+        {
+            name: "Jemand mitdrei Namen",
+            age: 25,
+            resort: "P",
+            memberstatus: "Anwärter",
+            major: 'M.Sc. Astronomie und Luftfahrt',
+            university: 'Technische Universität',
+            uniShort: 'TU',
+            joinDate: '26.07.2017'
+        },{
+            name: "Constantin Eißler",
+            age: 20,
+            resort: "B",
+            memberstatus: "Mitglied",
+            major: 'B.Sc. Informatik',
+            university: 'Humbold Universität',
+            uniShort: 'HU',
+            joinDate: '11.08.2012'
+        },
+        {
+            name: "Alex Mustermann",
+            age: 23,
+            resort: "QM",
+            memberstatus: "Interessent",
+            major: 'M.Sc. Betriebswirtschaftslehre',
+            university: 'Freie Universität',
+            uniShort: 'FU',
+            joinDate: '01.05.2017'
+        },
+        {
+            name: "Jemand mitdrei Namen",
+            age: 25,
+            resort: "RM",
+            memberstatus: "Anwärter",
+            major: 'M.Sc. Astronomie und Luftfahrt',
+            university: 'Technische Universität',
+            uniShort: 'HTW',
+            joinDate: '26.07.2017'
+        }
             ],
     general1: [],
     project2: [],
     project1: [
-            {
-                project: "PV-Tool",
-                bt: 150,
-                projectLeader: "Constantin Eissler"
-            },
-            {
-                project: "Imagetrailer",
-                bt: 102,
-                projectLeader: "Johannes"
-            },
-            {
-                project: "Audi",
-                bt: 50,
-                projectLeader: "Person XY"
-            }
+        {
+            bt: 150,
+            ip: 200,
+            percent: 68
+        },
+        {
+            bt: 123,
+            ip: 89,
+            percent: 22
+        },
+        {
+            bt: 333,
+            ip: 999,
+            percent: 54
+        },{
+            bt: 150,
+            ip: 200,
+            percent: 68
+        },
+        {
+            bt: 123,
+            ip: 89,
+            percent: 22
+        },
+        {
+            bt: 333,
+            ip: 999,
+            percent: 54
+        }
             ],
     seminar2: [],
     seminar1: [
