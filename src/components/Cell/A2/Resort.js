@@ -1,9 +1,7 @@
 import React from 'react';
 
 const resort = (props) => {
-    let renderedResort = <text fontStyle='italic'
-                               fontSize='2.003' fill='#fff' transform='translate(9.908 29.898) scale(15.3703)'>IT</text>
-
+    let renderedResort;
         switch(props.res){
             case 'HR':
                 renderedResort = <text fontStyle='italic' fontSize='2.003' fill='#fff' transform='translate(6.37 27.55) scale(12.0594)'>HR</text>
@@ -32,7 +30,6 @@ const resort = (props) => {
             default:
                 renderedResort = <text fontStyle='italic' fontSize='2.003' fill='#fff' transform='translate(13.257 27.55) scale(12.0594)'>--</text>
                 break
-
         }
     return renderedResort
 };

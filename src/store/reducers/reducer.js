@@ -2,8 +2,8 @@ import * as actionTypes from '../actions/actionTypes';
 
 const initialState = {
 
-    mod: [{type:'a', size: 2}, {type:'a', size: 0}, {type:'p', size: 1}, {type:'p', size: 1}],
-    rowAmount: 6,
+    mod: [{type:'a', size: 2}, {type:'a', size: 0}, {type:'p', size: 2}, {type:'p', size: 0}],
+    rowAmount: 4,
     general2: [
         {
             name: "Constantin Eißler",
@@ -30,7 +30,7 @@ const initialState = {
             age: 25,
             resort: "P",
             memberstatus: "Anwärter",
-            major: 'M.Sc. Astronomie und Luftfahrt',
+            major: 'B.Ar. Astronomie und Luftfahrt',
             university: 'Technische Universität',
             uniShort: 'TU',
             joinDate: '26.07.2017'
@@ -66,7 +66,196 @@ const initialState = {
         }
             ],
     general1: [],
-    project2: [],
+    project2: [
+        {
+            bt: 150,
+            ip: 200,
+            percent: 68,
+            projects: [
+                {
+                    name: "HCC FrontEnd Development",
+                    type: "extern",
+                    projectLeader: "Maximilian Eißler",
+                    bt: "15",
+                    status: 0
+                },
+                {
+                    name: "Project X",
+                    type: "intern",
+                    projectLeader: "That Guy",
+                    bt: "100k",
+                    status: 1
+                },{
+                    name: "HCC FrontEnd Development",
+                    type: "extern",
+                    projectLeader: "Maximilian Eißler",
+                    bt: "15",
+                    status: 1
+                },
+                {
+                    name: "Project X",
+                    type: "intern",
+                    projectLeader: "That Guy",
+                    bt: "100k",
+                    status: 1
+                },{
+                    name: "HCC FrontEnd Development",
+                    type: "extern",
+                    projectLeader: "Maximilian Eißler",
+                    bt: "15",
+                    status: 1
+                },
+                {
+                    name: "Project X",
+                    type: "intern",
+                    projectLeader: "That Guy",
+                    bt: "100k",
+                    status: 1
+                },
+            ]
+        },
+        {
+            bt: 150,
+            ip: 200,
+            percent: 68,
+            projects: [
+                {
+                    name: "HCC FrontEnd Development",
+                    type: "extern",
+                    projectLeader: "Maximilian Eißler",
+                    bt: "15",
+                    status: 0
+                },
+                {
+                    name: "Project X",
+                    type: "intern",
+                    projectLeader: "That Guy",
+                    bt: "100k",
+                    status: 1
+                },{
+                    name: "HCC FrontEnd Development",
+                    type: "extern",
+                    projectLeader: "Maximilian Eißler",
+                    bt: "15",
+                    status: 1
+                },
+                {
+                    name: "Project X",
+                    type: "intern",
+                    projectLeader: "That Guy",
+                    bt: "100k",
+                    status: 1
+                },{
+                    name: "HCC FrontEnd Development",
+                    type: "extern",
+                    projectLeader: "Maximilian Eißler",
+                    bt: "15",
+                    status: 1
+                },
+                {
+                    name: "Project X",
+                    type: "intern",
+                    projectLeader: "That Guy",
+                    bt: "100k",
+                    status: 1
+                },
+            ]
+        },
+        {
+            bt: 150,
+            ip: 200,
+            percent: 68,
+            projects: [
+                {
+                    name: "HCC FrontEnd Development",
+                    type: "extern",
+                    projectLeader: "Maximilian Eißler",
+                    bt: "15",
+                    status: 0
+                },
+                {
+                    name: "Project X",
+                    type: "intern",
+                    projectLeader: "That Guy",
+                    bt: "100k",
+                    status: 1
+                },{
+                    name: "HCC FrontEnd Development",
+                    type: "extern",
+                    projectLeader: "Maximilian Eißler",
+                    bt: "15",
+                    status: 1
+                },
+                {
+                    name: "Project X",
+                    type: "intern",
+                    projectLeader: "That Guy",
+                    bt: "100k",
+                    status: 1
+                },{
+                    name: "HCC FrontEnd Development",
+                    type: "extern",
+                    projectLeader: "Maximilian Eißler",
+                    bt: "15",
+                    status: 1
+                },
+                {
+                    name: "Project X",
+                    type: "intern",
+                    projectLeader: "That Guy",
+                    bt: "100k",
+                    status: 1
+                },
+            ]
+        },{
+            bt: 150,
+            ip: 200,
+            percent: 68,
+            projects: [
+                {
+                    name: "HCC FrontEnd Development",
+                    type: "extern",
+                    projectLeader: "Maximilian Eißler",
+                    bt: "15",
+                    status: 0
+                },
+                {
+                    name: "Project X",
+                    type: "intern",
+                    projectLeader: "That Guy",
+                    bt: "100k",
+                    status: 1
+                },{
+                    name: "HCC FrontEnd Development",
+                    type: "extern",
+                    projectLeader: "Maximilian Eißler",
+                    bt: "15",
+                    status: 1
+                },
+                {
+                    name: "Project X",
+                    type: "intern",
+                    projectLeader: "That Guy",
+                    bt: "100k",
+                    status: 2
+                },{
+                    name: "HCC FrontEnd Development",
+                    type: "extern",
+                    projectLeader: "Maximilian Eißler",
+                    bt: "15",
+                    status: 1
+                },
+                {
+                    name: "Project X",
+                    type: "intern",
+                    projectLeader: "That Guy",
+                    bt: "100k",
+                    status: 1
+                },
+            ]
+        }
+
+    ],
     project1: [
         {
             bt: 150,
@@ -100,23 +289,38 @@ const initialState = {
             ],
     seminar2: [],
     seminar1: [
-            {
-                seminarName: "Finanzen und Recht",
-                expieriencedIn: "WebDev",
-                about: "I like Designing"
-            },
-            {
-                seminarName: "Presentationstechniken",
-                expieriencedIn: "This and that",
-                about: "blabla"
-            },
-            {
-                seminarName: "Duummmmyyy 3",
-                expieriencedIn: "trains",
-                about: "I like trains"
-            }
+        {
+            seminarName: "Finanzen und Recht",
+            expieriencedIn: "WebDev",
+            about: "I like Designing"
+        },
+        {
+            seminarName: "Presentationstechniken",
+            expieriencedIn: "This and that",
+            about: "blabla"
+        },
+        {
+            seminarName: "Duummmmyyy 3",
+            expieriencedIn: "trains",
+            about: "I like trains"
+        },{
+            seminarName: "Finanzen und Recht",
+            expieriencedIn: "WebDev",
+            about: "I like Designing"
+        },
+        {
+            seminarName: "Presentationstechniken",
+            expieriencedIn: "This and that",
+            about: "blabla"
+        },
+        {
+            seminarName: "Duummmmyyy 3",
+            expieriencedIn: "trains",
+            about: "I like trains"
+        }
             ]
 };
+
 
 const reducer = (state = initialState, action) => {
     switch (action.type) {
@@ -126,6 +330,7 @@ const reducer = (state = initialState, action) => {
             return state
     }
 };
+
 
 const dropdownChanged = (state, action) => {
     const newMod = state.mod.slice()

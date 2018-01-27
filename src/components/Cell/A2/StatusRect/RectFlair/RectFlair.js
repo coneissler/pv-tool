@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Aux from '../../../../../../hoc/AuxComponent/AuxComponent'
+import Aux from '../../../../../hoc/AuxComponent/AuxComponent'
 const rectFlair = (props) => {
     let flair = (<Aux>
         <image id='_Image2' width='42' height='40' xlinkHref='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACoAAAAoCAYAAACIC2hQAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACc0lEQVRYhdWZ4WrEIBCENyJ9/+c9QuyP3oZxMqMxhdITxJya+GVWd5fcFg9La608uW/btuPRfSuTn8LZxRegp6ADuKfQEm4GPQQVkLPf2KcW5r7u9wjWgg4gy6RPlYNa12dhJShB8jXDzWAZCFsFLmEvoAYSW4ZdAeVr9xIX2GoeruAYVFUHytXNK268AzX70tVqQPkwMeQ+AD+vW2sFVXWKOhWraZ2qCrIA7E5zrcc4QUFNt0cRjusdUISMd1sBGs1eIuJAVWeKsmo1Ir4msAp0D6189icw3teV0WFSwFi/CJohWM09Il4CplPRgdSIodnV3kRIVleB7jFWu9IcaX6lKD90pqhSlUFRTeWu1LlY8qN88hFSmZ+fx2oe7/msNq6h/ajJjmauiQ8Vq5pQDjLNzWbPNTvY1lpZiUzO6SMsg432qwsW88hEgA7e7VlUPeFSNTw4s5ArgVfck4tAd8dWnilBPqLMFFWuRCUSv+mfZVUWlP2aA0//iKZDd8Pzst4BWwqhLk1TiUbCqcPkIJWaPoRu23YIX4rZDEKl38tIoyIRFgZ9EbRS+ALrQijCsqqp4AtaNc59CMmwvIYsbo+GWRD3I0LeifUMqWAtcI34kfZtfhVNOOl1WZCK60rVO+Y/BZslzurtMrEtNH43cXb1sXs63wYAMwzuMD46/QzqYHFsCHyCDsyffXjqEYL3rgNFIG5ZnM7sHahYIAAyyw59qbLKgPAZDtb5Uano6EsJp3l4vZJUjJy8AryoGTGPTDY/jF5NfDE1T8EoJ28P1Od+JDOwDmgG6WBd39pnxywf8SE3y0d8Gufyr/9scOWv/775Br5M3hbWLBZBAAAAAElFTkSuQmCC'

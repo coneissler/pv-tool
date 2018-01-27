@@ -1,7 +1,7 @@
 import React from 'react';
 
 import classes from './ContactSection.css'
-import Aux from '../../../../../hoc/AuxComponent/AuxComponent'
+import Aux from '../../../../hoc/AuxComponent/AuxComponent'
 
 const contactSection = (props) => {
 

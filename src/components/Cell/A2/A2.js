@@ -6,6 +6,7 @@ import ContactSection from './ContactSection/ContactSection'
 import cellClasses from '../Cells.css';
 import classes from './A2.css'
 
+
 class A2 extends Component {
     state = {
         socialGrid: false
@@ -22,17 +23,18 @@ class A2 extends Component {
     }
 
     render(){
+
         const months = calculateMonths(this.props.data.joinDate)
-    return(
+        return(
         <div className={cellClasses.Cell}>
-            <svg viewBox='0 0 629 189' xmlns='http://www.w3.org/2000/svg' xmlnsXlink='http://www.w3.org/1999/xlink'
+            <svg width="100%" height="100%" viewBox='0 0 629 189' xmlns='http://www.w3.org/2000/svg' xmlnsXlink='http://www.w3.org/1999/xlink'
                  fillRule='evenodd' clipRule='evenodd'
                  strokeLinecap='round' strokeLinejoin='round' strokeMiterlimit='1.5'>
                 <rect x='166.159' y='76.668' width='268.982' height='23.257' fill='#fff'
                       transform='matrix(2.33845 0 0 8.1265 -388.554 -623.041)' />
                 <rect width='534.768' height='58.221' fill='#b0b0b0' transform='matrix(.8491 0 0 .65269 37.927 0)'
                 />
-                <text fontSize='12.754' fill='#fff' textAnchor="end"
+                <text fontSize='12.754' fill='#fff' textAnchor="end" ref={(text) => text ? console.log(text.fontSize): null}
                       transform='matrix(1.87855 0 0 1.96015 475.646 27.948)'>{this.props.data.name}</text>
                 <use xlinkHref='#_Image1' width='189' height='169' id='_Image1_'
                       transform='matrix(.86266 0 0 .86982 2 40)' />
@@ -52,8 +54,8 @@ class A2 extends Component {
                 <ellipse cx='189.661' cy='110.309' rx='16.121' ry='15.809' fill='#b0b0b0'
                          transform='matrix(.99252 0 0 1.01209 262.167 23.857)' />
                 {this.props.data.major.charAt(0) === 'M' ? <text fontSize='15' fill='#1e467d'
-                      transform='matrix(.84557 0 0 .84557 435.551 140.039)'>M.Sc</text> :
-                    <text fontSize='15' fill='#1e467d' transform='matrix(.84557 0 0 .84557 436.61 140.039)'>B.Sc</text>}
+                      transform='matrix(.84557 0 0 .84557 435.551 140.039)'>{this.props.data.major.substring(0,4)}</text> :
+                    <text fontSize='15' fill='#1e467d' transform='matrix(.84557 0 0 .84557 436.61 140.039)'>{this.props.data.major.substring(0,4)}</text>}
                 {months.length === 3 ? <text fontSize='15'
                       fill='#1e467d' transform='matrix(.84557 0 0 .84557 174.632 106.98)'>{months}</text> :
                     <text fontSize='15' fill='#1e467d' transform='matrix(.84557 0 0 .84557 178.094 106.778)'>{months}</text> }
@@ -83,6 +85,7 @@ class A2 extends Component {
                 <ContactSection grid={this.props.closeSocial&&this.state.socialGrid} open={this.socialClickHandler}/>
             </div>
         </div>
+
     )
     }
 };

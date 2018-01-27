@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Aux from '../../../../../hoc/AuxComponent/AuxComponent'
+import Aux from '../../../../hoc/AuxComponent/AuxComponent'
 
 const statusRect = (props) => {
     let rect = <Aux>
