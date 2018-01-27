@@ -8,3 +8,17 @@ export const dropdownChanged = (col, element) => {
         element: mod
     }
 }
+
+const fetchDataA1 = () => {
+    return {
+        type: actionTypes.FETCH_DATA_A1,
+    }
+}
+
+export const sortData = (set, key) => {
+    return {
+        type: actionTypes.SORT_DATA,
+        set: set,
+        sortKey: key
+    }
+}

@@ -5,12 +5,23 @@
     display: flex;
     background-color: rgb(30,70,125); /*background-color: #14294A;*/
     position: relative;
+    transition: all 0.5s ease-out;
 
 }
 
-@media (min-width: 992px){
+
+@media (min-width: 992px) and (max-width: 1100px) {
+    .DropdownBar {
+        width: 95%;
+    }
+}
+
+@media (min-width: 1100px) {
     .DropdownBar {
         width: 85%;
     }
+
 }
+
+
 

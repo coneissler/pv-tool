@@ -8,7 +8,7 @@ const column = (props) => {
              sm={(props.size)*6}
              md={(props.size)*3}
              lg={(props.size)*3}
-             style={{padding: '2px'}}>
+             style={{padding: '0'}}>
             {props.children}
         </Col>
     )

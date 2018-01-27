@@ -1,9 +1,9 @@
 .Wrapper {
     position: absolute;
-    right: 2px;
-    top: 2px;
+    right: 0;
+    top: 0;
     width: 22%;
-    height: calc(100% - 4px);
+    height: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: inline-flex;
@@ -14,5 +14,4 @@
     -ms-flex-pack: center;
     justify-content: center;
     background-color: rgb(20,70,125);
-
 }
