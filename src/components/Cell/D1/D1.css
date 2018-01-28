@@ -1,3 +1,6 @@
 .D1{
-    background-color: lightgrey;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

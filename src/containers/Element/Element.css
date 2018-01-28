@@ -14,10 +14,10 @@
 .Hover {
     box-shadow: 0 0 25px #000000;
     -webkit-transition: all 200ms ease-in;
-    -webkit-transform: scale(1.01);
-    -ms-transform: scale(1.01);
+    /*-webkit-transform: scale(1.001);*/
+    /*-ms-transform: scale(1.001);*/
     -moz-transition: all 200ms ease-in;
-    -moz-transform: scale(1.01);
+    /*-moz-transform: scale(1.001);*/
     transition: all 200ms ease-in;
-    transform: scale(1.01);
+    /*transform: scale(1.001);*/
 }

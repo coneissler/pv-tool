@@ -12,7 +12,7 @@ import classes from './CellBuilder.css';
 class CellBuilder extends Component {
     state = {
         click: false,
-        stepSize: 200
+        stepSize: 450
     };
 
     onSpinnerClickHandler = () => {
@@ -23,9 +23,10 @@ class CellBuilder extends Component {
     scrollStep = () => {
         if (window.pageYOffset === 0) {
             clearInterval(this.state.intervalId);
+            this.setState({ stepSize: 450 });
         }
         window.scroll(0, window.pageYOffset - this.state.stepSize);
-        this.setState({ stepSize: this.state.stepSize-1 });
+        this.setState({ stepSize: this.state.stepSize-5 });
         console.log(this.state.stepSize)
     }
 

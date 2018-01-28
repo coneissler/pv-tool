@@ -2,8 +2,8 @@ import * as actionTypes from '../actions/actionTypes';
 
 const initialState = {
 
-    mod: [{type:'d', size: 0}, {type:'d', size: 0}, {type:'d', size: 1}, {type:'d', size: 0}],
-    rowAmount: 100,
+    mod: [{type:'a', size: 2}, {type:'p', size: 0}, {type:'s', size: 2}, {type:'d', size: 0}],
+    rowAmount: 2,
     general2: [
         {
             name: "Constantin Eißler",
@@ -287,7 +287,37 @@ const initialState = {
             percent: 54
         }
             ],
-    seminar2: [],
+    seminar2: [
+        {
+            seminars: [{
+                name: "Finanzen und Recht",
+                completed: true
+            },{
+                name: "Präsentationstechniken",
+                completed: true
+            },{
+                name: "Angebotsschulung",
+                completed: true
+            },{
+                name: "Schulung X",
+                completed: false
+            }]
+        },{
+            seminars: [{
+                name: "Finanzen und Recht",
+                completed: false
+            },{
+                name: "Präsentationstechniken",
+                completed: true
+            },{
+                name: "Angebotsschulung",
+                completed: false
+            },{
+                name: "Schulung X",
+                completed: true
+            }]
+        }
+    ],
     seminar1: [
         {
             seminarName: "Finanzen und Recht",
@@ -341,8 +371,7 @@ const dropdownChanged = (state, action) => {
             mod: newMod
         }
     }else {
-        const target = action.col - (action.col % 2)
-        newMod.splice(target, 2, action.element,
+        newMod.splice(action.col - (action.col % 2), 2, action.element,
             action.element.size === 2 ? {type: action.element.type, size: 0} : {type: 'd', size: 1})
         return {
             ...state,
