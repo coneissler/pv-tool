@@ -1,6 +1,5 @@
 .P2 {
     background-color: white;
-
 }
 
 .TopBar {
@@ -51,7 +50,7 @@
     color: rgb(20,70,125);
 }
 
-.ChipA, .ChipB {
+.ChipR, .ChipG, .ChipY, .ChipGold{
     position: relative;
     display: flex;
     justify-content: center;
@@ -61,14 +60,16 @@
     box-shadow: 0 3px 3px rgba(0,0,0,0.2);
 }
 
-.ChipA {
-    background: rgba(100,100,100,0.5);
-
+.ChipR {
+    background: linear-gradient(to right, rgba(239,46,46,0.2), rgba(100,100,100,0.5));
 }
 
-.ChipB {
-    background: rgba(20,70,125,0.5);
+.ChipG {
+    background: linear-gradient(to right, rgba(16,187,103,0.2), rgba(100,100,100,0.5)); /*background: rgba(20,70,125,0.5);*/
+}
 
+.ChipY {
+    background: linear-gradient(to right, rgba(254,219,65,0.2), rgba(100,100,100,0.5));
 }
 
 .ProjectView {

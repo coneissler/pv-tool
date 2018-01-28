@@ -2,8 +2,8 @@ import * as actionTypes from '../actions/actionTypes';
 
 const initialState = {
 
-    mod: [{type:'a', size: 2}, {type:'a', size: 0}, {type:'p', size: 2}, {type:'p', size: 0}],
-    rowAmount: 4,
+    mod: [{type:'d', size: 0}, {type:'d', size: 0}, {type:'d', size: 1}, {type:'d', size: 0}],
+    rowAmount: 100,
     general2: [
         {
             name: "Constantin Eißler",

@@ -6,9 +6,13 @@ import Spinner from '../../assets/Spinner/Spinner';
 import Element from '../Element/Element'
 import classes from './CellBuilder.css';
 
+
+
+
 class CellBuilder extends Component {
     state = {
-        click: false
+        click: false,
+        stepSize: 200
     };
 
     onSpinnerClickHandler = () => {
@@ -16,7 +20,25 @@ class CellBuilder extends Component {
         this.setState({click: change});
     };
 
+    scrollStep = () => {
+        if (window.pageYOffset === 0) {
+            clearInterval(this.state.intervalId);
+        }
+        window.scroll(0, window.pageYOffset - this.state.stepSize);
+        this.setState({ stepSize: this.state.stepSize-1 });
+        console.log(this.state.stepSize)
+    }
+
+    scrollToTop = () => {
+        let intervalId = setInterval(this.scrollStep.bind(this), 16.66);
+        this.setState({ intervalId: intervalId });
+    }
+
+
     render() {
+        window.scroll(function(){
+            console.log(this.scrollTop())
+        })
         let mappedRows = [];
 
         for (let i = 0; i < this.props.amount; i++) {
@@ -33,7 +55,7 @@ class CellBuilder extends Component {
                     {mappedRows} <Spinner click={this.state.click} clickHandler={this.onSpinnerClickHandler}/>
                 </Grid>
             </div>
-            <div className={classes.BorderArea} style={{right: '0'}}/>
+                <div className={classes.BorderArea} style={{right: '0'}}><button onClick={this.scrollToTop}>TOP</button></div>
             </div>
         );
     }

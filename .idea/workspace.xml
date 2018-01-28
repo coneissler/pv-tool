@@ -2,37 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ead1e105-e0f9-4d96-a269-561a88655421" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/components/Cell/P2/P2.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/components/Cell/P2/P2.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/components/Cell/P2/PerformanceIndicator.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/components/Cell/P2/ProjectChip.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/components/Cell/P2/ProjectChip.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/components/Cell/P2/ProjectDisplay.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/components/Cell/P2/ProjectDisplay.js" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/components/Cell/CellTypes/A1/A1.css" afterPath="$PROJECT_DIR$/src/components/Cell/A1/A1.css" />
-      <change beforePath="$PROJECT_DIR$/src/components/Cell/CellTypes/A1/A1.js" afterPath="$PROJECT_DIR$/src/components/Cell/A1/A1.js" />
-      <change beforePath="$PROJECT_DIR$/src/components/Cell/CellTypes/A2/A2.css" afterPath="$PROJECT_DIR$/src/components/Cell/A2/A2.css" />
-      <change beforePath="$PROJECT_DIR$/src/components/Cell/CellTypes/A2/A2.js" afterPath="$PROJECT_DIR$/src/components/Cell/A2/A2.js" />
-      <change beforePath="$PROJECT_DIR$/src/components/Cell/CellTypes/A2/ContactSection/ContactSection.css" afterPath="$PROJECT_DIR$/src/components/Cell/A2/ContactSection/ContactSection.css" />
-      <change beforePath="$PROJECT_DIR$/src/components/Cell/CellTypes/A2/ContactSection/ContactSection.js" afterPath="$PROJECT_DIR$/src/components/Cell/A2/ContactSection/ContactSection.js" />
-      <change beforePath="$PROJECT_DIR$/src/components/Cell/CellTypes/A2/Resort.js" afterPath="$PROJECT_DIR$/src/components/Cell/A2/Resort.js" />
-      <change beforePath="$PROJECT_DIR$/src/components/Cell/CellTypes/A2/StatusRect/RectFlair/RectFlair.js" afterPath="$PROJECT_DIR$/src/components/Cell/A2/StatusRect/RectFlair/RectFlair.js" />
-      <change beforePath="$PROJECT_DIR$/src/components/Cell/CellTypes/A2/StatusRect/StatusRect.js" afterPath="$PROJECT_DIR$/src/components/Cell/A2/StatusRect/StatusRect.js" />
-      <change beforePath="$PROJECT_DIR$/src/components/Cell/CellTypes/Cells.css" afterPath="$PROJECT_DIR$/src/components/Cell/Cells.css" />
-      <change beforePath="$PROJECT_DIR$/src/components/Cell/CellTypes/D1/D1.css" afterPath="$PROJECT_DIR$/src/components/Cell/D1/D1.css" />
-      <change beforePath="$PROJECT_DIR$/src/components/Cell/CellTypes/D1/D1.js" afterPath="$PROJECT_DIR$/src/components/Cell/D1/D1.js" />
-      <change beforePath="$PROJECT_DIR$/src/components/Cell/CellTypes/P1/P1.css" afterPath="$PROJECT_DIR$/src/components/Cell/P1/P1.css" />
-      <change beforePath="$PROJECT_DIR$/src/components/Cell/CellTypes/P1/P1.js" afterPath="$PROJECT_DIR$/src/components/Cell/P1/P1.js" />
-      <change beforePath="$PROJECT_DIR$/src/components/Cell/CellTypes/P2/P2.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/components/Cell/CellTypes/P2/P2.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/components/Cell/CellTypes/S1/S1.css" afterPath="$PROJECT_DIR$/src/components/Cell/S1/S1.css" />
-      <change beforePath="$PROJECT_DIR$/src/components/Cell/CellTypes/S1/S1.js" afterPath="$PROJECT_DIR$/src/components/Cell/S1/S1.js" />
-      <change beforePath="$PROJECT_DIR$/src/components/Cell/CellTypes/S2/S2.css" afterPath="$PROJECT_DIR$/src/components/Cell/S2/S2.css" />
-      <change beforePath="$PROJECT_DIR$/src/components/Cell/CellTypes/S2/S2.js" afterPath="$PROJECT_DIR$/src/components/Cell/S2/S2.js" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Element/Element.js" afterPath="$PROJECT_DIR$/src/containers/Element/Element.js" />
-      <change beforePath="$PROJECT_DIR$/src/store/actions/actionTypes.js" afterPath="$PROJECT_DIR$/src/store/actions/actionTypes.js" />
-      <change beforePath="$PROJECT_DIR$/src/store/actions/actions.js" afterPath="$PROJECT_DIR$/src/store/actions/actions.js" />
+      <change beforePath="$PROJECT_DIR$/src/components/Cell/D1/D1.js" afterPath="$PROJECT_DIR$/src/components/Cell/D1/D1.js" />
+      <change beforePath="$PROJECT_DIR$/src/components/Cell/P2/P2.css" afterPath="$PROJECT_DIR$/src/components/Cell/P2/P2.css" />
+      <change beforePath="$PROJECT_DIR$/src/components/Cell/P2/P2.js" afterPath="$PROJECT_DIR$/src/components/Cell/P2/P2.js" />
+      <change beforePath="$PROJECT_DIR$/src/components/Cell/P2/ProjectChip.css" afterPath="$PROJECT_DIR$/src/components/Cell/P2/ProjectChip.css" />
+      <change beforePath="$PROJECT_DIR$/src/components/Cell/P2/ProjectDisplay.css" afterPath="$PROJECT_DIR$/src/components/Cell/P2/ProjectDisplay.css" />
+      <change beforePath="$PROJECT_DIR$/src/components/Cell/P2/ProjectDisplay.js" afterPath="$PROJECT_DIR$/src/components/Cell/P2/ProjectDisplay.js" />
+      <change beforePath="$PROJECT_DIR$/src/components/Cell/S2/S2.css" afterPath="$PROJECT_DIR$/src/components/Cell/S2/S2.css" />
+      <change beforePath="$PROJECT_DIR$/src/components/Cell/S2/S2.js" afterPath="$PROJECT_DIR$/src/components/Cell/S2/S2.js" />
+      <change beforePath="$PROJECT_DIR$/src/containers/CellBuilder/CellBuilder.js" afterPath="$PROJECT_DIR$/src/containers/CellBuilder/CellBuilder.js" />
       <change beforePath="$PROJECT_DIR$/src/store/reducers/reducer.js" afterPath="$PROJECT_DIR$/src/store/reducers/reducer.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -47,11 +26,65 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="CellBuilder.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/containers/CellBuilder/CellBuilder.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="419">
+              <caret line="27" column="55" lean-forward="false" selection-start-line="27" selection-start-column="55" selection-end-line="27" selection-end-column="55" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="D1.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/Cell/D1/D1.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="100">
+              <caret line="5" column="18" lean-forward="false" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="S2.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/Cell/S2/S2.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="200">
+              <caret line="10" column="51" lean-forward="false" selection-start-line="10" selection-start-column="51" selection-end-line="10" selection-end-column="51" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="P2.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/Cell/P2/P2.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="550">
+              <caret line="102" column="0" lean-forward="false" selection-start-line="102" selection-start-column="0" selection-end-line="113" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="S2.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/Cell/S2/S2.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="890">
+              <caret line="49" column="0" lean-forward="true" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="reducer.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/store/reducers/reducer.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="438">
-              <caret line="63" column="28" lean-forward="true" selection-start-line="63" selection-start-column="28" selection-end-line="63" selection-end-column="28" />
+            <state relative-caret-position="100">
+              <caret line="5" column="18" lean-forward="false" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
               <folding />
             </state>
           </provider>
@@ -60,8 +93,8 @@
       <file leaf-file-name="Element.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/containers/Element/Element.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="463">
-              <caret line="38" column="83" lean-forward="false" selection-start-line="38" selection-start-column="83" selection-end-line="38" selection-end-column="83" />
+            <state relative-caret-position="1420">
+              <caret line="71" column="44" lean-forward="true" selection-start-line="71" selection-start-column="44" selection-end-line="71" selection-end-column="44" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
@@ -81,77 +114,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ProjectChip.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/Cell/P2/ProjectChip.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="163">
-              <caret line="17" column="23" lean-forward="true" selection-start-line="17" selection-start-column="23" selection-end-line="17" selection-end-column="23" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PerformanceIndicator.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/Cell/P2/PerformanceIndicator.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="80">
-              <caret line="26" column="40" lean-forward="false" selection-start-line="26" selection-start-column="40" selection-end-line="26" selection-end-column="40" />
-              <caret line="7" column="39" lean-forward="false" selection-start-line="7" selection-start-column="39" selection-end-line="7" selection-end-column="39" />
-              <caret line="4" column="36" lean-forward="false" selection-start-line="4" selection-start-column="36" selection-end-line="4" selection-end-column="36" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="P2.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/Cell/P2/P2.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="416">
-              <caret line="75" column="17" lean-forward="true" selection-start-line="75" selection-start-column="17" selection-end-line="75" selection-end-column="17" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="P2.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/components/Cell/P2/P2.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-170">
-              <caret line="11" column="5" lean-forward="true" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
-              <folding>
-                <element signature="e#0#39#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ProjectDisplay.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/Cell/P2/ProjectDisplay.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="280">
-              <caret line="14" column="16" lean-forward="true" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="ProjectDisplay.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/Cell/P2/ProjectDisplay.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="480">
-              <caret line="24" column="11" lean-forward="true" selection-start-line="24" selection-start-column="11" selection-end-line="24" selection-end-column="11" />
+              <caret line="24" column="23" lean-forward="false" selection-start-line="24" selection-start-column="23" selection-end-line="24" selection-end-column="23" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="P1.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/Cell/P1/P1.js">
+      <file leaf-file-name="P2.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/Cell/P2/P2.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="21" column="50" lean-forward="true" selection-start-line="21" selection-start-column="50" selection-end-line="21" selection-end-column="50" />
+            <state relative-caret-position="259">
+              <caret line="21" column="86" lean-forward="true" selection-start-line="21" selection-start-column="86" selection-end-line="21" selection-end-column="86" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
@@ -228,14 +205,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/components/ContactButton/Contact.js" />
-        <option value="$PROJECT_DIR$/src/components/Cell/CellTypes/A1/A1.js" />
-        <option value="$PROJECT_DIR$/src/components/ContactButton/test/test.js" />
-        <option value="$PROJECT_DIR$/src/assets/Spinner/Spinner.css" />
-        <option value="$PROJECT_DIR$/src/components/ContactButton/ContactButton.css" />
-        <option value="$PROJECT_DIR$/src/components/ContactButton/ContactButton.js" />
-        <option value="$PROJECT_DIR$/src/components/Cell/CellTypes/A2/ContactSection/ContactButton/ContactButton.css" />
-        <option value="$PROJECT_DIR$/src/components/Cell/CellTypes/A2/ContactSection/ContactButton/ContactButton.js" />
         <option value="$PROJECT_DIR$/src/components/Cell/Cell.js" />
         <option value="$PROJECT_DIR$/src/components/Cell/CellTypes/A2/ContactSection/ContactGrid/ContactGrid.js" />
         <option value="$PROJECT_DIR$/src/components/Cell/CellTypes/A2/ContactSection/ContactGrid/ContactGrid.css" />
@@ -247,7 +216,6 @@
         <option value="$PROJECT_DIR$/src/components/DropdownBar/Dropdown/Dropdown.js" />
         <option value="$PROJECT_DIR$/src/components/DropdownBar/Dropdown/Dropdown.css" />
         <option value="$PROJECT_DIR$/src/App.js" />
-        <option value="$PROJECT_DIR$/src/containers/CellBuilder/CellBuilder.js" />
         <option value="$PROJECT_DIR$/src/index.js" />
         <option value="$PROJECT_DIR$/src/containers/CellBuilder/CellBuilder.css" />
         <option value="$PROJECT_DIR$/src/components/DropdownBar/DropdownBar.css" />
@@ -270,15 +238,24 @@
         <option value="$PROJECT_DIR$/src/components/Cell/CellTypes/P2/Chip.js" />
         <option value="$PROJECT_DIR$/src/components/Cell/CellTypes/A2/A2.js" />
         <option value="$PROJECT_DIR$/src/components/Cell/CellTypes/P2/ProjectDisplay.js" />
-        <option value="$PROJECT_DIR$/src/containers/Element/Element.js" />
-        <option value="$PROJECT_DIR$/src/store/reducers/reducer.js" />
         <option value="$PROJECT_DIR$/src/components/Cell/CellTypes/P2/PerformanceIndicator.js" />
         <option value="$PROJECT_DIR$/src/components/Cell/CellTypes/P2/ProjectChip.js" />
         <option value="$PROJECT_DIR$/src/components/Cell/CellTypes/P2/ProjectDisplay.css" />
         <option value="$PROJECT_DIR$/src/components/Cell/CellTypes/P2/P2.css" />
         <option value="$PROJECT_DIR$/src/components/Cell/CellTypes/P2/P2.js" />
         <option value="$PROJECT_DIR$/src/components/Cell/CellTypes/P2/ProjectChip.css" />
+        <option value="$PROJECT_DIR$/src/components/Cell/P2/PerformanceIndicator.js" />
+        <option value="$PROJECT_DIR$/src/components/Cell/P2/ProjectChip.css" />
+        <option value="$PROJECT_DIR$/src/components/Cell/P2/P2.css" />
+        <option value="$PROJECT_DIR$/src/components/Cell/P2/ProjectDisplay.js" />
         <option value="$PROJECT_DIR$/src/components/Cell/P2/P2.js" />
+        <option value="$PROJECT_DIR$/src/components/Cell/P2/ProjectDisplay.css" />
+        <option value="$PROJECT_DIR$/src/containers/Element/Element.js" />
+        <option value="$PROJECT_DIR$/src/components/Cell/S2/S2.js" />
+        <option value="$PROJECT_DIR$/src/components/Cell/S2/S2.css" />
+        <option value="$PROJECT_DIR$/src/store/reducers/reducer.js" />
+        <option value="$PROJECT_DIR$/src/components/Cell/D1/D1.js" />
+        <option value="$PROJECT_DIR$/src/containers/CellBuilder/CellBuilder.js" />
       </list>
     </option>
   </component>
@@ -346,6 +323,30 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
               <item name="Cell" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pv-tool" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pv-tool" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="Cell" type="462c0819:PsiDirectoryNode" />
+              <item name="D1" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pv-tool" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pv-tool" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="Cell" type="462c0819:PsiDirectoryNode" />
+              <item name="P2" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pv-tool" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pv-tool" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="Cell" type="462c0819:PsiDirectoryNode" />
+              <item name="S2" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="pv-tool" type="b2602c69:ProjectViewProjectNode" />
@@ -491,12 +492,12 @@
       <workItem from="1516812370309" duration="16582000" />
       <workItem from="1516877434083" duration="2528000" />
       <workItem from="1516882255234" duration="1398000" />
-      <workItem from="1516905808122" duration="67217000" />
+      <workItem from="1516905808122" duration="73135000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="325600000" />
+    <option name="totallyTimeSpent" value="331518000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -509,8 +510,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16576251" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16576251" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.032" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -560,32 +562,11 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="1" />
+      <option name="time" value="2" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/axios-instance.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="6" column="22" lean-forward="false" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Cell/S1/S1.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Cell/A2/StatusRect/StatusRect.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="8" column="38" lean-forward="true" selection-start-line="8" selection-start-column="38" selection-end-line="8" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/ContactButton/test/test.js" />
     <entry file="file://$PROJECT_DIR$/src/assets/Spinner/Spinner.js">
       <provider selected="true" editor-type-id="text-editor">
@@ -688,16 +669,6 @@
         <state relative-caret-position="140">
           <caret line="7" column="33" lean-forward="false" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="33" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/containers/CellBuilder/CellBuilder.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="23" column="32" lean-forward="false" selection-start-line="23" selection-start-column="26" selection-end-line="23" selection-end-column="32" />
-          <folding>
-            <element signature="e#0#39#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -842,7 +813,7 @@
         <state relative-caret-position="20">
           <caret line="1" column="32" lean-forward="false" selection-start-line="1" selection-start-column="32" selection-end-line="1" selection-end-column="32" />
           <folding>
-            <element signature="e#154#183#0" expanded="true" />
+            <element signature="e#154#183#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -851,6 +822,22 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="720">
           <caret line="55" column="4" lean-forward="false" selection-start-line="55" selection-start-column="4" selection-end-line="55" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Cell/P2/PerformanceIndicator.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="4" column="38" lean-forward="true" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Cell/P2/ProjectChip.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-10">
+          <caret line="15" column="16" lean-forward="true" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
           <folding />
         </state>
       </provider>
@@ -865,56 +852,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/containers/Element/Element.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="463">
-          <caret line="38" column="83" lean-forward="false" selection-start-line="38" selection-start-column="83" selection-end-line="38" selection-end-column="83" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/store/reducers/reducer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="438">
-          <caret line="63" column="28" lean-forward="true" selection-start-line="63" selection-start-column="28" selection-end-line="63" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Cell/P2/ProjectDisplay.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="24" column="11" lean-forward="true" selection-start-line="24" selection-start-column="11" selection-end-line="24" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Cell/P2/P2.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="416">
-          <caret line="75" column="17" lean-forward="true" selection-start-line="75" selection-start-column="17" selection-end-line="75" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Cell/P2/ProjectDisplay.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="14" column="16" lean-forward="true" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
+        <state relative-caret-position="520">
+          <caret line="26" column="47" lean-forward="false" selection-start-line="26" selection-start-column="47" selection-end-line="26" selection-end-column="47" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Cell/P2/PerformanceIndicator.js">
+    <entry file="file://$PROJECT_DIR$/src/components/Cell/P2/ProjectDisplay.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="26" column="40" lean-forward="false" selection-start-line="26" selection-start-column="40" selection-end-line="26" selection-end-column="40" />
-          <caret line="7" column="39" lean-forward="false" selection-start-line="7" selection-start-column="39" selection-end-line="7" selection-end-column="39" />
-          <caret line="4" column="36" lean-forward="false" selection-start-line="4" selection-start-column="36" selection-end-line="4" selection-end-column="36" />
+        <state relative-caret-position="480">
+          <caret line="24" column="23" lean-forward="false" selection-start-line="24" selection-start-column="23" selection-end-line="24" selection-end-column="23" />
           <folding />
         </state>
       </provider>
@@ -929,21 +880,75 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Cell/P2/ProjectChip.css">
+    <entry file="file://$PROJECT_DIR$/src/components/Cell/P2/P2.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="163">
-          <caret line="17" column="23" lean-forward="true" selection-start-line="17" selection-start-column="23" selection-end-line="17" selection-end-column="23" />
+        <state relative-caret-position="259">
+          <caret line="21" column="86" lean-forward="true" selection-start-line="21" selection-start-column="86" selection-end-line="21" selection-end-column="86" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Cell/S2/S2.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="10" column="51" lean-forward="false" selection-start-line="10" selection-start-column="51" selection-end-line="10" selection-end-column="51" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Cell/P2/P2.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="550">
+          <caret line="102" column="0" lean-forward="false" selection-start-line="102" selection-start-column="0" selection-end-line="113" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Cell/P2/P2.js">
+    <entry file="file://$PROJECT_DIR$/src/components/Cell/S2/S2.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-170">
-          <caret line="11" column="5" lean-forward="true" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
+        <state relative-caret-position="890">
+          <caret line="49" column="0" lean-forward="true" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/store/reducers/reducer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="5" column="18" lean-forward="false" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Cell/D1/D1.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="5" column="18" lean-forward="false" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/containers/Element/Element.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1420">
+          <caret line="71" column="44" lean-forward="true" selection-start-line="71" selection-start-column="44" selection-end-line="71" selection-end-column="44" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/containers/CellBuilder/CellBuilder.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="419">
+          <caret line="27" column="55" lean-forward="false" selection-start-line="27" selection-start-column="55" selection-end-line="27" selection-end-column="55" />
+          <folding />
         </state>
       </provider>
     </entry>
