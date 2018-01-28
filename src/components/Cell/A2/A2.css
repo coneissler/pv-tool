@@ -1,7 +1,11 @@
+.A2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .Wrapper {
-    position: absolute;
-    right: 0;
-    top: 0;
+    position: relative;
     width: 22%;
     height: 100%;
     display: -webkit-box;
@@ -13,5 +17,54 @@
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-    background-color: rgb(20,70,125);
+}
+
+.SVGBackground{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -99;
+}
+
+.Content {
+    width: 78%;
+    height: 100%;
+}
+.MainContent {
+    width: 100%;
+    height: calc(100% - 20.10826381%);
+    display: flex;
+    align-items: center;
+}
+
+.TextContainer {
+    margin-right: 5.5%;
+    height: 100%;
+    width: 65%;
+    background: whitesmoke;
+}
+
+.ImgContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 35%;
+}
+
+.Img {
+    max-width:100%;
+    max-height:100%;
+}
+
+.TopBar {
+    position: relative;
+    display: flex;
+    font-size: 3.8vw;
+    width: 100%;
+    height: 20.10826381%;
+    color: white;
+    background: #B0B0B0;
+    border-bottom: solid 1px black;
+    z-index: -999;
 }

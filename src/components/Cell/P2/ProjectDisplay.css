@@ -14,8 +14,24 @@
     height: 100%;
 }
 
-.Negotiation {
-    background: rgb(254,219,65);
+.HeaderFinished, .HeaderInWork {
+    width:100%;
+    height: 15%;
+    line-height: 100%;
+    margin-bottom: 5%;
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    letter-spacing: 2px;
+}
+.HeaderInWork{
+    border-bottom: rgb(176, 150, 38) solid 2px;
+    color: rgb(176, 150, 38);
+}
+
+.HeaderFinished{
+    border-bottom: rgb(15, 100, 62) solid 2px;
+    color: rgb(15, 100, 62);
 }
 
 .InWork {
