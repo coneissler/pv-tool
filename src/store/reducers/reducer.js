@@ -2,18 +2,18 @@ import * as actionTypes from '../actions/actionTypes';
 
 const initialState = {
 
-    mod: [{type:'a', size: 2}, {type:'p', size: 0}, {type:'s', size: 2}, {type:'d', size: 0}],
-    rowAmount: 2,
+    mod: [{type:'a', size: 2}, {type:'d', size: 0}, {type:'p', size: 2}, {type:'a', size: 0}],
+    rowAmount: 100,
     general2: [
         {
-            name: "Constantin Eißler",
+            memberstatus: "Interessent",
             age: 20,
             resort: "IT",
-            memberstatus: "Mitglied",
             major: 'B.Sc. Informatik',
             university: 'Humbold Universität',
             uniShort: 'HTW',
-            joinDate: '11.08.2012'
+            joinDate: '11.08.2012',
+            img: "https://board.cct-ev.de/wp-content/uploads/2016/10/Benedikt-Ziegert-500x500.jpg"
         },
         {
             name: "Alex Mustermann",
@@ -23,26 +23,20 @@ const initialState = {
             major: 'M.Sc. Betriebswirtschaftslehre',
             university: 'Freie Universität',
             uniShort: 'HTW',
-            joinDate: '01.05.2017'
+            joinDate: '01.05.2017',
+            img: "https://board.cct-ev.de/wp-content/uploads/2017/06/Axel-500x331.jpg"
         },
         {
-            name: "Jemand mitdrei Namen",
-            age: 25,
-            resort: "P",
-            memberstatus: "Anwärter",
-            major: 'B.Ar. Astronomie und Luftfahrt',
-            university: 'Technische Universität',
-            uniShort: 'TU',
-            joinDate: '26.07.2017'
+
         },{
             name: "Constantin Eißler",
             age: 20,
-            resort: "B",
+            resort: "V",
             memberstatus: "Mitglied",
             major: 'B.Sc. Informatik',
             university: 'Humbold Universität',
             uniShort: 'HU',
-            joinDate: '11.08.2012'
+            joinDate: '11.08.2012',
         },
         {
             name: "Alex Mustermann",
@@ -69,7 +63,7 @@ const initialState = {
     project2: [
         {
             bt: 150,
-            ip: 200,
+            inp: 200,
             percent: 68,
             projects: [
                 {
@@ -112,6 +106,7 @@ const initialState = {
                     bt: "100k",
                     status: 1
                 },
+                {}
             ]
         },
         {
@@ -229,15 +224,14 @@ const initialState = {
                     name: "HCC FrontEnd Development",
                     type: "extern",
                     projectLeader: "Maximilian Eißler",
-                    bt: "15",
+                    bt: 15,
                     status: 1
                 },
                 {
                     name: "Project X",
                     type: "intern",
                     projectLeader: "That Guy",
-                    bt: "100k",
-                    status: 2
+                    bt: 100,
                 },{
                     name: "HCC FrontEnd Development",
                     type: "extern",
@@ -290,30 +284,22 @@ const initialState = {
     seminar2: [
         {
             seminars: [{
-                name: "Finanzen und Recht",
                 completed: true
             },{
-                name: "Präsentationstechniken",
                 completed: true
             },{
-                name: "Angebotsschulung",
                 completed: true
             },{
-                name: "Schulung X",
                 completed: false
             }]
         },{
             seminars: [{
-                name: "Finanzen und Recht",
                 completed: false
             },{
-                name: "Präsentationstechniken",
                 completed: true
             },{
-                name: "Angebotsschulung",
                 completed: false
             },{
-                name: "Schulung X",
                 completed: true
             }]
         }

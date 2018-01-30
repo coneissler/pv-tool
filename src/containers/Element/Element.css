@@ -1,14 +1,9 @@
 .Element {
     margin-bottom: 20px;
     -webkit-transition: all 200ms ease-in;
-    -webkit-transform: scale(1);
-    -ms-transform: scale(1);
     -moz-transition: all 200ms ease-in;
-    -moz-transform: scale(1);
     transition: all 200ms ease-in;
-    transform: scale(1);
     border: 1px solid black;
-    box-sizing: border-box;
 }
 
 .Hover {

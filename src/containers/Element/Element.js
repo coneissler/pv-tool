@@ -33,7 +33,7 @@ class Element extends Component {
         if(this.state.hoverElement) style = [classes.Element, classes.Hover, "show-grid"].join(' ');
         const id = this.props.dataId
         const cellMap = {
-            a1: <A1 data={this.props.a1[id]}/>,
+            a1: <A1 data={this.props.a2[id]}/>,
             a2: <A2 data={this.props.a2[id]} closeSocial={this.state.hoverElement}/>,
             p1: <P1 data={this.props.p1[id]}/>,
             p2: <P2 data={this.props.p2[id]} closeProjects={this.state.hoverElement}/>,

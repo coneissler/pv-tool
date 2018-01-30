@@ -10,8 +10,14 @@ class P1 extends Component {
     }
 
     render() {
-        const bt = this.props.data.bt
-        const ip = this.props.data.ip
+        // check for data
+        let bt = 1, inp = 1, percent = 1
+        if(this.props.data){
+            bt = this.props.data.bt
+            inp = this.props.data.ip
+            percent = this.props.data.percent
+        }
+
         const topClass = this.state.hoverSlice === 1 ? [classes.TopActiv, classes.CompartimentTop].join(' ') : classes.CompartimentTop
         const middleClass = this.state.hoverSlice === 0 ? [classes.MidActiv, classes.CompartimentMiddle].join(' ') : classes.CompartimentMiddle
         const bottomClass = classes.CompartimentBottom
@@ -20,8 +26,8 @@ class P1 extends Component {
             <div className={[cellClass.Cell, classes.P1].join(' ')}>
                 <div className={classes.DataNumbers}>
                     <div className={topClass}><span>{bt} BT</span></div>
-                    <div className={middleClass}><span>{ip} IP</span></div>
-                    <div className={bottomClass}><span>{this.props.data.percent}%</span></div>
+                    <div className={middleClass}><span>{inp} IP</span></div>
+                    <div className={bottomClass}><span>{percent}%</span></div>
                 </div>
                 <div className={classes.DataVis}>
                     <svg height="100%" viewBox="0 0 400 400">
@@ -31,7 +37,7 @@ class P1 extends Component {
                             standalone={false}
                             width={400} height={400}
                             data={[
-                                {x: 'BT', y: ip, fillOpacity: 0.9, stroke: "rgb(20,70,125)", strokeWidth: 3},
+                                {x: 'BT', y: inp, fillOpacity: 0.9, stroke: "rgb(20,70,125)", strokeWidth: 3},
                                 {x: 'IP', y: bt, fillOpacity: 0.9, stroke: "white", strokeWidth: 3}
                             ]}
                             labels={() => null}
