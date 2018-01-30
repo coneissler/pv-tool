@@ -9,12 +9,12 @@ const projectChip = (props) => {
         style = classes.ProjectChipA
         posStyle = {background: "linear-gradient(to right, rgba(0,0,0,0) , rgba(20,70,125,0.8))"}
 }
-    //style = props.project.status === 0 ? classes.Activ : style;
+    const position = typeof props.position !== 'undefined' ? props.position : ''
     return(
         <div onMouseEnter={() => props.onHover(props.id)} onMouseLeave={() => props.onHover(-1)} className={style}>
             {props.project.name}
             <div className={classes.Position} style={posStyle}>
-                PM
+                {position}
             </div>
         </div>
     )

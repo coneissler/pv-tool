@@ -1,17 +1,22 @@
 import React, {Component} from 'react';
 // import StatusRect from './StatusRect/StatusRect';
 // import RectFlair from './StatusRect/RectFlair/RectFlair';
-import Resort from './Resort'
 import ContactSection from './ContactSection/ContactSection'
 import cellClasses from '../Cells.css';
 import classes from './A2.css'
 
 import placeholder from '../../../assets/PlaceHolderSuit.png'
+import GeneralTopBar from '../GeneralTopBar'
 
 
 class A2 extends Component {
-    state = {
-        socialGrid: false
+    constructor(props){
+        super(props)
+        this.state = {
+            socialGrid: false,
+            imgDimensions: {}
+        }
+        this.onImgLoad = this.onImgLoad.bind(this)
     }
 
     socialClickHandler = () => {
@@ -24,54 +29,66 @@ class A2 extends Component {
             this.setState({ socialGrid: false })
     }
 
-    render(){
+    onImgLoad = ({target:img}) => {
+        this.setState({imgDimensions:{height:img.offsetHeight,
+                width:img.offsetWidth}});
+    }
 
-        const months = calculateMonths(this.props.data.joinDate)
+    render(){
+        // checking for data
+        let image, name, resort, memberStatus, joinDate, major, university, imgContainer, months, uniShort;
+        if(this.props.data){
+            image = typeof this.props.data.img !== 'undefined' ? this.props.data.img : placeholder
+            resort = this.props.data.resort
+            name = typeof this.props.data.name === 'string' ? this.props.data.name : 'Anonymous'
+            memberStatus = this.props.data.memberstatus
+            joinDate = typeof this.props.data.joinDate === 'string' ? this.props.data.joinDate : '01.01.2017'
+            major = typeof this.props.data.major === 'string' ? this.props.data.major : 'B.Sc. Spaßstudent'
+            university = this.props.data.university
+            uniShort = this.props.data.uniShort
+            months = calculateMonths(joinDate)
+            imgContainer = this.state.imgDimensions.width > this.state.imgDimensions.height + 30 ? classes.ImgContainerWidth : classes.ImgContainerHeight
+        }else{
+            resort = 'No'
+            name = 'Anonymous'
+            memberStatus = 'Interessent'
+            joinDate = '01.01.2017'
+            major = 'B.Sc. Spaßstudent'
+            university = '-'
+            uniShort = '-'
+            imgContainer = classes.ImgContainerHeight
+            months = calculateMonths(joinDate)
+            image = placeholder
+        }
         return(
         <div className={[cellClasses.Cell, classes.A2].join(' ')}>
             <div className={classes.Content}>
-                <div className={classes.TopBar}></div>
+                <GeneralTopBar name={name} width='110%' resort={resort}/>
                 <div className={classes.MainContent}>
-                    <div className={classes.ImgContainer}>
-                        <img className={classes.Img} src={placeholder}/>
+                    <div className={imgContainer}>
+                        <img onLoad={this.onImgLoad} alt={name} className={classes.Img} src={image}/>
                     </div>
-                    <div className={classes.TextContainer}> MAIN</div>
+                    <div className={classes.TextContainer}>
+                        <div className={classes.MemberStatus}>{memberStatus}</div>
+                        <div className={classes.JoinDate}><p className={classes.JoinDateShort}>{months}</p>Beitritt: {joinDate}</div>
+                        <div className={classes.Major}><p className={classes.MajorShort}>{major.substring(0,5)}</p>{major.substring(6)}</div>
+                        <div className={classes.Uni}><p className={classes.UniShort}>{uniShort}</p>{university}</div>
+                    </div>
                 </div>
             </div>
             <div className={classes.Wrapper}>
                 <ContactSection grid={this.props.closeSocial&&this.state.socialGrid} open={this.socialClickHandler}/>
             </div>
-
-
-
-
-
-
-
-
-
-
-            <div className={classes.SVGBackground}>
-            <svg width="100%" height="100%" viewBox='0 0 629 189' xmlns='http://www.w3.org/2000/svg' xmlnsXlink='http://www.w3.org/1999/xlink'
-                 fillRule='evenodd' clipRule='evenodd'
-                 strokeLinecap='round' strokeLinejoin='round' strokeMiterlimit='1.5'>
-
-                <rect width='534.768' height='58.221' fill="transparent" transform='matrix(.8491 0 0 .65269 37.927 0)'
-                />
-                <text fontSize='12.754' fill='#fff' textAnchor="end"
-                      transform='matrix(1.87855 0 0 1.96015 475.646 27.948)'>{this.props.data.name}</text>
-                <path d='M579.091,172.797L465.491,172.797L477.987,16.612L579.091,16.612L579.091,172.797Z'
-                      fill='#1e467d' transform='matrix(-.44815 0 0 -.2433 259.52 42.042)' />
-                <Resort res={this.props.data.resort}/>
-                /*Schräge*/
-                <path d='M579.091,172.797L465.491,172.797L483.091,16.373L579.091,16.612L579.091,172.797Z'
-                      fill='#1e467d' transform='matrix(1.45029 0 0 1.21012 -210.852 -20.106)'
-                />
-
-            </svg>
+            <div className={classes.backSVG}>
+                <svg height='100%' viewBox='0 0 164 189' xmlns='http://www.w3.org/2000/svg' fillRule='evenodd'
+                     clipRule='evenodd' strokeLinejoin='round' strokeMiterlimit='1.414'>
+                    <path d='M579.091,172.797L465.491,172.797L483.091,16.373L579.091,16.612L579.091,172.797Z'
+                          fill='#1e467d' transform='matrix(1.44595 0 0 1.21018 -673.339 -20.115)'
+                    />
+                </svg>
             </div>
-
         </div>
+
 
     )
     }
@@ -88,3 +105,4 @@ const calculateMonths = (joinDate) => {
         parseInt(joinDate.substring(4,7), 10)-
         parseInt(joinDate.substring(6), 10)*12 + 'M'
 }
+
