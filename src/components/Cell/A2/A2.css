@@ -5,6 +5,40 @@
     align-items: center;
 }
 
+.SocialBackdropHidden, .SocialBackdropActiv{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    top: 0;
+    left: 0;
+    transition: all 300ms;
+    width: 100%;
+    height: 100%;
+
+}
+.SocialBackdropActiv{
+    visibility: visible;
+    background: rgba(0,0,0,0.5);
+    z-index: 99;
+}
+.SocialBackdropHidden {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.PhoneNumber, .ClipBoard  {
+    position: relative;
+    width: 40%;
+    height: 100px;
+    background: white;
+    z-index: 9999;
+    text-align: center;
+    line-height: 100px;
+
+}
+
 .Wrapper {
     position: relative;
     width: 22%;
@@ -34,7 +68,7 @@
 .MainContent {
     position: relative;
     width: 100%;
-    height: calc(100% - 20.5%); /*20.14285714%*/
+    height: 80%;
     display: flex;
     align-items: center;
     flex-direction: row-reverse;
@@ -43,7 +77,6 @@
 }
 
 .TextContainer {
-    /*margin-right: 5.5%;*/
     height: 100%;
     width: 65%;
     padding: 3% 0 0 3%;
@@ -52,12 +85,12 @@
 .MemberStatus{
     color: rgb(20,70,125);
     height: 20%;
-    font-size: 1.3vw;
+    font-size: 150%;
     margin-bottom: 2%;
 
 }
 
-.MajorShort, .UniShort, .JoinDateShort {
+.TextLong p {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -71,13 +104,13 @@
 
 }
 
-.Major, .Uni, .JoinDate {
+.TextLong {
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     background: linear-gradient(to right, rgba(0,0,0,0.1) 0%,rgba(20,70,125,0.2)30%,rgba(20,70,125,0.2)70%, rgba(0,0,0,0.1)100%);
-    height: 25%;
+    height: 25.1%;
 }
 
 .ImgContainerWidth {

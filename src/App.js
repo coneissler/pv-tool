@@ -9,10 +9,7 @@ class App extends Component {
   render() {
       return(
           <Layout>
-              <Switch>
-                  <Route path="/somePerson" component={CellBuilder}/>
-                  <Route path="/" component={CellBuilder}/>
-              </Switch>
+              <CellBuilder/>
           </Layout>
       );
   }

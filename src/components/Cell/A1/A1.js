@@ -12,7 +12,7 @@ const a1 = (props) => {
 
     if(props.data) {
         name = typeof props.data.name === 'string' ? props.data.name : 'Anonymous'
-        resort = typeof props.data.name === 'string' ? props.data.name : 'm'
+        resort = typeof props.data.resort === 'string' ? props.data.resort : 'm'
         image = typeof props.data.img !== 'undefined' ? props.data.img : placeholder
     }
 

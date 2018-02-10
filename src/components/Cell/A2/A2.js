@@ -7,6 +7,7 @@ import classes from './A2.css'
 
 import placeholder from '../../../assets/PlaceHolderSuit.png'
 import GeneralTopBar from '../GeneralTopBar'
+import {Modal, Button} from 'react-bootstrap'
 
 
 class A2 extends Component {
@@ -14,6 +15,7 @@ class A2 extends Component {
         super(props)
         this.state = {
             socialGrid: false,
+            socialBackdrop: false,
             imgDimensions: {}
         }
         this.onImgLoad = this.onImgLoad.bind(this)
@@ -24,9 +26,17 @@ class A2 extends Component {
         this.setState({ socialGrid: newState })
     };
 
+    socialBackdropHandler = () => {
+        const newState = !this.state.socialBackdrop
+        this.setState({ socialBackdrop: newState })
+    }
+
+
     componentWillReceiveProps(nextProps) {
         if(!nextProps.closeSocial)
-            this.setState({ socialGrid: false })
+            this.setState({
+                socialBackdrop: false,
+                socialGrid: false })
     }
 
     onImgLoad = ({target:img}) => {
@@ -62,6 +72,16 @@ class A2 extends Component {
         }
         return(
         <div className={[cellClasses.Cell, classes.A2].join(' ')}>
+            <div onClick={this.socialBackdropHandler} className={["static-modal", this.state.socialBackdrop && this.props.closeSocial? classes.SocialBackdropActiv: classes.SocialBackdropHidden].join(' ')}>
+                <div className="static-modal">
+                    <Modal.Dialog>
+                        <Modal.Header>
+                            <Modal.Title style={{display: 'inline', fontSize: '150%'}}>0176344829388</Modal.Title>
+                            <Button style={{float: 'right'}} bsStyle="primary">Copy</Button>
+                        </Modal.Header>
+                    </Modal.Dialog>
+                </div>;
+            </div>
             <div className={classes.Content}>
                 <GeneralTopBar name={name} width='110%' resort={resort}/>
                 <div className={classes.MainContent}>
@@ -70,14 +90,14 @@ class A2 extends Component {
                     </div>
                     <div className={classes.TextContainer}>
                         <div className={classes.MemberStatus}>{memberStatus}</div>
-                        <div className={classes.JoinDate}><p className={classes.JoinDateShort}>{months}</p>Beitritt: {joinDate}</div>
-                        <div className={classes.Major}><p className={classes.MajorShort}>{major.substring(0,5)}</p>{major.substring(6)}</div>
-                        <div className={classes.Uni}><p className={classes.UniShort}>{uniShort}</p>{university}</div>
+                        <div className={classes.TextLong}><p>{months}</p>Beitritt: {joinDate}</div>
+                        <div className={classes.TextLong}><p>{major.substring(0,5)}</p>{major.substring(6)}</div>
+                        <div className={classes.TextLong}><p>{uniShort}</p>{university}</div>
                     </div>
                 </div>
             </div>
             <div className={classes.Wrapper}>
-                <ContactSection grid={this.props.closeSocial&&this.state.socialGrid} open={this.socialClickHandler}/>
+                <ContactSection grid={this.props.closeSocial&&this.state.socialGrid} open={this.socialClickHandler} backdrop={this.socialBackdropHandler}/>
             </div>
             <div className={classes.backSVG}>
                 <svg height='100%' viewBox='0 0 164 189' xmlns='http://www.w3.org/2000/svg' fillRule='evenodd'

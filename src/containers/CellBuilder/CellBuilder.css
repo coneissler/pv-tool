@@ -14,6 +14,21 @@
     transition: all 0.5s ease-out;
 }
 
+.BackToTop{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    border: none;
+    outline: none;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 5%;
+
+}
+
 
 @media (min-width: 992px){
     .CellBuilder {
