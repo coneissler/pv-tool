@@ -5,7 +5,7 @@ import SeminarChip from './SeminarChip'
 
 const s2 = (props) => {
     let seminars = [], counter = 0, nextElement, expieriencedIn, pastProjects, skill1, skill2
-    const strings = ['Angebot', 'Recht', 'Internes, QM und BDSU', 'Präsentationstechniken', 'Projektmanagement', 'Corporate Design']
+    const strings = ['Angebotserstellung', 'Finanzen und Recht', 'Internes, QM und BDSU', 'Präsentationstechniken', 'Projektmanagement', 'Corporate Design']
     if(props.data){
     for (let i = 0; i < 6; i++){
         try {
@@ -30,7 +30,7 @@ const s2 = (props) => {
 
     }
     return (
-        <div className={[cellClass.Cell, classes.S2].join(' ')}>
+        <div className={cellClass.Cell}>
             <div className={classes.TopBar}><p className={classes.Header}>{counter}/6 Pflichtschulungen abgeschlossen</p></div>
             <div className={classes.MainContent}>
                 <div className={classes.StaticStats}>

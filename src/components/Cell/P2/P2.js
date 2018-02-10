@@ -32,7 +32,7 @@ class P2 extends Component {
         const display = this.state.displayProject !== -1 && this.props.closeProjects ?
             <ProjectDisplay display={this.props.data.projects[this.state.displayProject]}/> : <div className={classes.Placeholder}><p>Projects</p></div>
         return(
-            <div className={[cellClass.Cell, classes.P2].join(' ')}>
+            <div className={cellClass.Cell}>
                 <div className={classes.TopBar}><p className={classes.Header}>6 externe Projekte abgeschlossen</p></div>
                 <div className={classes.MainContent}>
                     <div className={classes.StaticNumbers}>

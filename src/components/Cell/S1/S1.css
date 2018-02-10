@@ -1,3 +1,101 @@
 .S1 {
-    background-color: salmon;
+    background-color: #b0b0b0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.ExperienceElement {
+    background: rgba(20,70,125,0.5);
+    box-shadow: 0 3px 3px rgba(0,0,0,0.2);
+    display: flex;
+    width: 96%;
+    height: 55%;
+}
+.CompartimentLeft{
+    width: 65%;
+    height: 100%;
+}
+.CompartimentLeftTop{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60%;
+}
+
+.CapitalNumber {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 25%;
+    font-size: 300%;
+    color: white;
+
+    text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+}
+
+.CompartimentLeftBot{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: white 1px solid;
+    height: 40%;
+}
+.CompartimentRight{
+    border-left: white 1px solid;
+    width: 35%;
+    height: 100%;
+}
+.CompartimentRightTop, .CompartimentRightBot{
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.CompartimentRightBot{
+    border-top: white 1px solid;
+}
+
+.ProgressBarElement{
+    background: rgba(100,100,100,0.5);
+    box-shadow: 0 3px 3px rgba(0,0,0,0.2);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 96%;
+    height: 38%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+.ProgressBar{
+    border: white solid 1px;
+    height: 40%;
+    width: 90%;
+    margin-bottom: 0;
+}
+
+.BarSegment1{
+    background: #b0b0b0;
+    border-right: white solid 1px;
+}
+.BarSegment2{
+    background: linear-gradient(to right, #b0b0b0,#909aa5);
+    border-right: white solid 1px;
+}
+.BarSegment3{
+    background: linear-gradient(to right, #909aa5,#71859b);
+    border-right: white solid 1px;
+}
+.BarSegment4{
+    background: linear-gradient(to right, #71859b,#527091);
+    border-right: white solid 1px;
+}
+.BarSegment5{
+    background: linear-gradient(to right, #527091,#335b87);
+    border-right: white solid 1px;
+}
+.BarSegment6{
+    background: linear-gradient(to right, #335b87,#14467d);
 }

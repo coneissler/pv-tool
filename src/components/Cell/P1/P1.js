@@ -11,23 +11,24 @@ class P1 extends Component {
 
     render() {
         // check for data
-        let bt = 1, inp = 1, percent = 1
+        let bt = 1, inp = 1, available = true
         if(this.props.data){
             bt = this.props.data.bt
             inp = this.props.data.ip
-            percent = this.props.data.percent
+            available = this.props.data.available
         }
 
         const topClass = this.state.hoverSlice === 1 ? [classes.TopActiv, classes.CompartimentTop].join(' ') : classes.CompartimentTop
         const middleClass = this.state.hoverSlice === 0 ? [classes.MidActiv, classes.CompartimentMiddle].join(' ') : classes.CompartimentMiddle
-        const bottomClass = classes.CompartimentBottom
 
         return (
             <div className={[cellClass.Cell, classes.P1].join(' ')}>
                 <div className={classes.DataNumbers}>
                     <div className={topClass}><span>{bt} BT</span></div>
                     <div className={middleClass}><span>{inp} IP</span></div>
-                    <div className={bottomClass}><span>{percent}%</span></div>
+                    {available ?
+                        <div style={{background: 'rgba(16,187,103,0.3)'}} className={classes.CompartimentBottom}><span>Verfügbar</span></div> :
+                        <div style={{background: 'rgba(239,46,46,0.3)'}} className={classes.CompartimentBottom}><span>Auf Projekt</span></div>}
                 </div>
                 <div className={classes.DataVis}>
                     <svg height="100%" viewBox="0 0 400 400">
@@ -53,16 +54,7 @@ class P1 extends Component {
                                                 mutation: (eventProps) => {
                                                     this.setState({hoverSlice: eventProps.index})
                                                     return ({
-                                                        style: {...eventProps.style, strokeWidth: 6},
-                                                        slice: {
-                                                            ...eventProps.slice,
-                                                            padAngle: eventProps.slice.padAngle + 0.07,
-                                                        },
-
-                                                        origin: {
-                                                            x: eventProps.index === 0 ? eventProps.origin.x + 10 : eventProps.origin.x - 10,
-                                                            y: eventProps.origin.y
-                                                        }
+                                                        style: {...eventProps.style, strokeWidth: 6}
                                                     })
                                                 }
                                             }]
@@ -73,16 +65,7 @@ class P1 extends Component {
                                                 mutation: (eventProps) => {
                                                     this.setState({hoverSlice: -1})
                                                     return ({
-                                                        style: {...eventProps.style, strokeWidth: 3},
-                                                        slice: {
-                                                            ...eventProps.slice,
-                                                            padAngle: eventProps.slice.padAngle - 0.07,
-                                                        },
-                                                        origin: {
-                                                            x: eventProps.index === 0 ? eventProps.origin.x - 10 : eventProps.origin.x + 10,
-                                                            y: eventProps.origin.y
-                                                        }
-
+                                                        style: {...eventProps.style, strokeWidth: 3}
                                                     })
                                                 }
 

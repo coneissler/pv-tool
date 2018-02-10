@@ -1,9 +1,10 @@
 import * as actionTypes from '../actions/actionTypes';
 
+
 const initialState = {
 
-    mod: [{type:'a', size: 2}, {type:'d', size: 0}, {type:'p', size: 2}, {type:'a', size: 0}],
-    rowAmount: 100,
+    mod: [{type:'a', size: 2}, {type:'d', size: 0}, {type:'s', size: 1}, {type:'p', size: 1}],
+    rowAmount: 20,
     general2: [
         {
             memberstatus: "Interessent",
@@ -67,9 +68,9 @@ const initialState = {
             percent: 68,
             projects: [
                 {
-                    name: "HCC FrontEnd Development",
-                    type: "extern",
-                    projectLeader: "Maximilian Eißler",
+                    name: "HCC sgd Development",
+                    projectTyp: "IT-Projekt",
+                    client: "FU Berlin",
                     bt: "15",
                     status: 0
                 },
@@ -254,31 +255,31 @@ const initialState = {
         {
             bt: 150,
             ip: 200,
-            percent: 68
+            available: true
         },
         {
             bt: 123,
             ip: 89,
-            percent: 22
+            available: true
         },
         {
             bt: 333,
             ip: 999,
-            percent: 54
+            available: false
         },{
             bt: 150,
             ip: 200,
-            percent: 68
+            available: true
         },
         {
             bt: 123,
             ip: 89,
-            percent: 22
+            available: false
         },
         {
             bt: 333,
             ip: 999,
-            percent: 54
+            available: false
         }
             ],
     seminar2: [
@@ -342,10 +343,12 @@ const reducer = (state = initialState, action) => {
     switch (action.type) {
         case actionTypes.DROPDOWN_CHANGED: return dropdownChanged(state, action)
         case actionTypes.SORT_DATA: return sortData(state, action)
+
         default:
             return state
     }
 };
+
 
 
 const dropdownChanged = (state, action) => {

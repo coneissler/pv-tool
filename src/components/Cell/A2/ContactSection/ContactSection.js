@@ -93,8 +93,8 @@ const contactSection = (props) => {
             </div>
             <div className={gridClasses}>
                 <div className={classes.Box}>
-                    <a href="/" className={slackClass} >{slack}</a>
-                    <a href="/" className={phoneClass} >{iPhone}</a>
+                    <a className={slackClass} >{slack}</a>
+                    <a onClick={props.backdrop}  className={phoneClass} >{iPhone}</a>
                     <a href="/" className={mailClass} >{mail}</a>
                     <a href="/" className={linkedInClass} >{linkedIn}</a>
                 </div>
