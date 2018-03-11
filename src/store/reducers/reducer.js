@@ -1,5 +1,14 @@
 import * as actionTypes from '../actions/actionTypes';
+import axios from "../../axios-instance";
 
+axios.get('http://localhost:5000/api/users/a2').then(function (response) {
+    console.log(response);
+    console.log(response.data);
+    var usersJson = response.data;
+    console.log(usersJson);
+}).catch(function (error) {
+    console.log(error);
+});
 
 const initialState = {
 
