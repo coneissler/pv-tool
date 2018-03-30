@@ -33,11 +33,11 @@ const resort = (props) => {
         }
     return (
         <svg height='100%' viewBox='0 0 39.5 29.5' xmlns='http://www.w3.org/2000/svg' fillRule='evenodd'
-             clipRule='evenodd' strokeLinejoin='round' strokeMiterlimit='1.414'>
+             clipRule='evenodd' strokeLinejoin='round' strokeMiterlimit='1.414' >
             <path d='M579.091,172.797L465.491,172.797L477.987,16.612L579.091,16.612L579.091,172.797Z'
-                  fill='#1e467d' transform='matrix(-.34771 0 0 -.189 201.356 32.66)' />
+                  fill={props.active ? '#1e467d' : '#ab2d19'} transform='matrix(-.34771 0 0 -.189 201.356 32.66)'/>
             {renderedResort}
         </svg>)
 };
-
+//Passiv Rot: #ab2d19
 export default resort;

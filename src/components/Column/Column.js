@@ -6,7 +6,7 @@ const column = (props) => {
     return(
         <Col xs={(props.size)*6}
              sm={(props.size)*6}
-             md={(props.size)*3}
+             md={(props.size)*6}
              lg={(props.size)*3}
              style={{padding: '0'}}>
             {props.children}

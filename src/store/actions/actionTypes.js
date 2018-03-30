@@ -1,4 +1,4 @@
-export const DROPDOWN_CHANGED = 'DROPDOWN_CHANGED'
+export const CHANGE_DROPDOWN = 'CHANGE_DROPDOWN'
 export const SORT_DATA = 'SORT_DATA'
-export const FETCH_DATA_A1 = 'FETCH_DATA_A1'
+export const SET_DATA = 'SET_DATA'
 

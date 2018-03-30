@@ -22,8 +22,8 @@ const dropdown = (props) => {
                 <option value={'a1'}>Allgemein </option>
                 <option value={'p2'}>Projekte (detail)</option>
                 <option value={'p1'}>Projekte</option>
-                <option value={'s2'}>Schulungen (detail)</option>
-                <option value={'s1'}>Schulungen</option>
+                <option value={'s2'}>Kompetenzen (detail)</option>
+                <option value={'s1'}>Kompetenzen</option>
                 <option hidden value={'d1'}>Default</option>
             </select>
         </div>

@@ -5,7 +5,6 @@ import ContactSection from './ContactSection/ContactSection'
 import cellClasses from '../Cells.css';
 import classes from './A2.css'
 
-import placeholder from '../../../assets/PlaceHolderSuit.png'
 import GeneralTopBar from '../GeneralTopBar'
 import {Modal, Button} from 'react-bootstrap'
 
@@ -45,31 +44,10 @@ class A2 extends Component {
     }
 
     render(){
-        // checking for data
-        let image, name, resort, memberStatus, joinDate, major, university, imgContainer, months, uniShort;
-        if(this.props.data){
-            image = typeof this.props.data.img !== 'undefined' ? this.props.data.img : placeholder
-            resort = this.props.data.resort
-            name = typeof this.props.data.name === 'string' ? this.props.data.name : 'Anonymous'
-            memberStatus = this.props.data.memberstatus
-            joinDate = typeof this.props.data.joinDate === 'string' ? this.props.data.joinDate : '01.01.2017'
-            major = typeof this.props.data.major === 'string' ? this.props.data.major : 'B.Sc. Spaßstudent'
-            university = this.props.data.university
-            uniShort = this.props.data.uniShort
-            months = calculateMonths(joinDate)
-            imgContainer = this.state.imgDimensions.width > this.state.imgDimensions.height + 30 ? classes.ImgContainerWidth : classes.ImgContainerHeight
-        }else{
-            resort = 'No'
-            name = 'Anonymous'
-            memberStatus = 'Interessent'
-            joinDate = '01.01.2017'
-            major = 'B.Sc. Spaßstudent'
-            university = '-'
-            uniShort = '-'
-            imgContainer = classes.ImgContainerHeight
-            months = calculateMonths(joinDate)
-            image = placeholder
-        }
+        let imgContainer
+        if(this.props.data) imgContainer = this.state.imgDimensions.width > this.state.imgDimensions.height + 30 ? classes.ImgContainerWidth : classes.ImgContainerHeight
+        else                imgContainer = classes.ImgContainerHeight
+
         return(
         <div className={[cellClasses.Cell, classes.A2].join(' ')}>
             <div onClick={this.socialBackdropHandler} className={["static-modal", this.state.socialBackdrop && this.props.closeSocial? classes.SocialBackdropActiv: classes.SocialBackdropHidden].join(' ')}>
@@ -83,16 +61,16 @@ class A2 extends Component {
                 </div>;
             </div>
             <div className={classes.Content}>
-                <GeneralTopBar name={name} width='110%' resort={resort}/>
+                <GeneralTopBar name={this.props.data.name} width='110%' resort={this.props.data.resort} active={this.props.data.active}/>
                 <div className={classes.MainContent}>
                     <div className={imgContainer}>
-                        <img onLoad={this.onImgLoad} alt={name} className={classes.Img} src={image}/>
+                        <img onLoad={this.onImgLoad} alt={this.props.data.name} className={classes.Img} src={this.props.data.img}/>
                     </div>
                     <div className={classes.TextContainer}>
-                        <div className={classes.MemberStatus}>{memberStatus}</div>
-                        <div className={classes.TextLong}><p>{months}</p>Beitritt: {joinDate}</div>
-                        <div className={classes.TextLong}><p>{major.substring(0,5)}</p>{major.substring(6)}</div>
-                        <div className={classes.TextLong}><p>{uniShort}</p>{university}</div>
+                        <div className={classes.MemberStatus}>{this.props.data.memberstatus}</div>
+                        <div className={classes.TextLong}><p>{this.props.data.months}</p>Beitritt: {this.props.data.joinDate}</div>
+                        <div className={classes.TextLong}><p>{this.props.data.major.substring(0,5)}</p>{this.props.data.major.substring(6)}</div>
+                        <div className={classes.TextLong}><p>{this.props.data.uniShort}</p>{this.props.data.university}</div>
                     </div>
                 </div>
             </div>
@@ -108,21 +86,9 @@ class A2 extends Component {
                 </svg>
             </div>
         </div>
-
-
     )
     }
-};
-
-
+}
 
 export default A2;
-
-
-const calculateMonths = (joinDate) => {
-    const today = new Date()
-    return today.getMonth() + 1+today.getFullYear()*12-
-        parseInt(joinDate.substring(4,7), 10)-
-        parseInt(joinDate.substring(6), 10)*12 + 'M'
-}
 

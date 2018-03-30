@@ -3,25 +3,14 @@ import cellClass from '../Cells.css';
 import classes from './A1.css';
 
 import GeneralTopBar from '../GeneralTopBar'
-import placeholder from '../../../assets/PlaceHolderSuit.png'
 
 const a1 = (props) => {
-
-    //check for data
-    let name, resort, image
-
-    if(props.data) {
-        name = typeof props.data.name === 'string' ? props.data.name : 'Anonymous'
-        resort = typeof props.data.resort === 'string' ? props.data.resort : 'm'
-        image = typeof props.data.img !== 'undefined' ? props.data.img : placeholder
-    }
-
     return(
         <div className={[cellClass.Cell, classes.A1].join(' ')}>
-            <GeneralTopBar name={name} width='100%' resort={resort}/>
+            <GeneralTopBar name={props.data.name} width='100%' resort={props.data.resort}/>
             <div className={classes.MainContent}>
                 <div className={classes.ImgContainer}>
-                    <img alt={name} className={classes.Img} src={image}/>
+                    <img alt={props.data.name} className={classes.Img} src={props.data.img}/>
                 </div>
             </div>
 

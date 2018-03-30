@@ -2,43 +2,15 @@
 
 }
 
-.SVGBackground{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    z-index: -99;
-    top: 0;
-    left: 0;
-}
-
-
-.TopBar {
-    position: relative;
-    width: 100%;
-    height: 20.5%;
-    color: white;
-    background: #B0B0B0;
-    border-bottom: solid 1px black;
-    z-index: -999;
-}
-
 .MainContent {
     position: relative;
     width: 100%;
     height: calc(100% - 20.5%);
     display: flex;
     align-items: center;
-    flex-direction: row-reverse;
+    justify-content: center;
     /*background: linear-gradient(to right, rgba(0,0,0,0.1) 0%,rgba(20,70,125,0.2)30%,rgba(20,70,125,0.2)70%, rgba(0,0,0,0.1)100%);*/
     z-index: -9999;
-}
-
-.ResIndicator {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-
 }
 
 .ImgContainer {
@@ -49,10 +21,10 @@
     align-items: center;
     justify-content: center;
     height: 100%;
-    width: 60%;
+    width: 100%;
     overflow: hidden;
-
 }
+
 .Img {
     height: 100%;
 }

@@ -57,17 +57,17 @@
 
 }
 
-.ChipR {
-    background: linear-gradient(to right, rgba(239,46,46,0.2), rgba(100,100,100,0.5));
-}
+/*.ChipR {*/
+    /*background: linear-gradient(to right, rgba(239,46,46,0.2), rgba(100,100,100,0.5));*/
+/*}*/
 
 .ChipG {
-    background: linear-gradient(to right, rgba(16,187,103,0.2), rgba(100,100,100,0.5)); /*background: rgba(20,70,125,0.5);*/
+    /*background: linear-gradient(to right, rgba(16,187,103,0.2), rgba(100,100,100,0.5)); !*background: rgba(20,70,125,0.5);*!*/
     border-top: black 1px solid;
 }
 
 .ChipY {
-    background: linear-gradient(to right, rgba(254,219,65,0.2), rgba(100,100,100,0.5));
+    /*background: linear-gradient(to right, rgba(254,219,65,0.2), rgba(100,100,100,0.5));*/
     border-top: black 1px solid;
 }
 

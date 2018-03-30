@@ -2,7 +2,7 @@ import React from 'react';
 import cellClass from '../Cells.css';
 import classes from './D1.css';
 
-const d1 = (props) => {
+const d1 = () => {
     return(
         <div className={[cellClass.Cell, classes.D1].join(' ')}>
             <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 231.48163 207.80576'

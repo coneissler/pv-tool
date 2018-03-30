@@ -10,23 +10,16 @@ class P1 extends Component {
     }
 
     render() {
-        // check for data
-        let bt = 1, inp = 1, available = true
-        if(this.props.data){
-            bt = this.props.data.bt
-            inp = this.props.data.ip
-            available = this.props.data.available
-        }
-
+      const data = this.props.data
         const topClass = this.state.hoverSlice === 1 ? [classes.TopActiv, classes.CompartimentTop].join(' ') : classes.CompartimentTop
         const middleClass = this.state.hoverSlice === 0 ? [classes.MidActiv, classes.CompartimentMiddle].join(' ') : classes.CompartimentMiddle
 
         return (
             <div className={[cellClass.Cell, classes.P1].join(' ')}>
                 <div className={classes.DataNumbers}>
-                    <div className={topClass}><span>{bt} BT</span></div>
-                    <div className={middleClass}><span>{inp} IP</span></div>
-                    {available ?
+                    <div className={topClass}><span>{data.bt} BT</span></div>
+                    <div className={middleClass}><span>{data.ip} IP</span></div>
+                    {data.available ?
                         <div style={{background: 'rgba(16,187,103,0.3)'}} className={classes.CompartimentBottom}><span>Verfügbar</span></div> :
                         <div style={{background: 'rgba(239,46,46,0.3)'}} className={classes.CompartimentBottom}><span>Auf Projekt</span></div>}
                 </div>
@@ -38,8 +31,8 @@ class P1 extends Component {
                             standalone={false}
                             width={400} height={400}
                             data={[
-                                {x: 'BT', y: inp, fillOpacity: 0.9, stroke: "rgb(20,70,125)", strokeWidth: 3},
-                                {x: 'IP', y: bt, fillOpacity: 0.9, stroke: "white", strokeWidth: 3}
+                                {x: 'BT', y: data.ip, fillOpacity: 0.9, stroke: "rgb(20,70,125)", strokeWidth: 3},
+                                {x: 'IP', y: data.bt, fillOpacity: 0.9, stroke: "white", strokeWidth: 3}
                             ]}
                             labels={() => null}
                             innerRadius={68}

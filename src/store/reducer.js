@@ -1,34 +1,34 @@
-import * as actionTypes from '../actions/actionTypes';
-
+import * as actionTypes from './actions/actionTypes'
+import {a1SanityCheck, a2SanityCheck, p1SanityCheck, p2SanityCheck, s1SanityCheck, s2SanityCheck} from "./SanityChecks"
 
 const initialState = {
 
     mod: [{type:'a', size: 2}, {type:'d', size: 0}, {type:'s', size: 1}, {type:'p', size: 1}],
-    rowAmount: 20,
+    rowAmount: 30,
     general2: [
         {
-            memberstatus: "Interessent",
+            name: "Benedikt Ziegert",
+            memberstatus: "Mitglied",
             age: 20,
-            resort: "IT",
-            major: 'B.Sc. Informatik',
-            university: 'Humbold Universität',
-            uniShort: 'HTW',
-            joinDate: '11.08.2012',
-            img: "https://board.cct-ev.de/wp-content/uploads/2016/10/Benedikt-Ziegert-500x500.jpg"
+            resort: "IN",
+            major: 'B.Sc. Wirtschaftsingenieurwesen',
+            university: 'Technische Universität',
+            uniShort: 'TU',
+            img: "https://board.cct-ev.de/wp-content/uploads/2016/10/Benedikt-Ziegert-500x500.jpg",
+            active: true
         },
         {
-            name: "Alex Mustermann",
+            name: "Axel-Bernhard Walter",
             age: 23,
-            resort: "HR",
+            resort: "IT",
             memberstatus: "Interessent",
             major: 'M.Sc. Betriebswirtschaftslehre',
-            university: 'Freie Universität',
-            uniShort: 'HTW',
-            joinDate: '01.05.2017',
-            img: "https://board.cct-ev.de/wp-content/uploads/2017/06/Axel-500x331.jpg"
-        },
-        {
-
+            university: 'Technische Universität',
+            uniShort: 'TU',
+            img: "https://board.cct-ev.de/wp-content/uploads/2017/06/Axel-500x331.jpg",
+            active: false
+        },{
+            active: true
         },{
             name: "Constantin Eißler",
             age: 20,
@@ -37,7 +37,7 @@ const initialState = {
             major: 'B.Sc. Informatik',
             university: 'Humbold Universität',
             uniShort: 'HU',
-            joinDate: '11.08.2012',
+            active: true
         },
         {
             name: "Alex Mustermann",
@@ -47,7 +47,6 @@ const initialState = {
             major: 'M.Sc. Betriebswirtschaftslehre',
             university: 'Freie Universität',
             uniShort: 'FU',
-            joinDate: '01.05.2017'
         },
         {
             name: "Jemand mitdrei Namen",
@@ -57,7 +56,6 @@ const initialState = {
             major: 'M.Sc. Astronomie und Luftfahrt',
             university: 'Technische Universität',
             uniShort: 'HTW',
-            joinDate: '26.07.2017'
         }
             ],
     general1: [],
@@ -282,20 +280,32 @@ const initialState = {
             available: false
         }
             ],
+  // ['Angebotserstellung', 'Corporate Design', 'Finanzen und Recht', 'Internes, QM und BDSU', 'Präsentationstechniken', 'Projektmanagement']
     seminar2: [
         {
             seminars: [{
+                name: 'Angebotserstellung',
                 completed: true
             },{
+                name: 'Finanzen und Recht',
                 completed: true
             },{
+                name: 'Internes, QM und BDSU',
                 completed: true
             },{
-                completed: false
+              name: 'Präsentationstechniken',
+              completed: true
+            },{
+              name: 'Projektmanagement',
+              completed: true
+            },{
+              name: 'Corporate Design',
+              completed: true
             }]
         },{
             seminars: [{
-                completed: false
+                name: 'Corporate Design',
+                completed: true
             },{
                 completed: true
             },{
@@ -307,52 +317,71 @@ const initialState = {
     ],
     seminar1: [
         {
-            seminarName: "Finanzen und Recht",
-            expieriencedIn: "WebDev",
-            about: "I like Designing"
+          completedSeminars: 6,
+          bestType: 'IT-Projekte',
+          amountPl: 4,
+          amountPc: 1,
+          bestTypeAmount: 2,
+          projectsTotal: 9
         },
         {
-            seminarName: "Presentationstechniken",
-            expieriencedIn: "This and that",
-            about: "blabla"
+          completedSeminars: 3,
+          bestType: 'Strategieprojekte',
+          amountPl: 1,
+          amountPc: 3,
+          bestTypeAmount: 4,
+          projectsTotal: 7
         },
         {
-            seminarName: "Duummmmyyy 3",
-            expieriencedIn: "trains",
-            about: "I like trains"
+          completedSeminars: 6,
+          bestType: 'IT-Projekte',
+          amountPl: 2,
+          amountPc: 1,
+          bestTypeAmount: 4,
+          projectsTotal: 1
         },{
-            seminarName: "Finanzen und Recht",
-            expieriencedIn: "WebDev",
-            about: "I like Designing"
+        completedSeminars: 6
         },
         {
             seminarName: "Presentationstechniken",
             expieriencedIn: "This and that",
-            about: "blabla"
+            about: "blabla",
+          completedSeminars: 6
         },
         {
             seminarName: "Duummmmyyy 3",
             expieriencedIn: "trains",
-            about: "I like trains"
+            about: "I like trains",
+          completedSeminars: 6
         }
             ]
-};
-
+}
 
 const reducer = (state = initialState, action) => {
     switch (action.type) {
-        case actionTypes.DROPDOWN_CHANGED: return dropdownChanged(state, action)
+        case actionTypes.CHANGE_DROPDOWN: return changeDropdown(state, action)
         case actionTypes.SORT_DATA: return sortData(state, action)
-
-        default:
-            return state
+        case actionTypes.SET_DATA: return setData(state, action)
+      default:
+        return testRunSanity(state)
     }
-};
+}
 
+const testRunSanity = state => {
+  const ra = state.rowAmount
+  return {
+    ...state,
+    general2: a2SanityCheck(state.general2, ra),
+    general1: a1SanityCheck(state.general1, ra),
+    project1: p1SanityCheck(state.project1, ra),
+    project2: p2SanityCheck(state.project2, ra),
+    seminar1: s1SanityCheck(state.seminar1, ra),
+    seminar2: s2SanityCheck(state.seminar2, ra)
+  }
+}
 
-
-const dropdownChanged = (state, action) => {
-    const newMod = state.mod.slice()
+const changeDropdown = (state, action) => {
+  const newMod = state.mod.slice()
     if(state.mod[action.col].size === action.element.size){
         newMod.splice(action.col, 1, action.element)
         return {
@@ -369,13 +398,20 @@ const dropdownChanged = (state, action) => {
     }
 }
 
+const setData = (state, action) => {
+    return {
+      ...state,
+      rowAmount: action.length,
+      [action.col]: action.data
+    }
+}
+
 const sortData = (state, action) => {
     const n = state.rowAmount
     const sortedState = state.slice()
     mergeSort(sortedState, 0, n-1, action)
     return sortedState
 }
-
 
 const mergeSort = (array, left, right, action) => {
     if(left < right) {

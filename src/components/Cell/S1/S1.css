@@ -12,15 +12,30 @@
     width: 96%;
     height: 55%;
 }
-.CompartimentLeft{
+.CompartimentLeft {
     width: 65%;
     height: 100%;
 }
-.CompartimentLeftTop{
+
+.CompartimentLeftTop {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 60%;
+}
+
+.BoxDescription {
+    font-size:  150%;
+    letter-spacing: 1px;
+    position: absolute;
+    left: 50%;
+}
+
+.BoxNumber {
+    font-size: 200%;
+    color: white;
+    position: absolute;
+    left: 20%;
 }
 
 .CapitalNumber {
@@ -31,7 +46,6 @@
     width: 25%;
     font-size: 300%;
     color: white;
-
     text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
 }
 
@@ -48,6 +62,7 @@
     height: 100%;
 }
 .CompartimentRightTop, .CompartimentRightBot{
+    position: relative;
     height: 50%;
     display: flex;
     justify-content: center;
