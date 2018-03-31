@@ -19,7 +19,8 @@ const s1 = (props) => {
                     <p style={{display: 'inline', margin: '0'}}> externe Projekte gesamt</p></div>
                     <div className={classes.CompartimentLeftBot}>
                         <p style={{margin: '0', display: 'inline'}}> davon </p>
-                        <h3 style={{margin: '0', display: 'inline', marginRight: '5%', marginLeft: '5%', color: 'white'}}>{data.bestTypeAmount}</h3>
+                        <div style={{fontSize: '200%', margin: '0', display: 'inline', marginRight: '5%', marginLeft: '5%', color: 'white'}}>
+                          {data.bestTypeAmount}</div>
                         <p style={{margin: '0',display: 'inline'}}>{data.bestType}</p></div>
 
                 </div>

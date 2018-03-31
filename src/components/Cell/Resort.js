@@ -40,4 +40,5 @@ const resort = (props) => {
         </svg>)
 };
 //Passiv Rot: #ab2d19
+//Passiv Gelb: #EEBD15
 export default resort;

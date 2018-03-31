@@ -4,7 +4,7 @@ import {a1SanityCheck, a2SanityCheck, p1SanityCheck, p2SanityCheck, s1SanityChec
 const initialState = {
 
     mod: [{type:'a', size: 2}, {type:'d', size: 0}, {type:'s', size: 1}, {type:'p', size: 1}],
-    rowAmount: 30,
+    rowAmount: 10,
     general2: [
         {
             name: "Benedikt Ziegert",
@@ -371,8 +371,8 @@ const testRunSanity = state => {
   const ra = state.rowAmount
   return {
     ...state,
-    general2: a2SanityCheck(state.general2, ra),
     general1: a1SanityCheck(state.general1, ra),
+    general2: a2SanityCheck(state.general2, ra),
     project1: p1SanityCheck(state.project1, ra),
     project2: p2SanityCheck(state.project2, ra),
     seminar1: s1SanityCheck(state.seminar1, ra),
@@ -382,20 +382,15 @@ const testRunSanity = state => {
 
 const changeDropdown = (state, action) => {
   const newMod = state.mod.slice()
-    if(state.mod[action.col].size === action.element.size){
-        newMod.splice(action.col, 1, action.element)
-        return {
-            ...state,
-            mod: newMod
-        }
-    }else {
-        newMod.splice(action.col - (action.col % 2), 2, action.element,
-            action.element.size === 2 ? {type: action.element.type, size: 0} : {type: 'd', size: 1})
-        return {
-            ...state,
-            mod: newMod
-        }
-    }
+  if(state.mod[action.col].size === action.element.size){
+    newMod.splice(action.col, 1, action.element)
+  }else {
+    newMod.splice(action.col - (action.col % 2), 2, action.element,
+      action.element.size === 2 ? {type: action.element.type, size: 0} : {type: 'd', size: 1})
+  }return {
+    ...state,
+    mod: newMod
+  }
 }
 
 const setData = (state, action) => {

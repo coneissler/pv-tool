@@ -15,25 +15,21 @@ import D1 from '../../components/Cell/D1/D1'
 
 
 class Element extends Component {
-
     state = {
         hoverElement: false,
-    };
-
+    }
     rowHoverHandler = () => {
         const newState = !this.state.hoverElement;
         this.setState({
             hoverElement: newState
         })
-    };
-
-
+    }
     render(){
         let style = [classes.Element, "show-grid"].join(' ');
         if(this.state.hoverElement) style = [classes.Element, classes.Hover, "show-grid"].join(' ');
         const id = this.props.dataId
         const cellMap = {
-            a1: <A1 data={this.props.a2[id]}/>,
+            a1: <A1 data={this.props.a1[id]}/>,
             a2: <A2 data={this.props.a2[id]} closeSocial={this.state.hoverElement}/>,
             p1: <P1 data={this.props.p1[id]}/>,
             p2: <P2 data={this.props.p2[id]} closeProjects={this.state.hoverElement}/>,
@@ -53,7 +49,6 @@ class Element extends Component {
         );
     }
 }
-
 const mapStateToProps = (state) => {
     return {
         mod0: state.mod[0],

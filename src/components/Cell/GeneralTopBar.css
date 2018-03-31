@@ -24,13 +24,13 @@
     font-size: 3.8vw;
 }
 
-@media(min-width: 991px){
+@media(min-width: 992px){
     .Name {
         font-size: 1.57vw;
     }
 }
 
-@media(min-width: 991px) and (max-width: 1100px){
+@media(min-width: 992px) and (max-width: 1100px){
     .Name {
         font-size: 1.7vw;
     }

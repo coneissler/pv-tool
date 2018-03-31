@@ -1,14 +1,11 @@
-
 .Display {
     position: relative;
     height: 88%;
     width: 90%;
-    background: lightgrey;
     box-shadow: 0 3px 15px rgba(0,0,0,0.2);
     opacity: 0.7;
     border: black solid 1px;
     list-style-type: circle;
-
 }
 
 .Display li {
@@ -18,7 +15,6 @@
     margin-top: 14.3%;
     margin-left: 10%;
 }
-
 
 .HeaderFinished, .HeaderInWork {
     width:100%;

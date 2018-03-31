@@ -1,18 +1,17 @@
 .AddIcon:hover {
-    -webkit-animation:scaling .5s ease-out .1s;
-    -moz-animation:scaling .5s ease-out .1s;
-    animation:scaling .5s ease-out .1s;
+    transform: scale(1.05);
 }
 
 .AddIcon:hover path{
-    fill: black;
+    fill: lightgrey;
 }
 
 .AddIcon {
     width: 35px;
     height: 35px;
     margin: 5px;
-    cursor: pointer;
+    cursor: not-allowed;
+    transition: transform 0.3s ease-out;
     display: block;
     z-index: 8000;
 }
@@ -31,27 +30,3 @@
     }
 }
 
-@-moz-keyframes scaling {
-    0%, 100% {
-        -moz-transform: scale(1);
-    }
-    50% {
-        -moz-transform: scale(1.1);
-    }
-}
-@-webkit-keyframes scaling {
-    0%, 100% {
-        -webkit-transform: scale(1);
-    }
-    50% {
-        -webkit-transform: scale(1.1);
-    }
-}
-@keyframes scaling {
-    0%, 100% {
-        transform: scale(1);
-    }
-    50% {
-        transform: scale(1.1);
-    }
-}

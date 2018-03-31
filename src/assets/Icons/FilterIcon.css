@@ -1,21 +1,19 @@
 .FilterIcon:hover path{
-    fill: black;
+    fill: lightgrey;
 }
 
 .FilterIcon:hover {
-    transform: scale(1.2);
+    transform: scale(1.05);
 }
 
 .FilterIcon {
     width: 35px;
     height: 35px;
     margin: 5px;
-    cursor: pointer;
+    cursor: not-allowed;
     transition: transform 0.3s ease-out;
     z-index: 8000;
     position: relative;
-
-
 }
 
 .Open {
