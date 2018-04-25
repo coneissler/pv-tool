@@ -2,14 +2,22 @@ import React from 'react';
 import cellClass from '../Cells.css';
 import classes from './S2.css';
 import SeminarChip from './SeminarChip'
+import SkillChip from './SkillChip'
 
 const s2 = (props) => {
   const data = props.data
-  const seminars = []
+  const seminars = [], skills1 = [], skills2 = []
   data.seminars.map((sem, key) => {
     seminars.push(<SeminarChip completed={sem.completed}
                    name={sem.name}
-                   key={key}/>)
+                   key={key}
+                  />)
+    return null})
+  data.skillSet1.map((sk, key) => {
+    skills1.push(<SkillChip skill={sk} key={key} id={key} last={(key === data.skillSet1.length-1)}/>)
+    return null})
+  data.skillSet2.map((sk, key) => {
+    skills2.push(<SkillChip skill={sk} key={key} id={key} last={(key === data.skillSet2.length-1)}/>)
     return null})
     return (
         <div className={cellClass.Cell}>
@@ -20,16 +28,14 @@ const s2 = (props) => {
                         <div className={classes.BoxDescription}>Experience In</div>
                         {data.expieriencedIn}
                     </div>
-                    <div className={classes.PastProjects}>
-                        <div className={classes.BoxDescription}>Past Projects</div>
-                        {data.pastProjects}
+                  <div className={classes.Skills}>
+                  <div className={classes.SecondarySkills}>
+                    {skills1}
+                  </div>
+                    <div className={classes.SecondarySkills}>
+                      {skills2}
                     </div>
-                    <div className={classes.Skills}>
-                        <div className={classes.Skill1}>
-                            <div style={{color: "black"}} className={classes.BoxDescription}>Skill1</div>{data.skill1}</div>
-                        <div className={classes.Skill2}>
-                            <div style={{color: "black"}} className={classes.BoxDescription}>Skill2</div>{data.skill2}</div>
-                    </div>
+                  </div>
                 </div>
                 <div className={classes.SeminarView}>
                     {seminars}
@@ -40,3 +46,4 @@ const s2 = (props) => {
 };
 
 export default s2;
+

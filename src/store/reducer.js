@@ -3,7 +3,7 @@ import {a1SanityCheck, a2SanityCheck, p1SanityCheck, p2SanityCheck, s1SanityChec
 
 const initialState = {
 
-    mod: [{type:'a', size: 2}, {type:'d', size: 0}, {type:'s', size: 1}, {type:'p', size: 1}],
+    mod: [{type:'a', size: 2}, {type:'d', size: 0}, {type:'s', size: 2}, {type:'p', size: 0}],
     rowAmount: 10,
     general2: [
         {
@@ -58,7 +58,28 @@ const initialState = {
             uniShort: 'HTW',
         }
             ],
-    general1: [],
+    general1: [{
+      name: "Benedikt Ziegert",
+      memberstatus: "Mitglied",
+      age: 20,
+      resort: "IN",
+      major: 'B.Sc. Wirtschaftsingenieurwesen',
+      university: 'Technische Universität',
+      uniShort: 'TU',
+      img: "https://board.cct-ev.de/wp-content/uploads/2016/10/Benedikt-Ziegert-500x500.jpg",
+      active: true
+    },
+      {
+        name: "Axel-Bernhard Walter",
+        age: 23,
+        resort: "IT",
+        memberstatus: "Interessent",
+        major: 'M.Sc. Betriebswirtschaftslehre',
+        university: 'Technische Universität',
+        uniShort: 'TU',
+        img: "https://board.cct-ev.de/wp-content/uploads/2017/06/Axel-500x331.jpg",
+        active: false
+      }],
     project2: [
         {
             bt: 150,
@@ -67,7 +88,7 @@ const initialState = {
             projects: [
                 {
                     name: "HCC sgd Development",
-                    projectTyp: "IT-Projekt",
+                    projectTyp: "IT-Projekt IT-Projekt",
                     client: "FU Berlin",
                     bt: "15",
                     status: 0
@@ -283,26 +304,32 @@ const initialState = {
   // ['Angebotserstellung', 'Corporate Design', 'Finanzen und Recht', 'Internes, QM und BDSU', 'Präsentationstechniken', 'Projektmanagement']
     seminar2: [
         {
-            seminars: [{
-                name: 'Angebotserstellung',
-                completed: true
-            },{
-                name: 'Finanzen und Recht',
-                completed: true
-            },{
-                name: 'Internes, QM und BDSU',
-                completed: true
-            },{
-              name: 'Präsentationstechniken',
-              completed: true
-            },{
-              name: 'Projektmanagement',
-              completed: true
-            },{
-              name: 'Corporate Design',
-              completed: true
-            }]
+        seminars: [{
+          name: 'Angebotserstellung',
+          completed: true
         },{
+          name: 'Finanzen und Recht',
+          completed: true
+        },{
+          name: 'Internes, QM und BDSU',
+          completed: true
+        },{
+          name: 'Präsentationstechniken',
+          completed: true
+        },{
+          name: 'Projektmanagement',
+          completed: true
+        },{
+          name: 'Corporate Design',
+          completed: true
+        }],
+          seminarName: "Duummmmyyy 3",
+          expieriencedIn: "trains",
+          about: "I like trains",
+          completedSeminars: 6,
+          skills: ['Web Development', 'Präsentationstechniken', 'Design', 'Mathematik', 'Verhandlungsskills', 'Aquiseskills','Skill 1', 'Skill 2 der ewjfnj', 'Skillqwefq 1', 'Skidll 1', 'Skidd', 'Skillad']
+        },{
+        skills: ['Skill 1', 'Skill 2 der ewjfnj', 'Skillqwefq 1', 'Skidll 1', 'Skidd', 'Skilld'],
             seminars: [{
                 name: 'Corporate Design',
                 completed: true

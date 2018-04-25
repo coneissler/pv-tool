@@ -44,8 +44,9 @@ class A2 extends Component {
     }
 
     render(){
+        const data = this.props.data
         let imgContainer
-        if(this.props.data) imgContainer = this.state.imgDimensions.width > this.state.imgDimensions.height + 30 ? classes.ImgContainerWidth : classes.ImgContainerHeight
+        if(data) imgContainer = this.state.imgDimensions.width > this.state.imgDimensions.height + 30 ? classes.ImgContainerWidth : classes.ImgContainerHeight
         else                imgContainer = classes.ImgContainerHeight
 
         return(
@@ -61,16 +62,16 @@ class A2 extends Component {
                 </div>;
             </div>
             <div className={classes.Content}>
-                <GeneralTopBar name={this.props.data.name} width='110%' resort={this.props.data.resort} active={this.props.data.active}/>
+                <GeneralTopBar name={data.name} width='110%' resort={data.resort} active={data.active}/>
                 <div className={classes.MainContent}>
                     <div className={imgContainer}>
-                        <img onLoad={this.onImgLoad} alt={this.props.data.name} className={classes.Img} src={this.props.data.img}/>
+                        <img onLoad={this.onImgLoad} alt={data.name} className={classes.Img} src={data.img}/>
                     </div>
                     <div className={classes.TextContainer}>
-                        <div className={classes.MemberStatus}>{this.props.data.memberstatus}</div>
-                        <div className={classes.TextLong}><p>{this.props.data.months}</p>Beitritt: {this.props.data.joinDate}</div>
-                        <div className={classes.TextLong}><p>{this.props.data.major.substring(0,5)}</p>{this.props.data.major.substring(6)}</div>
-                        <div className={classes.TextLong}><p>{this.props.data.uniShort}</p>{this.props.data.university}</div>
+                        <div className={classes.MemberStatus}>{data.memberstatus}</div>
+                        <div className={classes.TextLong}><p>{data.months}</p>Beitritt: {data.joinDate}</div>
+                        <div className={classes.TextLong}><p>{data.major.substring(0,5)}</p>{data.major.substring(6)}</div>
+                        <div className={classes.TextLong}><p>{data.uniShort}</p>{data.university}</div>
                     </div>
                 </div>
             </div>

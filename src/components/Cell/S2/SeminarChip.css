@@ -1,13 +1,11 @@
 .Completed, .Open {
     position: relative;
-    margin: 10px;
+    width: 130%;
     height: 30%;
-    box-shadow: 0 3px 3px rgba(0,0,0,0.2);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    margin: 2% 0 2% 0;
     cursor: default;
     transition: all 100ms ease-out;
+
 }
 
 .Completed {
@@ -16,4 +14,27 @@
 
 .Open {
     background:rgba(239,46,46,0.2);
+}
+
+.Name {
+
+    width: 78%;
+    height: 100%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.2s ease-out;
+ }
+
+.Completed .Name:hover {
+    width: 55%;
+    transition: all 0.2s ease-out;
+}
+
+.Date {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    height: 100%;
 }

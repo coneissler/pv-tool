@@ -32,19 +32,19 @@ class P2 extends Component {
                         <div className={classes.ChipR}>
                             {data.bt} BT
                             <div className={classes.IndicatorBox} title="BT/Zeit">
-                                <PerformanceIndicator performance={0}/>
+                                {/*<PerformanceIndicator performance={0}/>*/}
                             </div>
                         </div>
                         <div className={classes.ChipG}>
                             {data.ip} INP
                             <div className={classes.IndicatorBox} title="INP/Zeit">
-                                <PerformanceIndicator performance={2}/>
+                                {/*<PerformanceIndicator performance={2}/>*/}
                             </div>
                         </div>
                         <div className={classes.ChipY}>
                             {data.bt/data.inp * 100}%
                             <div className={classes.IndicatorBox} title="BT-INP Verhältniss">
-                                <PerformanceIndicator performance={1}/>
+                                {/*<PerformanceIndicator performance={1}/>*/}
                             </div>
                         </div>
                     </div>

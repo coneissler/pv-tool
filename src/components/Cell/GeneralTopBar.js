@@ -8,7 +8,7 @@ const generalTopBar = (props) => {
     return(
         <div className={classes.TopBar} style={{width: props.width}}>
             <p className={classes.Name} style={addStyle}>{props.name}</p>
-            <div title="cs" className={classes.ResIndicator}>
+            <div title="cjdadffjjs" className={classes.ResIndicator}>
                 <Resort res={props.resort} active={props.active}/>
             </div>
         </div>

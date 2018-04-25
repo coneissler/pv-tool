@@ -153,15 +153,18 @@ export const s1SanityCheck = (data, rowAmount) => {
 }
 
 export const s2SanityCheck = (data, rowAmount) => {
-  let cleanData = []
-  let expieriencedIn, pastProjects, skill1, skill2
+  let cleanData = [], skillSet1 = [], skillSet2 = []
+  let expieriencedIn, pastProjects
   for(let i = 0; i<rowAmount; i++) {
     const seminars = []
     if(data && data[i]) {
+      if(data[i].skills){
+        const conSorted = conSort(data[i].skills)
+        skillSet1 = conSorted[0]
+        skillSet2 = conSorted[1]
+      }
       expieriencedIn = typeof data[i].expieriencedIn === 'string' ? data[i].expieriencedIn : ''
       pastProjects = typeof data[i].pastProjects === 'string' ? data[i].pastProjects : ''
-      skill1 = typeof data[i].skill1 === 'string' ? data[i].skill1 : ''
-      skill2 = typeof data[i].skill2 === 'string' ? data[i].skill2 : ''
       data[i].seminars.map(sem => {
         if(typeof sem.name === 'string' && typeof sem.completed === 'boolean') {
           seminars.push({
@@ -174,8 +177,8 @@ export const s2SanityCheck = (data, rowAmount) => {
     else {
       expieriencedIn =  ''
       pastProjects = ''
-      skill1 = ''
-      skill2 = ''
+      skillSet1 = ['Skills']
+      skillSet2 = []
     }
     legitSeminarStrings.map(legit => {
       if(!seminars.some(e => {
@@ -190,8 +193,8 @@ export const s2SanityCheck = (data, rowAmount) => {
     cleanData[i] = {
       expieriencedIn: expieriencedIn,
       pastProjects: pastProjects,
-      skill1: skill1,
-      skill2: skill2,
+      skillSet1: skillSet1,
+      skillSet2: skillSet2,
       seminars: seminars
     }
   }
@@ -206,4 +209,48 @@ const calculateMonths = (joinDate) => {
   return today.getMonth() + 1+today.getFullYear()*12-
     parseInt(joinDate.substring(4,7), 10)-
     parseInt(joinDate.substring(6), 10)*12 + 'M'
+}
+
+const conSort = (array) => {
+  const output1 = [], output2 = []
+  let length1 = 0, length2 = 0
+  const countedArray = array.map(word => {
+    return {
+      skill: word,
+      length: word.length
+    }
+  })
+  countedArray.sort(compare)
+  length2 += countedArray[countedArray.length-1].length
+  output2.push(countedArray[countedArray.length-1].skill)
+  countedArray.splice(countedArray.length-1, 1)
+  for(let i = countedArray.length-1; i>=0; i--) {
+    if(length2 >= length1) {
+      length1 += countedArray[i].length
+      output1.push(countedArray[i].skill)
+    } else {
+      length2 += countedArray[i].length
+      output2.push(countedArray[i].skill)
+    }
+  }
+  return [output1.shuffle(), output2.shuffle()]
+}
+
+const compare = (a, b) => {
+  if (a.length<b.length) {
+    return -1;
+  }
+  if (a.length>b.length) {
+    return 1;
+  }
+  return 0;
+}
+// Achtung nicht-deterministisch!
+Array.prototype.shuffle = function () {
+  let m = this.length;
+  while (m) {
+    let i = Math.floor(Math.random() * m--);
+    [this[m], this[i]] = [this[i], this[m]];
+  }
+  return this;
 }

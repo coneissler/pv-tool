@@ -8,6 +8,7 @@
     height: 20.5%;
     color: white;
     border-bottom: solid 1px black;
+    border-left: solid 1px black;
 }
 
 .Header{
@@ -21,6 +22,7 @@
 .MainContent {
     display: flex;
     height: calc(100% - 20.5%);
+    border-left: solid 1px black;
 }
 
 .StaticStats{
@@ -43,28 +45,27 @@
     border-bottom: solid 1px black;
     box-sizing: border-box;
 }
-
 .Skills{
-    height: 33.34%;
+    position: relative;
+    height: 66.67%;
+    width: 100%;
+    cursor: default;
+    overflow: auto;
+}
+.Divider {
+    position: absolute;
+    top: 50%;
+    min-height: 1px;
+    min-width: 1000%;
+    background: black;
+    left: 0;
+    right: 100%;
+}
+.SecondarySkills {
+    height: 50%;
     width: 100%;
     display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.Skill1, .Skill2 {
-    width: 50%;
-    height: 100%;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.Skill1 {
-    background: rgba(255,255,255,0.5);
-    border-right: solid 1px black;
-}
-.Skill2 {
-    background: rgba(255,255,255,0.5);
+    flex-wrap: nowrap;
 }
 .Experience {
     background: rgba(20,70,125,0.5);
@@ -86,7 +87,7 @@
 .SeminarView{
     width: 50%;
     height: 100%;
-    overflow: scroll;
+    overflow-x: hidden;
 }
 
 @media(min-width: 991px){

@@ -1,0 +1,11 @@
+.Skill {
+    height: 100%;
+    padding: 0 5px 0 5px;
+    display: flex;
+    align-items: center;
+}
+
+.Divider {
+    height: 100%;
+    min-width: 6%;
+}
