@@ -24,6 +24,7 @@ const s2 = (props) => {
             <div className={classes.TopBar}><p className={classes.Header}>{seminars.length}/6 Pflichtschulungen abgeschlossen</p></div>
             <div className={classes.MainContent}>
                 <div className={classes.StaticStats}>
+                  <div className={classes.BorderSkills}/>
                     <div className={classes.Experience}>
                         <div className={classes.BoxDescription}>Experience In</div>
                         {data.expieriencedIn}

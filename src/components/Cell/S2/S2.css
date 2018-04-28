@@ -18,14 +18,23 @@
     white-space: nowrap;
     letter-spacing: -0.2px;
 }
-
 .MainContent {
     display: flex;
     height: calc(100% - 20.5%);
     border-left: solid 1px black;
 }
 
+.BorderSkills{
+    position: absolute;
+    top: 66.67%;
+    min-width: 100%;
+    min-height: 1px;
+    background: black;
+    z-index: 100;
+}
+
 .StaticStats{
+    position: relative;
     width: 50%;
     border-right: 1px black solid;
     display: flex;

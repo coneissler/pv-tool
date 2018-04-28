@@ -1,0 +1,21 @@
+.Indicator {
+    height: 30%;
+    margin: 0 2% 0 2%;
+    width: 12%;
+    cursor: pointer;
+}
+
+.Active {
+    transition: background-color 0.75s ease;
+    background-color: rgba(30,70,125, 0.8);
+}
+
+.Disabled {
+    transition: background-color 0.75s ease;
+    background-color: rgba(30,70,125, 0.3);
+}
+
+.Disabled:hover{
+    background-color: rgba(30,70,125, 0.5);
+}
+

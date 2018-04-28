@@ -3,8 +3,8 @@ import {a1SanityCheck, a2SanityCheck, p1SanityCheck, p2SanityCheck, s1SanityChec
 
 const initialState = {
 
-    mod: [{type:'a', size: 2}, {type:'d', size: 0}, {type:'s', size: 2}, {type:'p', size: 0}],
-    rowAmount: 10,
+    mod: [{type:'a', size: 2}, {type:'d', size: 0}, {type:'p', size: 2}, {type:'p', size: 0}],
+    rowAmount: 4,
     general2: [
         {
             name: "Benedikt Ziegert",
@@ -15,7 +15,8 @@ const initialState = {
             university: 'Technische Universität',
             uniShort: 'TU',
             img: "https://board.cct-ev.de/wp-content/uploads/2016/10/Benedikt-Ziegert-500x500.jpg",
-            active: true
+            active: true,
+            socials: {linkedIn: 'https://www.linkedIn.com'}
         },
         {
             name: "Axel-Bernhard Walter",
@@ -30,14 +31,15 @@ const initialState = {
         },{
             active: true
         },{
-            name: "Constantin Eißler",
+            name: "Max Mustermann",
             age: 20,
-            resort: "V",
+            resort: "IT",
             memberstatus: "Mitglied",
             major: 'B.Sc. Informatik',
             university: 'Humbold Universität',
             uniShort: 'HU',
-            active: true
+            active: true,
+            socials: {slack: 'https://www.linkedIn.com'}
         },
         {
             name: "Alex Mustermann",
@@ -59,14 +61,14 @@ const initialState = {
         }
             ],
     general1: [{
-      name: "Benedikt Ziegert",
+      name: "Max Mustermann",
       memberstatus: "Mitglied",
       age: 20,
       resort: "IN",
       major: 'B.Sc. Wirtschaftsingenieurwesen',
       university: 'Technische Universität',
       uniShort: 'TU',
-      img: "https://board.cct-ev.de/wp-content/uploads/2016/10/Benedikt-Ziegert-500x500.jpg",
+      //img: "https://board.cct-ev.de/wp-content/uploads/2016/10/Benedikt-Ziegert-500x500.jpg",
       active: true
     },
       {
@@ -181,46 +183,27 @@ const initialState = {
             ip: 200,
             percent: 68,
             projects: [
-                {
-                    name: "HCC FrontEnd Development",
-                    type: "extern",
-                    projectLeader: "Maximilian Eißler",
-                    bt: "15",
-                    status: 0
-                },
-                {
-                    name: "Project X",
-                    type: "intern",
-                    projectLeader: "That Guy",
-                    bt: "100k",
-                    status: 1
-                },{
-                    name: "HCC FrontEnd Development",
-                    type: "extern",
-                    projectLeader: "Maximilian Eißler",
-                    bt: "15",
-                    status: 1
-                },
-                {
-                    name: "Project X",
-                    type: "intern",
-                    projectLeader: "That Guy",
-                    bt: "100k",
-                    status: 1
-                },{
-                    name: "HCC FrontEnd Development",
-                    type: "extern",
-                    projectLeader: "Maximilian Eißler",
-                    bt: "15",
-                    status: 1
-                },
-                {
-                    name: "Project X",
-                    type: "intern",
-                    projectLeader: "That Guy",
-                    bt: "100k",
-                    status: 1
-                },
+              {
+                name: "HCC FrontEnd Development",
+                type: "extern",
+                projectLeader: "Maximilian Eißler",
+                bt: "15",
+                status: 0
+              },
+              {
+                name: "HCC FrontEnd Development",
+                type: "extern",
+                projectLeader: "Maximilian Eißler",
+                bt: "15",
+                status: 0
+              },
+              {
+                name: "HCC FrontEnd Development",
+                type: "extern",
+                projectLeader: "Maximilian Eißler",
+                bt: "15",
+                status: 0
+              }
             ]
         },{
             bt: 150,
@@ -240,32 +223,7 @@ const initialState = {
                     projectLeader: "That Guy",
                     bt: "100k",
                     status: 1
-                },{
-                    name: "HCC FrontEnd Development",
-                    type: "extern",
-                    projectLeader: "Maximilian Eißler",
-                    bt: 15,
-                    status: 1
-                },
-                {
-                    name: "Project X",
-                    type: "intern",
-                    projectLeader: "That Guy",
-                    bt: 100,
-                },{
-                    name: "HCC FrontEnd Development",
-                    type: "extern",
-                    projectLeader: "Maximilian Eißler",
-                    bt: "15",
-                    status: 1
-                },
-                {
-                    name: "Project X",
-                    type: "intern",
-                    projectLeader: "That Guy",
-                    bt: "100k",
-                    status: 1
-                },
+                }
             ]
         }
 
@@ -329,7 +287,7 @@ const initialState = {
           completedSeminars: 6,
           skills: ['Web Development', 'Präsentationstechniken', 'Design', 'Mathematik', 'Verhandlungsskills', 'Aquiseskills','Skill 1', 'Skill 2 der ewjfnj', 'Skillqwefq 1', 'Skidll 1', 'Skidd', 'Skillad']
         },{
-        skills: ['Skill 1', 'Skill 2 der ewjfnj', 'Skillqwefq 1', 'Skidll 1', 'Skidd', 'Skilld'],
+        skills: ['Skill 1', 'Skill 2 der ewjfnj',  'Skilld'],
             seminars: [{
                 name: 'Corporate Design',
                 completed: true

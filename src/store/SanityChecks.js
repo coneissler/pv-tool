@@ -28,7 +28,7 @@ export const a1SanityCheck = (data, rowAmount) => {
 export const a2SanityCheck = (data, rowAmount) => {
   let cleanData = []
   for(let i = 0; i<rowAmount; i++) {
-    let image, name, resort, memberStatus, joinDate, major, university, months, uniShort, active;
+    let image, name, resort, memberStatus, joinDate, major, university, months, uniShort, active, socials;
     if(data && data[i]) {
       image = typeof data[i].img !== 'undefined' ? data[i].img : placeholder
       resort = data[i].resort
@@ -40,6 +40,11 @@ export const a2SanityCheck = (data, rowAmount) => {
       uniShort = typeof data[i].uniShort === 'string' ? data[i].uniShort : '-'
       months = calculateMonths(joinDate)
       active = data[i].active
+      socials = {phone: (typeof data[i].socials !== 'undefined' && typeof data[i].socials.phone === 'string') ? data[i].socials.phone : '-',
+                mail: (typeof data[i].socials !== 'undefined' && typeof data[i].socials.mail === 'string') ? data[i].socials.mail : '-',
+                slack: (typeof data[i].socials !== 'undefined' && typeof data[i].socials.slack === 'string') ? data[i].socials.slack : '-',
+                linkedIn: (typeof data[i].socials !== 'undefined' && typeof data[i].socials.linkedIn === 'string') ? data[i].socials.linkedIn : '-'}
+
     }else {
       resort = 'No'
       name = 'Anonymous'
@@ -51,6 +56,7 @@ export const a2SanityCheck = (data, rowAmount) => {
       months = '0M'
       active = true
       image = placeholder
+      socials = {phone: '-', mail: '-', slack: '-', linkedIn: '-'}
     }
     cleanData[i] = {
       img: image,
@@ -62,7 +68,8 @@ export const a2SanityCheck = (data, rowAmount) => {
       university: university,
       uniShort: uniShort,
       months: months,
-      active: active
+      active: active,
+      socials: socials
     }
   }
   return cleanData

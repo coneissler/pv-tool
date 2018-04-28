@@ -30,6 +30,9 @@ class A2 extends Component {
         this.setState({ socialBackdrop: newState })
     }
 
+    socialUnknownHandler = (url, payload) => {
+
+    }
 
     componentWillReceiveProps(nextProps) {
         if(!nextProps.closeSocial)
@@ -76,7 +79,7 @@ class A2 extends Component {
                 </div>
             </div>
             <div className={classes.Wrapper}>
-                <ContactSection grid={this.props.closeSocial&&this.state.socialGrid} open={this.socialClickHandler} backdrop={this.socialBackdropHandler}/>
+                <ContactSection socials={data.socials} grid={this.props.closeSocial&&this.state.socialGrid} open={this.socialClickHandler} backdrop={this.socialBackdropHandler}/>
             </div>
             <div className={classes.backSVG}>
                 <svg height='100%' viewBox='0 0 164 189' xmlns='http://www.w3.org/2000/svg' fillRule='evenodd'

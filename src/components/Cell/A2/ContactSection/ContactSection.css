@@ -30,8 +30,6 @@
     opacity: 0;
     animation: hideContact 0.5s forwards;
 }
-
-
 .AspectRatio{
     display: flex;
     justify-content: center;
@@ -151,11 +149,11 @@ a:hover {
 }
 
 .SlackAppearing {
-    animation-name: fade;
-    -webkit-animation-name: fade;
-    animation-duration: 0.01s;
-    -webkit-animation-duration: 0.01s;
-}
+     animation-name: fade;
+     -webkit-animation-name: fade;
+     animation-duration: 0.01s;
+     -webkit-animation-duration: 0.01s;
+ }
 .MailAppearing {
     animation-name: fade;
     -webkit-animation-name: fade;
@@ -175,6 +173,42 @@ a:hover {
     -webkit-animation-duration: 0.25s;
 }
 
+.SlackAppearingDisabled {
+    animation-name: fadeDisabled;
+    -webkit-animation-name: fadeDisabled;
+    animation-duration: 0.01s;
+    -webkit-animation-duration: 0.01s;
+    opacity: 0.4;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+.MailAppearingDisabled {
+    animation-name: fadeDisabled;
+    -webkit-animation-name: fadeDisabled;
+    animation-duration: 0.75s;
+    -webkit-animation-duration: 0.75s;
+    opacity: 0.4;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+.PhoneAppearingDisabled {
+    animation-name: fadeDisabled;
+    -webkit-animation-name: fadeDisabled;
+    animation-duration: 0.5s;
+    -webkit-animation-duration: 0.5s;
+    opacity: 0.4;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+.LinkedInAppearingDisabled {
+    animation-name: fadeDisabled;
+    -webkit-animation-name: fadeDisabled;
+    animation-duration: 0.25s;
+    -webkit-animation-duration: 0.25s;
+    opacity: 0.4;
+    cursor: not-allowed;
+    pointer-events: none;
+}
 .SlackLeaving {
     animation-name: fadeOut;
     -webkit-animation-name: fadeOut;
@@ -204,23 +238,55 @@ a:hover {
     opacity: 0;
 }
 
+
+.SlackLeavingDisabled {
+    animation-name: fadeOutDisabled;
+    -webkit-animation-name: fadeOutDisabled;
+    animation-duration: 0.75s;
+    -webkit-animation-duration: 0.75s;
+    opacity: 0;
+}
+.MailLeavingDisabled {
+    animation-name: fadeOutDisabled;
+    -webkit-animation-name: fadeOutDisabled;
+    animation-duration: 0.01s;
+    -webkit-animation-duration: 0.01s;
+    opacity: 0;
+}
+.PhoneLeavingDisabled {
+    animation-name: fadeOutDisabled;
+    -webkit-animation-name: fadeOutDisabled;
+    animation-duration: 0.25s;
+    -webkit-animation-duration: 0.25s;
+    opacity: 0;
+}
+.LinkedInLeavingDisabled {
+    animation-name: fadeOutDisabled;
+    -webkit-animation-name: fadeOutDisabled;
+    animation-duration: 0.5s;
+    -webkit-animation-duration: 0.5s;
+    opacity: 0;
+}
+
 @keyframes fade {
     0% { opacity:0; }
     50% { opacity:0; }
     100% { opacity:1; }
 }
-
+@keyframes fadeDisabled {
+    0% { opacity:0; }
+    50% { opacity:0; }
+    100% { opacity:0.4; }
+}
 @keyframes fadeOut {
     0% { opacity:1; }
     50% { opacity:1; }
+    100% { opacity:0; }}
+
+@keyframes fadeOutDisabled {
+    0% { opacity:0.4; }
+    50% { opacity:0.4; }
     100% { opacity:0; }
-}
-
-
-@-webkit-keyframes fade {
-    0% { opacity:0; }
-    50% { opacity:0; }
-    100% { opacity:1; }
 }
 
 @keyframes hideContact {

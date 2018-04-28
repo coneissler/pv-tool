@@ -67,17 +67,17 @@ const contactSection = (props) => {
 
     let gridClasses = [classes.Wrapper, classes.GridWrapperInv].join(' ')
     let buttonClasses = classes.WrapperOffset
-    let slackClass = [classes.SlackLeaving, classes.Slack].join(' ')
-    let phoneClass = [classes.PhoneLeaving, classes.Phone].join(' ')
-    let mailClass = [classes.MailLeaving, classes.Mail].join(' ')
-    let linkedInClass = [classes.LinkedInLeaving, classes.LinkedIn].join(' ')
+    let slackClass = [props.socials.slack === '-' ? classes.SlackLeavingDisabled : classes.SlackLeaving, classes.Slack].join(' ')
+    let phoneClass = [props.socials.phone === '-' ? classes.PhoneLeavingDisabled : classes.PhoneLeaving, classes.Phone].join(' ')
+    let mailClass = [props.socials.mail === '-' ? classes.MailLeavingDisabled : classes.MailLeaving, classes.Mail].join(' ')
+    let linkedInClass = [props.socials.linkedIn === '-' ? classes.LinkedInLeavingDisabled : classes.LinkedInLeaving, classes.LinkedIn].join(' ')
     if (props.grid){
         gridClasses = classes.Wrapper
         buttonClasses= [classes.Wrapper, classes.ButtonWrapper].join(' ')
-        slackClass = [classes.SlackAppearing, classes.Slack].join(' ')
-        phoneClass = [classes.PhoneAppearing, classes.Phone].join(' ')
-        mailClass = [classes.MailAppearing, classes.Mail].join(' ')
-        linkedInClass = [classes.LinkedInAppearing, classes.LinkedIn].join(' ')
+        slackClass = [props.socials.slack === '-' ? classes.SlackAppearingDisabled : classes.SlackAppearing, classes.Slack].join(' ')
+        phoneClass = [props.socials.phone === '-' ? classes.PhoneAppearingDisabled :classes.PhoneAppearing, classes.Phone].join(' ')
+        mailClass = [props.socials.mail === '-' ? classes.MailAppearingDisabled : classes.MailAppearing, classes.Mail].join(' ')
+        linkedInClass = [props.socials.linkedIn === '-' ? classes.LinkedInAppearingDisabled : classes.LinkedInAppearing, classes.LinkedIn].join(' ')
     }
     return (
         <Aux>
@@ -93,10 +93,10 @@ const contactSection = (props) => {
             </div>
             <div className={gridClasses}>
                 <div className={classes.Box}>
-                    <a className={slackClass} >{slack}</a>
+                    <a href={props.socials.slack}  className={slackClass} >{slack}</a>
                     <a onClick={props.backdrop}  className={phoneClass} >{iPhone}</a>
-                    <a href="/" className={mailClass} >{mail}</a>
-                    <a href="/" className={linkedInClass} >{linkedIn}</a>
+                    <a href={'mailto:' + props.socials.mail} className={mailClass} >{mail}</a>
+                    <a href={props.socials.linkedIn} className={linkedInClass} >{linkedIn}</a>
                 </div>
             </div>
         </Aux>
