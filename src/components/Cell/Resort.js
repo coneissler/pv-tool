@@ -35,8 +35,7 @@ const resort = (props) => {
         <svg height='100%' viewBox='0 0 39.5 29.5' xmlns='http://www.w3.org/2000/svg' fillRule='evenodd'
              clipRule='evenodd' strokeLinejoin='round' strokeMiterlimit='1.414'>
             <path d='M579.091,172.797L465.491,172.797L477.987,16.612L579.091,16.612L579.091,172.797Z'
-                  fill={props.active ? '#1e467d' : 'rgba(171,45,25,0.7)'} transform='matrix(-.34771 0 0 -.189 201.356 32.66)'>
-              <title>coany</title>
+                  fill={props.active ? '#1e467d' : 'rgba(171,45,25,0.8)'} transform='matrix(-.34771 0 0 -.189 201.356 32.66)'>
             </path>
             {renderedResort}
         </svg>)

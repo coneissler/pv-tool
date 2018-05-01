@@ -52,7 +52,7 @@
 
 .CompartimentLeftBot{
     display: flex;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
     border-top: white 1px solid;
     height: 40%;

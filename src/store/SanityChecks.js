@@ -8,7 +8,7 @@ export const a1SanityCheck = (data, rowAmount) => {
       name = typeof data[i].name === 'string' ? data[i].name : 'Anonymous'
       resort = typeof data[i].resort === 'string' ? data[i].resort : 'No'
       image = typeof data[i].img !== 'undefined' ? data[i].img : placeholder
-      active = typeof data[i].active !== 'boolean' ? data[i].active : true
+      active = typeof data[i].active === 'boolean' ? data[i].active : true
     } else {
       name = 'Anonymous'
       resort = 'No'
@@ -35,9 +35,9 @@ export const a2SanityCheck = (data, rowAmount) => {
       name = typeof data[i].name === 'string' ? data[i].name : 'Anonymous'
       memberStatus = typeof data[i].memberstatus === 'string' ? data[i].memberstatus : 'Unbekannt'
       joinDate = typeof data[i].joinDate === 'string' ? data[i].joinDate : '01.01.2017'
-      major = typeof data[i].major === 'string' ? data[i].major : 'B.Sc. Spaßstudent'
-      university = typeof data[i].university === 'string' ? data[i].university : 'Unbekannt'
-      uniShort = typeof data[i].uniShort === 'string' ? data[i].uniShort : '-'
+      major = typeof data[i].major === 'string' ? data[i].major : ''
+      university = typeof data[i].university === 'string' ? data[i].university : ''
+      uniShort = typeof data[i].uniShort === 'string' ? data[i].uniShort : ''
       months = calculateMonths(joinDate)
       active = data[i].active
       socials = {phone: (typeof data[i].socials !== 'undefined' && typeof data[i].socials.phone === 'string') ? data[i].socials.phone : '-',
@@ -50,7 +50,7 @@ export const a2SanityCheck = (data, rowAmount) => {
       name = 'Anonymous'
       memberStatus = 'Unbekannt'
       joinDate = '01.01.2017'
-      major = 'B.Sc. Spaßstudent'
+      major = ''
       university = '-'
       uniShort = '-'
       months = '0M'
@@ -65,6 +65,7 @@ export const a2SanityCheck = (data, rowAmount) => {
       memberstatus: memberStatus,
       joinDate: joinDate,
       major: major,
+      joinDateMonth: monthDict[joinDate.substring(3,5)] + ' ' + joinDate.substring(6),
       university: university,
       uniShort: uniShort,
       months: months,
@@ -82,11 +83,11 @@ export const p1SanityCheck = (data, rowAmount) => {
     if(data && data[i]) {
       bt = typeof data[i].bt === 'number' ? data[i].bt : 1
       ip = typeof data[i].ip === 'number' ? data[i].ip : 1
-      available = typeof data[i].available === 'boolean' ? data[i].available : true
+      available = typeof data[i].available === 'string' ? data[i].available : 'Verfügbar'
     } else {
       bt = 1
       ip = 1
-      available = true
+      available = 'Verfügbar'
     }
     cleanData[i] = {
       bt: bt,
@@ -100,28 +101,33 @@ export const p1SanityCheck = (data, rowAmount) => {
 export const p2SanityCheck = (data, rowAmount) => {
   let cleanData = []
   for(let i = 0; i<rowAmount; i++) {
-    let bt, ip
+    let bt, ip, projectsTotal
     let projects = []
     if(data && data[i]) {
-      bt = typeof data[i].bt === 'number' ? data[i].bt : 1
-      ip = typeof data[i].ip === 'number' ? data[i].ip : 1
+      bt = typeof data[i].bt === 'number' ? data[i].bt : 0
+      ip = typeof data[i].inp === 'number' ? data[i].inp : 0
+      projectsTotal = typeof data[i].projectsTotal === 'number' ? data[i].projectsTotal : 0
       projects = data[i].projects.map(proj => {
         return {
           projectTyp: typeof proj.projectTyp === 'string' ? proj.projectTyp : 'Projekttyp',
           client: typeof proj.client === 'string' ? proj.client : 'Kunde',
           bt: typeof proj.bt === 'number' ? proj.bt : '?',
           position: typeof proj.position === 'string' ? proj.position : '',
-          name: typeof proj.name === 'string' ? proj.name : 'Projekt'
+          name: typeof proj.name === 'string' ? proj.name : 'Projekt',
+          completed: typeof proj.completed === 'string' ? projectStatus(proj.completed): 'rgb(30,70,125, 0.8)'
         }
       })
     } else {
       bt = 1
       ip = 1
+      projectsTotal = 0
     }
     cleanData[i] = {
       bt: bt,
       ip: ip,
+      projectsTotal: projectsTotal,
       projects: projects
+
     }
   }
   return cleanData
@@ -136,8 +142,8 @@ export const s1SanityCheck = (data, rowAmount) => {
       projectsTotal = typeof data[i].projectsTotal === 'number' ? data[i].projectsTotal : 0
       bestType = typeof data[i].bestType === 'string' ? data[i].bestType : '-'
       bestTypeAmount = typeof data[i].bestTypeAmount === 'number' ? data[i].bestTypeAmount : 0
-      timesPl = typeof data[i].amountPl === 'number' ? data[i].amountPl : 0
-      timesPc = typeof data[i].amountPc === 'number' ? data[i].amountPc : 0
+      timesPl = typeof data[i].timesPl === 'number' ? data[i].timesPl : 0
+      timesPc = typeof data[i].timesPc === 'number' ? data[i].timesPc : 0
     }
     else {
       completedSeminars = 0
@@ -160,17 +166,20 @@ export const s1SanityCheck = (data, rowAmount) => {
 }
 
 export const s2SanityCheck = (data, rowAmount) => {
-  let cleanData = [], skillSet1 = [], skillSet2 = []
+  let cleanData = []
   let expieriencedIn, pastProjects
   for(let i = 0; i<rowAmount; i++) {
     const seminars = []
+    let skillSet1 = [], skillSet2 = []
     if(data && data[i]) {
       if(data[i].skills){
-        const conSorted = conSort(data[i].skills)
-        skillSet1 = conSorted[0]
-        skillSet2 = conSorted[1]
+        if(data[i].skills && data[i].skills.length > 0){
+          const conSorted = conSort(data[i].skills)
+          skillSet1 = conSorted[0]
+          skillSet2 = conSorted[1]
+        }
       }
-      expieriencedIn = typeof data[i].expieriencedIn === 'string' ? data[i].expieriencedIn : ''
+      expieriencedIn = typeof data[i].expieriencedIn === 'string' ? data[i].expieriencedIn : '-'
       pastProjects = typeof data[i].pastProjects === 'string' ? data[i].pastProjects : ''
       data[i].seminars.map(sem => {
         if(typeof sem.name === 'string' && typeof sem.completed === 'boolean') {
@@ -182,9 +191,9 @@ export const s2SanityCheck = (data, rowAmount) => {
       return null})
     }
     else {
-      expieriencedIn =  ''
+      expieriencedIn =  '-'
       pastProjects = ''
-      skillSet1 = ['Skills']
+      skillSet1 = []
       skillSet2 = []
     }
     legitSeminarStrings.map(legit => {
@@ -206,6 +215,22 @@ export const s2SanityCheck = (data, rowAmount) => {
     }
   }
   return cleanData
+}
+
+const monthDict = {
+  '01': 'Januar', '02': 'Februar','03': 'März','04': 'April','05': 'Mai','06': 'Juni','07': 'Juli',
+  '08': 'August','09': 'September','10': 'Oktober','11': 'November','12': 'Dezember'
+}
+
+const projectStatus = (status) => {
+  switch(status){
+    case 'laufend':
+      return 'rgba(238, 189, 21, 0.8)'
+    case 'abgelehnt':
+      return 'rgba(171,45,25,0.8)'
+    default:
+      return 'rgba(30,70,125,0.8)'
+  }
 }
 
 const legitSeminarStrings = ['Angebotserstellung', 'Corporate Design', 'Finanzen und Recht', 'Internes, QM und BDSU',

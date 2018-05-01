@@ -40,6 +40,7 @@
     position: relative;
     width: 75%;
     height: 100%;
+    background: rgba(20,70,125,0.5);
     overflow: hidden;
 }
 
@@ -51,6 +52,7 @@
     align-items: center;
     justify-content: left;
     padding: 0 2% 0 2%;
+    background: white;
 }
 
 .CarouselContainer{
@@ -60,8 +62,12 @@
     display: flex;
     align-items: center;
     margin-left: 15%;
+
 }
 
+.Img {
+    width: 40%;
+}
 .NextItem, .PrevItem {
     position: absolute;
     top: 20%;

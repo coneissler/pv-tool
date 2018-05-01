@@ -19,24 +19,36 @@ const s2 = (props) => {
   data.skillSet2.map((sk, key) => {
     skills2.push(<SkillChip skill={sk} key={key} id={key} last={(key === data.skillSet2.length-1)}/>)
     return null})
+  const noSkill = skills2.length === 0 && skills1.length === 0
+  const noExperience = data.expieriencedIn === '-'
     return (
         <div className={cellClass.Cell}>
             <div className={classes.TopBar}><p className={classes.Header}>{seminars.length}/6 Pflichtschulungen abgeschlossen</p></div>
             <div className={classes.MainContent}>
                 <div className={classes.StaticStats}>
-                  <div className={classes.BorderSkills}/>
+                  {noSkill ? null : <div className={classes.BorderSkills}/>}
+                  {noExperience ?
+                    <div className={classes.Experience}>
+                      <div className={classes.BoxDescriptionEmpty} style={{fontSize: '200%'}}>Experience In</div>
+                    </div>
+                    :
                     <div className={classes.Experience}>
                         <div className={classes.BoxDescription}>Experience In</div>
                         {data.expieriencedIn}
+                    </div>}
+                  {noSkill ?
+                    <div className={classes.NoSkills}>
+                      <div className={classes.BoxDescriptionEmpty} style={{color: 'rgb(20,70,125)', opacity: '0.3'}}>Skills</div>
                     </div>
-                  <div className={classes.Skills}>
-                  <div className={classes.SecondarySkills}>
-                    {skills1}
-                  </div>
-                    <div className={classes.SecondarySkills}>
-                      {skills2}
-                    </div>
-                  </div>
+                    :
+                    <div className={classes.Skills}>
+                      <div className={classes.SecondarySkills}>
+                        {skills1}
+                      </div>
+                      <div className={classes.SecondarySkills}>
+                        {skills2}
+                      </div>
+                    </div>}
                 </div>
                 <div className={classes.SeminarView}>
                     {seminars}

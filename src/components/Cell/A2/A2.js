@@ -30,10 +30,6 @@ class A2 extends Component {
         this.setState({ socialBackdrop: newState })
     }
 
-    socialUnknownHandler = (url, payload) => {
-
-    }
-
     componentWillReceiveProps(nextProps) {
         if(!nextProps.closeSocial)
             this.setState({
@@ -55,14 +51,14 @@ class A2 extends Component {
         return(
         <div className={[cellClasses.Cell, classes.A2].join(' ')}>
             <div onClick={this.socialBackdropHandler} className={["static-modal", this.state.socialBackdrop && this.props.closeSocial? classes.SocialBackdropActiv: classes.SocialBackdropHidden].join(' ')}>
-                <div className="static-modal">
+                <div style={{position: 'absolute', top: '0', left: '0'}} className="static-modal">
                     <Modal.Dialog>
                         <Modal.Header>
                             <Modal.Title style={{display: 'inline', fontSize: '150%'}}>0176344829388</Modal.Title>
                             <Button style={{float: 'right'}} bsStyle="primary">Copy</Button>
                         </Modal.Header>
                     </Modal.Dialog>
-                </div>;
+                </div>
             </div>
             <div className={classes.Content}>
                 <GeneralTopBar name={data.name} width='110%' resort={data.resort} active={data.active}/>
@@ -72,7 +68,7 @@ class A2 extends Component {
                     </div>
                     <div className={classes.TextContainer}>
                         <div className={classes.MemberStatus}>{data.memberstatus}</div>
-                        <div className={classes.TextLong}><p>{data.months}</p>Beitritt: {data.joinDate}</div>
+                        <div className={classes.TextLong}><p>{data.months}</p>Im CCT seit {data.joinDateMonth}</div>
                         <div className={classes.TextLong}><p>{data.major.substring(0,5)}</p>{data.major.substring(6)}</div>
                         <div className={classes.TextLong}><p>{data.uniShort}</p>{data.university}</div>
                     </div>

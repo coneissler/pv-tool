@@ -19,9 +19,9 @@ class P1 extends Component {
                 <div className={classes.DataNumbers}>
                     <div className={topClass}><span>{data.bt} BT</span></div>
                     <div className={middleClass}><span>{data.ip} IP</span></div>
-                    {data.available ?
-                        <div style={{background: 'rgba(16,187,103,0.3)'}} className={classes.CompartimentBottom}><span>Verfügbar</span></div> :
-                        <div style={{background: 'rgba(239,46,46,0.3)'}} className={classes.CompartimentBottom}><span>Auf Projekt</span></div>}
+                    {data.available === 'Verfügbar' ?
+                        <div style={{background: 'rgba(16,187,103,0.3)'}} className={classes.CompartimentBottom}><span>{data.available}</span></div> :
+                        <div style={{background: 'rgba(239,46,46,0.3)'}} className={classes.CompartimentBottom}><span>{data.available}</span></div>}
                 </div>
                 <div className={classes.DataVis}>
                     <svg height="100%" viewBox="0 0 400 400">
