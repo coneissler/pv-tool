@@ -1,0 +1,123 @@
+.Background{
+    position: relative;
+    width: 100%;
+    min-height: 50vh;
+    background: linear-gradient(135deg, rgb(30,70,125), rgb(30,70,125) 50%,  transparent 50.1%);
+    color: white;
+    font-size: 600%;
+    display: flex;
+    align-items: center;
+    border-bottom: rgb(30,70,125) 3px solid;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.PV {
+    position: absolute;
+    left: 0;
+    height: 50vh;
+    right: 55%;
+    top: 0;
+    color: white;
+    display: flex;
+    align-items: center;
+    font-size: 600%;
+    justify-content: flex-end;
+}
+
+.Tool {
+    position: absolute;
+    left: 55%;
+    height: 50vh;
+    right: 0;
+    top: 0;
+    color: rgb(30,70,125);
+    display: flex;
+    align-items: center;
+    font-size: 600%;
+}
+
+.ButtonContainer {
+     width: 100%;
+     height: 40vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+ }
+
+.Item{
+    position: relative;
+    overflow: hidden;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border: solid 2px black;
+}
+
+.ItemCaption, .ItemCaptionHover{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    font-size: 500%;
+    color: rgba(30, 70 ,125, 0.7);
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.ItemCaptionHover {
+    -webkit-transform: translateX(100%);
+    -moz-transform: translateX(100%);
+    -ms-transform: translateX(100%);
+    -o-transform: translateX(100%);
+    transform: translateX(100%);
+}
+.Image, .ImageHover{
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    display: block;
+    opacity: 0.5;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.ImageHover {
+    opacity: 1;
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.Impressum {
+    width: 100%;
+    min-height: 10vh;
+    opacity: 0.5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 600px) {
+    .ButtonContainer {
+        flex-direction: column;
+    }
+    .Item {
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+}

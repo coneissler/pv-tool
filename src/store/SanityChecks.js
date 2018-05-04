@@ -81,12 +81,12 @@ export const p1SanityCheck = (data, rowAmount) => {
   for(let i = 0; i<rowAmount; i++) {
     let bt, ip, available
     if(data && data[i]) {
-      bt = typeof data[i].bt === 'number' ? data[i].bt : 1
-      ip = typeof data[i].ip === 'number' ? data[i].ip : 1
+      bt = typeof data[i].bt === 'number' ? data[i].bt : 0
+      ip = typeof data[i].ip === 'number' ? data[i].ip : 0
       available = typeof data[i].available === 'string' ? data[i].available : 'Verfügbar'
     } else {
-      bt = 1
-      ip = 1
+      bt = 0
+      ip = 0
       available = 'Verfügbar'
     }
     cleanData[i] = {
@@ -114,7 +114,7 @@ export const p2SanityCheck = (data, rowAmount) => {
           bt: typeof proj.bt === 'number' ? proj.bt : '?',
           position: typeof proj.position === 'string' ? proj.position : '',
           name: typeof proj.name === 'string' ? proj.name : 'Projekt',
-          completed: typeof proj.completed === 'string' ? projectStatus(proj.completed): 'rgb(30,70,125, 0.8)'
+          completed: typeof proj.completed === 'string' ? projectStatus(proj.completed): 'rgba(16,187,103,0.5)'
         }
       })
     } else {
@@ -167,20 +167,19 @@ export const s1SanityCheck = (data, rowAmount) => {
 
 export const s2SanityCheck = (data, rowAmount) => {
   let cleanData = []
-  let expieriencedIn, pastProjects
+  let expieriencedIn, pastProjects, completedSeminars
   for(let i = 0; i<rowAmount; i++) {
     const seminars = []
     let skillSet1 = [], skillSet2 = []
     if(data && data[i]) {
-      if(data[i].skills){
-        if(data[i].skills && data[i].skills.length > 0){
+      if(data[i].skills && data[i].skills.length > 0){
           const conSorted = conSort(data[i].skills)
           skillSet1 = conSorted[0]
           skillSet2 = conSorted[1]
-        }
       }
       expieriencedIn = typeof data[i].expieriencedIn === 'string' ? data[i].expieriencedIn : '-'
       pastProjects = typeof data[i].pastProjects === 'string' ? data[i].pastProjects : ''
+      completedSeminars = typeof data[i].completedSeminars === 'number' ? data[i].completedSeminars : 0
       data[i].seminars.map(sem => {
         if(typeof sem.name === 'string' && typeof sem.completed === 'boolean') {
           seminars.push({
@@ -193,6 +192,7 @@ export const s2SanityCheck = (data, rowAmount) => {
     else {
       expieriencedIn =  '-'
       pastProjects = ''
+      completedSeminars = 0
       skillSet1 = []
       skillSet2 = []
     }
@@ -208,6 +208,7 @@ export const s2SanityCheck = (data, rowAmount) => {
     return null})
     cleanData[i] = {
       expieriencedIn: expieriencedIn,
+      completedSeminars: completedSeminars,
       pastProjects: pastProjects,
       skillSet1: skillSet1,
       skillSet2: skillSet2,
@@ -225,11 +226,11 @@ const monthDict = {
 const projectStatus = (status) => {
   switch(status){
     case 'laufend':
-      return 'rgba(238, 189, 21, 0.8)'
+      return 'rgba(238, 189, 21, 0.5)'
     case 'abgelehnt':
-      return 'rgba(171,45,25,0.8)'
+      return 'rgba(171,45,25,0.5)'
     default:
-      return 'rgba(30,70,125,0.8)'
+      return 'rgba(16,187,103,0.5)'
   }
 }
 

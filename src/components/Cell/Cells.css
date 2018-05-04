@@ -1,6 +1,7 @@
 .Cell {
     height: 29.75vw;
     transition: all 0.5s ease-out;
+    overflow: hidden;
 }
 @media (min-width: 992px) and (max-width: 1100px) {
     .Cell {

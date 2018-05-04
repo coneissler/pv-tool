@@ -31,8 +31,8 @@ class P1 extends Component {
                             standalone={false}
                             width={400} height={400}
                             data={[
-                                {x: 'BT', y: data.ip, fillOpacity: 0.9, stroke: "rgb(20,70,125)", strokeWidth: 3},
-                                {x: 'IP', y: data.bt, fillOpacity: 0.9, stroke: "white", strokeWidth: 3}
+                                {x: 'BT', y: data.ip===0 ? 1 : data.ip, fillOpacity: 0.9, stroke: "rgb(20,70,125)", strokeWidth: 3},
+                                {x: 'IP', y: data.bt===0 ? 1 : data.bt, fillOpacity: 0.9, stroke: "white", strokeWidth: 3}
                             ]}
                             labels={() => null}
                             innerRadius={68}

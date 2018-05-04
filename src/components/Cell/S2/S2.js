@@ -14,7 +14,7 @@ const s2 = (props) => {
                   />)
     return null})
   data.skillSet1.map((sk, key) => {
-    skills1.push(<SkillChip skill={sk} key={key} id={key} last={(key === data.skillSet1.length-1)}/>)
+    skills1.push(<SkillChip border skill={sk} key={key} id={key} last={(key === data.skillSet1.length-1)}/>)
     return null})
   data.skillSet2.map((sk, key) => {
     skills2.push(<SkillChip skill={sk} key={key} id={key} last={(key === data.skillSet2.length-1)}/>)
@@ -23,10 +23,9 @@ const s2 = (props) => {
   const noExperience = data.expieriencedIn === '-'
     return (
         <div className={cellClass.Cell}>
-            <div className={classes.TopBar}><p className={classes.Header}>{seminars.length}/6 Pflichtschulungen abgeschlossen</p></div>
+            <div className={classes.TopBar}><p className={classes.Header}>{data.completedSeminars}/6 Pflichtschulungen abgeschlossen</p></div>
             <div className={classes.MainContent}>
                 <div className={classes.StaticStats}>
-                  {noSkill ? null : <div className={classes.BorderSkills}/>}
                   {noExperience ?
                     <div className={classes.Experience}>
                       <div className={classes.BoxDescriptionEmpty} style={{fontSize: '200%'}}>Experience In</div>

@@ -1,0 +1,84 @@
+.TopBar {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.ViewCut {
+    width: 100vw;
+    height: 80vh;
+    overflow-x: hidden;
+}
+
+.BodyContainer {
+    width: 200vw;
+    overflow: auto;
+    display: flex;
+    flex-direction: row;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+
+}
+.Button {
+    width: 45%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+    color: rgb(30,70,125);
+    font-size: 150%;
+}
+
+.ButtonBar, .ButtonBarActiv {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.ButtonBarActiv {
+    background: rgb(30,70,125);
+}
+.ButtonBar {
+    background: white;
+}
+.Content1 , .Content2{
+    min-width: 100vw;
+    padding: 2% 2% 0 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.View2 {
+    -webkit-transform: translateX(-100vw);
+    -moz-transform: translateX(-100vw);
+    -ms-transform: translateX(-100vw);
+    -o-transform: translateX(-100vw);
+    transform: translateX(-100vw);
+}
+
+.Impressum {
+    position: absolute;
+    width: 100%;
+    height: 10vh;
+    bottom:0;
+    left:0;
+    opacity: 0.5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

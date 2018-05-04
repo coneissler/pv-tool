@@ -38,6 +38,7 @@
 }
 
 .Header {
+    position: relative;
     width: 100%;
     height: 33.5%;
     display: flex;
@@ -58,7 +59,13 @@
 }
 
 
-
+.StatusIndicator{
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 18%;
+}
 .CctLogo{
     background: linear-gradient(to top, rgba(30,70,125,1) 0%,  rgba(30,70,125,1) 64%,  rgba(30,70,125, 0.2) 65%);
     mask: url('../../../assets/cct-logo-ohne-punkt.svg');

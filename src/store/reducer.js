@@ -5,7 +5,7 @@ import {a1DummyData, a2DummyData, p1DummyData, p2DummyData, s1DummyData, s2Dummy
 const initialState = {
 
     mod: [{type:'a', size: 2}, {type:'d', size: 0}, {type:'s', size: 1}, {type:'p', size: 1}],
-    rowAmount: 6,
+    rowAmount: 7,
     general2: a2DummyData(),
     general1: a1DummyData(),
     project2: p2DummyData(),

@@ -90,7 +90,7 @@ class P2 extends Component {
       const  cursorStyle = (carouselItems.length < 2) ? 'default' : 'pointer'
         return(
             <div className={cellClass.Cell}>
-                <div className={classes.TopBar}><p className={classes.Header}>{data.projectsTotal} Projekt{data.projectsTotal !== 1 ? 'e' : ''} abgeschlossen</p></div>
+                <div className={classes.TopBar}><p className={classes.Header}>{data.projectsTotal} externe Projekt{data.projectsTotal !== 1 ? 'e' : ''} abgeschlossen</p></div>
                 <div className={classes.MainContent}>
                     <div className={classes.StaticNumbers}>
                         <div className={classes.ChipR}>

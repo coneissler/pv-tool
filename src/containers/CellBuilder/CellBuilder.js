@@ -8,12 +8,13 @@ import classes from './CellBuilder.css';
 class CellBuilder extends Component {
     state = {
         click: false,
-        stepSize: 450
+        stepSize: 450,
+        startPresentation: 0
     };
 
     onSpinnerClickHandler = () => {
-        const change = !this.state.click;
-        this.setState({click: change});
+        const change = {click: !this.state.click, startPresentation: this.state.startPresentation + 1}
+        this.setState(change);
     };
 
     scrollStep = () => {
@@ -45,7 +46,7 @@ class CellBuilder extends Component {
             <div className={classes.BorderArea} style={{left: '0'}}/>
             <div className={classes.CellBuilder}>
                 <Grid fluid >
-                    {mappedRows} <Spinner click={this.state.click} clickHandler={this.onSpinnerClickHandler}/>
+                  {mappedRows}
                 </Grid>
             </div>
                 <div className={classes.BorderArea} style={{right: '0'}}><button className={classes.BackToTop} onClick={this.scrollToTop}>

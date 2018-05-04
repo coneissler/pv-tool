@@ -26,8 +26,9 @@ class A2 extends Component {
     };
 
     socialBackdropHandler = () => {
-        const newState = !this.state.socialBackdrop
-        this.setState({ socialBackdrop: newState })
+        // const newState = !this.state.socialBackdrop
+        // this.setState({ socialBackdrop: newState })
+      alert('+49 1769382737')
     }
 
     componentWillReceiveProps(nextProps) {

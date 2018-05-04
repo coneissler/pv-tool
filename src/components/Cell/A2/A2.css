@@ -56,7 +56,6 @@
 
 .SVGBackground{
     position: absolute;
-    width: 100%;
     height: 100%;
     z-index: -99;
 }
@@ -165,7 +164,7 @@
     position: absolute;
     top: 0;
     right: 0;
-    height: 100%;
+    height: 101%;
     z-index: -99;
 }
 

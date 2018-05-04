@@ -6,7 +6,7 @@ const skillChip = (props) => {
   const borderClass = props.last ? classes.SkillLast : classes.Skill
     return(
       <Aux>
-        <div className={borderClass}><nobr>{props.skill}</nobr></div>
+        <div style={{borderBottom: props.border ? '1px solid black' : 'none'}} className={borderClass}><nobr>{props.skill}</nobr></div>
       </Aux>
     )
 };
