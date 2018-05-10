@@ -1,0 +1,79 @@
+.Container{
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.Container iframe {
+    display: block;
+    pointer-events: none;
+    width: 50vw;
+    height: 18.9583vw;
+    z-index: 50;
+}
+.Container p {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    right: 0;
+    top: 0;
+    color: black;
+    display: block;
+    font-size: 1.5vw;
+    text-decoration: none;
+    -webkit-animation: swipeIn 1s ease-in 2s forwards;
+    -o-animation: swipeIn 1s ease-in 2s forwards;
+    animation: swipeIn 1s ease-in 2s forwards;
+}
+
+
+@keyframes swipeIn {
+    0%{
+        top: 0;
+    }
+    70%{
+        top: 23vw;
+    }
+    80%{
+        top: 21vw;
+    }
+    90%{
+        top: 22vw;
+    }
+    100%{
+        top: 21vw;
+    }
+}
+
+@media (max-width: 1000px) {
+    .Container iframe {
+        width: 100vw;
+        height: 37.9166vw;
+    }
+    .Container p {
+        font-size: 150%;
+    }
+    @keyframes swipeIn {
+        0%{
+            top: 0;
+        }
+        70%{
+            top: 42vw;
+        }
+        80%{
+            top: 40vw;
+        }
+        90%{
+            top: 41vw;
+        }
+        100%{
+            top: 40vw;
+        }
+    }
+}

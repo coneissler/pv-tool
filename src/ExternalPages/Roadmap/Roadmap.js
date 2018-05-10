@@ -36,8 +36,8 @@ class Roadmap extends Component {
                   <VersionParagraph version='0.9'
                                     checkedTasks={['Grafische Nutzer Oberfläche', 'Ausführliche Entwickler Dokumentation in WMS',
                     'Datenbank auf CCT Server gehostet', 'Demo Datensatz erstellt' ,'Einbettung in Dashboard']} openTasks={[]}/>
-                  <VersionParagraph version='1.0' checkedTasks={['Grafische Entwicklungsoberfläche implementieren']}
-                                    openTasks={['CSV-Export', 'Zugang auf Board beschränken', 'Eingabemaske zum Einpflegen/ Instandhalten der Datensätze',
+                  <VersionParagraph version='1.0' checkedTasks={['Grafische Entwicklungsoberfläche implementieren','Zugang auf Board beschränken']}
+                                    openTasks={['CSV-Export', 'Eingabemaske zum Einpflegen/ Instandhalten der Datensätze',
                                     'Vervollständigung der Datenbasis']}/>
                   <VersionParagraph version='1.1' checkedTasks={[]}
                                     openTasks={['Rechte/Rollen System implementieren','ZVG-Tracking', 'Teilnahme auf Donnerstagssitzung oder anderen Events verfolgen', 'Projektbewerbungen ermöglichen']}/>

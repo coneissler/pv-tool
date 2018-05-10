@@ -2,12 +2,15 @@
     position: relative;
     width: 100%;
     min-height: 50vh;
-    background: linear-gradient(135deg, rgb(30,70,125), rgb(30,70,125) 50%,  transparent 50.1%);
+    background: linear-gradient(-45deg, #142f54 0%, #142f54 50%, transparent 50.03%, transparent 100%);
+    background: -webkit-linear-gradient(-45deg, #142f54 0%, #142f54 50%, transparent 50.03%, transparent 100%);
+    background: -o-linear-gradient(-45deg, #142f54 0%, #142f54 50%, transparent 50.03%, transparent 100%);
+    background: -moz-linear-gradient(-45deg, #142f54 0%, #142f54 50%, transparent 50.03%, transparent 100%);
     color: white;
     font-size: 600%;
     display: flex;
     align-items: center;
-    border-bottom: rgb(30,70,125) 3px solid;
+    border-bottom: #142f54 3px solid;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
 }
@@ -31,7 +34,7 @@
     height: 50vh;
     right: 0;
     top: 0;
-    color: rgb(30,70,125);
+    color: #142f54;
     display: flex;
     align-items: center;
     font-size: 600%;
